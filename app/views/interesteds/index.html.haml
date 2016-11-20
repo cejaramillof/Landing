@@ -1,0 +1,33 @@
+.container
+  .row
+    .col-md-12
+      %h1.title-dash.text-center Listing Interesteds
+.table-responsive
+  %table.table.table-striped.table-hover
+    %thead
+      %tr
+        %th ID
+        %th Email
+        %th Interesed
+        %th Language
+        %th IP
+        %th Updated
+        %th Created
+        %th 
+        %th 
+    %tbody
+      - @interesteds.each do |interested|
+        %tr
+          %td= interested.id
+          %td= interested.email
+          %td= interested.desc
+          %td= interested.locale
+          %td= interested.ip
+          %td= interested.updated_at
+          %td= interested.created_at
+          %td= link_to 'Edit', edit_interested_path(interested), :class => "boton-green-min"
+          %td= link_to 'X', interested, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => "boton-red-min"
+.container
+  .row
+    .col-md-12
+      = will_paginate @interesteds, {:class => "text-center paginate"}

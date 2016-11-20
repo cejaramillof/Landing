@@ -1,0 +1,22 @@
+= form_for @interested do |f|
+  - if @interested.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@interested.errors.count, "error")} prohibited this interested from being saved:"
+      %ul
+        - @interested.errors.full_messages.each do |msg|
+          %li= msg
+  .field
+    %p ID:
+    = f.text_field :id, :readonly => true, :style => "border-radius: 6px;border: 1px solid #dedede; padding: 1em; color: #8e8e8e;width: 80%;"
+  .field
+    %p Email:
+    = f.text_field :email, :readonly => true, :style => "border-radius: 6px;border: 1px solid #dedede; padding: 1em; color: #8e8e8e;width: 80%;"
+  .field
+    %p Language:
+    = f.select(:locale, ['es', 'en', 'pt'])
+  .field
+    %p Interesed:
+    = f.text_area :desc, :style => "border-radius: 6px;border: 1px solid #dedede; padding: 1em; color: #8e8e8e;", :cols => "50", :rows => "4"
+  .actions
+    = f.submit 'Save', :class => "boton-green-d"
+    = link_to 'Back', interesteds_path, :class => "boton-red-d"

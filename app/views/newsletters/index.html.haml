@@ -1,0 +1,39 @@
+.container
+  .row
+    .col-md-12
+      %h1.title-dash.text-center Listing Newsletters
+.container
+  .row
+    .col-md-3
+    .col-md-6
+      .table-responsive
+        %table.table.table-striped.table-hover.text-center
+          %thead
+            %tr
+              %th ID
+              %th Titles
+              %th Type
+              %th Language
+              %th
+
+          %tbody
+            - @newsletters.each do |newsletter|
+              %tr
+                %td{ :width => "5%;" }= newsletter.id
+                %td= link_to newsletter.title, newsletter
+                %td{ :width => "20%;" }
+                  -if newsletter.type_new.empty?
+                    Newsletter
+                  -elsif newsletter.type_new == "All"
+                    All
+                  -else
+                    = newsletter.type_new
+                %td{ :width => "10%;" }= newsletter.language
+                %td{ :width => "10%;" }= link_to 'X', newsletter, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => "boton-red-min"
+    .col-md-3
+.container
+  .row
+    .col-md-12
+      = will_paginate @interesteds, {:class => "text-center paginate"}
+    .col-md-12.text-center
+      = link_to 'New Newsletter', new_newsletter_path, :class => "boton-green-d"

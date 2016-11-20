@@ -1,0 +1,42 @@
+.pre-footer
+  .container
+    .col-md-6.col-xs-12
+      %p.footer-title= t('footer.newsletter.title')
+      =form_tag(create_email_path, method: :post, id: "emails-form") do
+        =email_field_tag "email",nil, :type => "email", :placeholder => "you@email.com", :style => "font-size: 1.5em; border-radius: 6px;border: 1px; padding: 0.5em; width: 250px; background-color: #3c3d49; color: white;"
+        =hidden_field_tag "ip", request.remote_ip
+        =submit_tag I18n.t('footer.newsletter.botton'), :class => "clear-btn boton-green"
+      #email-info
+      %p.footer-subtitle= t('footer.newsletter.conditions')
+      = link_to t('footer.newsletter.policy'), '#', { :class=> "footer-link footer-subtitle" }
+      %p.footer-subtitle= t('footer.newsletter.and')
+      = link_to t('footer.newsletter.terms'), '#', { :class=> "footer-link footer-subtitle" }
+      %br
+      = link_to image_tag( 'redes/fb.png', :class => "social-icon" ), 'https://www.facebook.com/worldtechmakers/', :target => "_blank"
+      = link_to image_tag( 'redes/tw.png', :class => "social-icon" ), 'https://twitter.com/worldtechmaker', :target => "_blank"
+      = link_to image_tag( 'redes/yt.png', :class => "social-icon" ), 'https://www.youtube.com/channel/UCgB6zwXyznAoZWdXMPgin9w', :target => "_blank"
+      = link_to image_tag( 'redes/in.png', :class => "social-icon" ), 'https://www.linkedin.com/company/world-tech-makers', :target => "_blank"
+
+    .col-md-6.col-xs-12
+      .row
+        .col-md-6.col-xs-12
+          %p.footer-title= t('footer.right.title1')  
+          %p= link_to t('footer.right.left1'), '#', { :class=> "footer-link2" }
+          %p= link_to t('footer.right.left2'), '#', { :class=> "footer-link2" }
+          %p= link_to t('footer.right.left3'), '#', { :class=> "footer-link2" }
+          %p= link_to t('footer.right.left4'), '#', { :class=> "footer-link2" }
+          %p= link_to t('footer.right.left5'), '#', { :class=> "footer-link2" }
+        .col-md-6.col-xs-12
+          %p.footer-title= t('footer.right.title2')
+          %p= link_to t('footer.right.right1'), '#', { :class=> "footer-link2" }
+          %p= link_to t('footer.right.right2'), '#', { :class=> "footer-link2" }
+          %p= link_to t('footer.right.right3'), '#', { :class=> "footer-link2" }
+          %p= link_to t('footer.right.right4'), '#', { :class=> "footer-link2" }
+          %p= link_to t('footer.right.right5'), '#', { :class=> "footer-link2" }
+.footer-msj
+  .container
+    .col-md-12
+      %span.btn-left= t('footer.footer.left')
+      %span.btn-right= t('footer.footer.right2')
+      %span.btn-right= image_tag('corazon.svg')
+      %span.btn-right= t('footer.footer.right1')

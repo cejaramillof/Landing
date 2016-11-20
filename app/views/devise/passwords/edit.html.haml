@@ -1,0 +1,19 @@
+.container.text-center
+  .row
+    .col-xs-2.col-md-4
+    .col-xs-8.col-md-4.login-cont
+      = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f|
+        = devise_error_messages!
+        = f.hidden_field :reset_password_token
+        .field
+          = f.label :password, "New password"
+          - if @minimum_password_length %>
+            %em= @minimum_password_length + 'characters minimum'
+          = f.password_field :password, autofocus: true, autocomplete: "off"
+        .field
+          = f.label :password_confirmation, "Confirm new password"
+          = f.password_field :password_confirmation, autocomplete: "off"
+        .actions
+          = f.submit "SAVE", :class => "boton-green-d"
+          %span= link_to "BACK", :back, :class => "boton-red-d"
+    .col-xs-2.col-md-4

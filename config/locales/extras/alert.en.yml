@@ -1,0 +1,4 @@
+en:
+  alert:
+    saved: 'Your email has been saved.'
+    error: 'Cant save email.'

@@ -1,0 +1,2 @@
+module InterestedsHelper
+end

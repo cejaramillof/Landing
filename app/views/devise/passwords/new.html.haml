@@ -1,0 +1,17 @@
+.container
+  .row
+    .col-md-12
+      %h1.title-dash.text-center Forgot your password?
+.container.text-center
+  .row
+    .col-xs-2.col-md-4
+    .col-xs-8.col-md-4.login-cont
+      = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+        = devise_error_messages!
+        .field
+          %p Email:
+          =f.email_field :email, autofocus: true, :style => "border-radius: 6px;border: 1px solid #dedede; padding: 1em; color: #8e8e8e;width: 80%;"
+        .actions
+          = f.submit "SEND", :class => "boton-green-d"
+          %span= link_to "BACK", :back, :class => "boton-red-d"
+    .col-xs-2.col-md-4

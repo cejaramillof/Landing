@@ -1,0 +1,31 @@
+.container
+  .row
+    .col-md-12
+      %h1.title-dash.text-center Listing Subscribers
+.table-responsive
+  %table.table.table-striped.table-hover
+    %thead
+      %tr
+        %th ID
+        %th Email
+        %th Language
+        %th IP
+        %th Updated
+        %th Created
+        %th
+        %th 
+    %tbody
+      - @subscribers.each do |subscriber|
+        %tr
+          %td= subscriber.id
+          %td= subscriber.email
+          %td= subscriber.locale
+          %td= subscriber.ip
+          %td= subscriber.updated_at
+          %td= subscriber.created_at
+          %td= link_to 'Edit', edit_subscriber_path(subscriber), :class => "boton-green-min"
+          %td= link_to 'X', subscriber, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => "boton-red-min"
+.container
+  .row
+    .col-md-12
+      = will_paginate @interesteds, {:class => "text-center paginate"}

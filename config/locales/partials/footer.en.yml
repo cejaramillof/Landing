@@ -1,0 +1,26 @@
+en:
+  footer:
+    newsletter:
+      title: 'Stay connect'
+      botton: 'Get Updates'
+      conditions: 'By sharing your email, you agree to our'
+      policy: 'Privacy Policy'
+      and: 'and' 
+      terms: 'Terms of Service'
+    footer:
+      left: '® All Rights Reserved 2016'
+      right1: 'Made with'
+      right2: 'in San Francisco'
+    right:
+      title1: 'Bootcamps'
+      left1: 'Ruby on Rails'
+      left2: 'iOS Development'
+      left3: 'Android Development'
+      left4: 'Full-stack Development'
+      left5: 'Custome Made Bootcamp'
+      title2: 'WTM'
+      right1: 'About'
+      right2: 'Companies'
+      right3: 'Financing program'
+      right4: 'FAQs'
+      right5: 'Blog'

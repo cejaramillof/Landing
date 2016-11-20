@@ -1,0 +1,5 @@
+en:
+  newsletter:
+    nomail: 'Woops! Parece que olvidaste colocar el correo.'
+    emailused: 'Este correo ya fue registrado.'
+    novalidmail: 'No es un correo valido.'

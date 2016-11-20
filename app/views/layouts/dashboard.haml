@@ -1,0 +1,16 @@
+!!! 5
+%html
+  %head
+    %title Dashboard
+    = stylesheet_link_tag 'dashboard', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'dashboard', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    %script
+      setTimeout("$('.error_msgs').fadeOut('slow')", 4000)
+  %body
+    .error_msgs{style:" #{"display:none;" if notice.nil?} "}
+      %p.notice= notice
+    .error_msgs{style:" #{"display:none;" if alert.nil?} "}
+      %p.alert= alert
+    = render "partials/dashnavbar"
+    = yield

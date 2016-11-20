@@ -1,0 +1,13 @@
+= form_for @course do |f|
+  - if @course.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@course.errors.count, "error")} prohibited this course from being saved:"
+      %ul
+        - @course.errors.full_messages.each do |msg|
+          %li= msg
+  .field
+    %p Name:
+    = f.text_field :name, :style => "border-radius: 6px;border: 1px solid #dedede; padding: 1em; color: #8e8e8e;width: 90%;"
+  .actions
+    = f.submit 'Save', :class => "boton-green-d"
+    = link_to 'Back', courses_path, :class => "boton-red-d"

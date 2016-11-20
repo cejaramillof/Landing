@@ -1,0 +1,27 @@
+.container
+  .row
+    .col-md-12
+      %h1.title-dash.text-center Listing Courses
+.container
+  .row
+    .col-md-3
+    .col-md-6
+      .table-responsive
+        %table.table.table-striped.table-hover
+          %thead
+            %tr
+              %th Name
+              %th 
+              %th 
+          %tbody
+            - @courses.each do |course|
+              %tr
+                %td= course.name
+                %td{ :width => "10%;" }= link_to 'Edit', edit_course_path(course), :class => "boton-green-min"
+                %td{ :width => "10%;" }= link_to 'X', course, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => "boton-red-min"
+.container
+  .row
+    .col-md-12
+      =# will_paginate @interesteds, {:class => "text-center paginate"}
+    .col-md-12.text-center
+      = link_to 'New Course', new_course_path, :class => "boton-green-d"

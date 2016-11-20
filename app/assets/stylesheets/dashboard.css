@@ -1,0 +1,33 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require dash
+ *= require_self
+/*
+ *= require froala_editor.min.css
+ *= require froala_style.min.css
+ *= require font-awesome
+ */
+/*
+ *= require froala/plugins/char_counter.min.css
+ *= require froala/plugins/code_view.min.css
+ *= require froala/plugins/colors.min.css
+ *= require froala/plugins/emoticons.min.css
+ *= require froala/plugins/file.min.css
+ *= require froala/plugins/fullscreen.min.css
+ *= require froala/plugins/image_manager.min.css
+ *= require froala/plugins/image.min.css
+ *= require froala/plugins/line_breaker.min.css
+ *= require froala/plugins/quick_insert.min.css
+ *= require froala/plugins/table.min.css
+ *= require froala/plugins/video.min.css
+ */

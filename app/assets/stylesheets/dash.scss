@@ -1,0 +1,200 @@
+// Place all the styles related to the Main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$white: #fff;
+$gray: #858585;
+$darkblue: #111529;
+$green: #2dbac2;
+$darkgreen: #24949b;
+$red: #ea3962;
+$darkred: #bb2d4e;
+
+* {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+}
+
+*:focus {
+    outline: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.login-cont {
+  background-color: #e8e8e8;
+  border-radius: 15px 0px 15px 15px;
+  border-bottom: 2px solid #c1c1c1;
+  padding: 2em;
+  margin: 4em 0;
+}
+
+.field {
+  margin: 0.5em 0;
+  color: #363636;
+  font-size: 1em;
+}
+
+#error_explanation {
+  font-size: 1em;
+  color: #3b3b3b;
+  text-align: justify;
+}
+
+#error_explanation > h2 {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.actions {
+  margin-top: 2em
+}
+
+.boton-green-d {
+  font-size: 1.8rem;
+  border-radius: 6px;
+  padding: 10px 30px;
+  border-bottom: 2px solid $darkgreen!important;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: $white;
+  background-color: $green;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0.5em;
+}
+
+.boton-green-min {
+  border-radius: 6px;
+  padding: 3px 10px;
+  border-bottom: 2px solid $darkgreen!important;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: $white;
+  background-color: $green;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.boton-green-d:hover,
+.boton-green-min:hover {
+  color: $white;
+  text-decoration: none;
+}
+
+.boton-red-d {
+  font-size: 1.8rem;
+  border-radius: 6px;
+  padding: 10px 30px;
+  border-bottom: 2px solid $darkred;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: $white;
+  background-color: $red;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0.5em;
+}
+
+.boton-red-min {
+  padding: 3px 10px;
+  border-bottom: 2px solid $darkred;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 6px;
+  color: $white;
+  background-color: $red;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.boton-red-d:hover, 
+.boton-red-min:hover {
+  color: $white;
+  text-decoration: none;
+}
+
+.alert {
+  background-color: $red;
+  text-align: center;
+  color: $white;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 0px!important;
+  border: none;
+  padding: 15px;
+}
+
+.notice {
+  padding: 15px;
+  background-color: $green;
+  text-align: center;
+  color: $white;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 0px!important;
+  border: none;
+}
+
+.list-menu {
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #dddddd;
+  background-color: #f9f9f9;
+}
+
+.list-menu > li {
+  display: inline-block;
+}
+
+.list-menu > li > a {
+  display: inline-block;
+  background-color: #f9f9f9;
+  font-size: 1.2em;
+  padding: 1em 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #777777;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  &:hover {
+    background-color: #dddddd;
+    text-decoration: none;
+    color: #333;
+    text-shadow: none;
+  }
+}
+
+.paginate {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-style: none;
+  a {
+    color: $green;
+    &:hover {
+      color: $darkgreen;
+      text-decoration: none;
+    }
+  }
+}
+
+.title-dash {
+  font-weight: bold;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}

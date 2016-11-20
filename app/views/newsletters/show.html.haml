@@ -1,0 +1,28 @@
+.container
+  .row
+    .col-md-12
+      %h1.title-dash.text-center Show Newsletter
+%p#notice= notice
+
+.container
+  .row
+    .col-md-1
+    .col-md-10
+      %p
+        %b Title:
+        = @newsletter.title
+      %p
+        %b Type:
+        -if @newsletter.type_new.empty? 
+          Newsletter
+        -else
+          = @newsletter.type_new
+      %p
+        %b Language:
+        = @newsletter.language        
+      %p
+        %b Newsletter:
+        = @newsletter.body.html_safe
+    .col-md-1
+.text-center
+  = link_to 'Back', newsletters_path, :class => "boton-red-d"

@@ -1,0 +1,20 @@
+.container.text-center
+  .row
+    .col-xs-4
+    .col-xs-4
+      
+    .col-xs-4
+  .row
+    .col-xs-2.col-md-4
+    .col-xs-8.col-md-4.login-cont
+      =form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .field
+          %p Email:
+          =f.email_field :email, autofocus: true, :style => "border-radius: 6px;border: 1px solid #dedede; padding: 1em; color: #8e8e8e;width: 80%;"
+        .field
+          %p Password:
+          =f.password_field :password, autocomplete: "off", :style => "border-radius: 6px;border: 1px solid #dedede; padding: 1em; color: #8e8e8e;width: 80%;"
+        .actions
+          =f.submit "LOG IN", :class => "boton-red-d"
+      %em= link_to 'Forgot password?', new_admin_password_path
+    .col-xs-2.col-md-4

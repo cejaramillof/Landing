@@ -1,0 +1,78 @@
+en:
+  home:
+    header:   
+      title: 'Become a better developer in 12 weeks'
+      msg: 'Change your career. Change your life'
+      btn-left: 'Bootcamps Online'
+      btn-right: 'Bootcamps On-site'
+    bar:
+      msg1: 'Check out our new online bootcamps.  '
+      msg2: 'Subscribe now'
+      msg3: '  and change your career'
+    syllabus: 
+      input1: "What do you want to learn?"
+      input2: "Your email:"
+      button: "Download Syllabus"
+    content: 
+      bootcamp-pros:
+        tlt1: 'Find a better job'
+        msg1: 'Work in one of the most demanded and growing industries with great career opportunities as a web or mobile developer, or as a freelancer from the comfort of your home.'
+        button:
+          n1: '85%'
+          txt1: 'Of our graduates get job after complete the program.'
+          n2: '+75k'
+          txt2: 'Is the average of our graduates salary.'
+        tlt2: 'Relevant technologies'
+        msg2: 'Our coding bootcamps launch your career in tech: Software developers or tech entrepreneurs.'
+      bootcamp-list:
+        on-site: 'On-site bootcamps'
+        online: 'Online bootcamps'
+        learnm: 'Learn more'
+        ror: 'Ruby on Rails'
+        ror-txt: 'Learn the language used by Github, Twitter, Basecamps and more.'
+        js: 'JavaScript Development'
+        js-txt: 'Javascript is the most demanded skill in tech world.'
+        ui: 'UI/UX'
+        ui-txt: 'The most used operative mobile system in the world.'
+        android: 'Android Development'
+        android-txt: 'The most used operative mobile system in the world.'
+        allcourses: 'See all courses'
+        explorecourses: 'Explore online courses'
+        lokingflex: 'Looking for something more flexible?'
+        custom: 'Custome Made Bootcamp'
+        custom-txt: 'Javascript is the most demanded skill in tech world.'
+        exploreb: 'Explore Bootcamp'
+      partners:
+        partner: 'Tim Draper -'
+        partner-desc: 'World Tech Makers partner'
+        partner-msg: "World Tech Makers it's a great opportunity to improve your career and get a better job."
+      mentors:
+        title: 'Get 1-1 mentorship sessions'
+        msg: 'with experienced developers, entrepreneurs, designers and investors.'
+        bar:
+          msg: 'Meet our mentors'
+      testimony:
+        msg: 'I flew from Venezuela to join the program and was able to build the MVP for my mobile application.'
+        button: 'See more stories'
+      locations:
+        title: "We're a global community"
+        msg: 'Where you can find us'
+        invite: 'Want to bring World Tech Makers to your country?'
+        mail: 'Email us: info@worldtechmakers.com'
+      bootcamps:
+        title: 'Web development Bootcamps'
+        msg: 'Become a hired developer. Guaranteed.'
+        title-online: 'Flexible (Online)'
+        dur-online: '12 weeks'
+        cost-online: '$2,000,000 COP'
+        pre-online: '2 pre-work week'
+        class-online: 'Class three times per week'
+        title-onsite: 'Intensive (on-site)'
+        dur-onsite: '16 weeks'
+        cost-onsite: '$6,500,000 COP'
+        pre-onsite: '1 pre-work week (virtual)'
+        class-onsite: '3 backing weeks'
+        button: 'View programs'
+      achievements:
+        text: '"MassChange winning startup, poised to '
+        text2: 'make tremendous impact"'
