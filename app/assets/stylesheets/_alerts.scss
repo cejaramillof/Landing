@@ -1,0 +1,27 @@
+/*
+-----------------
+      Alerts
+-----------------
+*/
+
+.alert {
+  background-color: $red;
+  text-align: center;
+  color: $white;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 0px!important;
+  border: none;
+  padding: 15px;
+}
+
+.notice {
+  padding: 15px;
+  background-color: $green;
+  text-align: center;
+  color: $white;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 0px!important;
+  border: none;
+}

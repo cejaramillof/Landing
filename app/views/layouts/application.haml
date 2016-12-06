@@ -2,14 +2,15 @@
 %html
   %head
     %title= t('site_title')
+    = favicon_link_tag 'favicon.ico'
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
     %link{rel:'stylesheet', href:'https://fonts.googleapis.com/css?family=Noto+Sans:400,700', type:'text/css'}
     %meta{name:"viewport", content:"width=device-width, initial-scale=1"}
+    = zopim_init
   %body
     %header
       = render :partial => "partials/navbar"
     = yield
-    %footer
-      = render :partial => "partials/footer"
+    = render :partial => "partials/footer"

@@ -5,43 +5,60 @@ en:
       msg: 'Change your career. Change your life'
       btn-left: 'Bootcamps Online'
       btn-right: 'Bootcamps On-site'
+      whats: "What's a bootcamp?"
+      achievements:
+        one: 'Most Impactful'
+        oneby: 'MassChallenge'
+        two: 'Most Creative'
+        twoby: 'BIP Demand solutions'
+        three: 'Most Innovative'
+        threeby: 'MIT'
+        startup: 'Startup'
     bar:
       msg1: 'Check out our new online bootcamps.  '
       msg2: 'Subscribe now'
       msg3: '  and change your career'
     syllabus: 
-      input1: "What do you want to learn?"
-      input2: "Your email:"
-      button: "Download Syllabus"
+      input1: 'What do you want to learn?'
+      input2: 'Your email:'
+      button: 'Download Syllabus'
     content: 
       bootcamp-pros:
-        tlt1: 'Find a better job'
-        msg1: 'Work in one of the most demanded and growing industries with great career opportunities as a web or mobile developer, or as a freelancer from the comfort of your home.'
+        tlt1: 'Launch your career in technology'
+        msg1: 'Work in one of the most growing industries in the world. Find great career opportunities as a software developer, or as a technology entrepreneur. Join the tribe and stay connected!'
         button:
-          n1: '85%'
+          n1: '95%'
           txt1: 'Of our graduates get job after complete the program.'
-          n2: '+75k'
+          n2: '+5k'
           txt2: 'Is the average of our graduates salary.'
-        tlt2: 'Relevant technologies'
-        msg2: 'Our coding bootcamps launch your career in tech: Software developers or tech entrepreneurs.'
       bootcamp-list:
-        on-site: 'On-site bootcamps'
-        online: 'Online bootcamps'
-        learnm: 'Learn more'
-        ror: 'Ruby on Rails'
-        ror-txt: 'Learn the language used by Github, Twitter, Basecamps and more.'
-        js: 'JavaScript Development'
-        js-txt: 'Javascript is the most demanded skill in tech world.'
-        ui: 'UI/UX'
-        ui-txt: 'The most used operative mobile system in the world.'
-        android: 'Android Development'
-        android-txt: 'The most used operative mobile system in the world.'
-        allcourses: 'See all courses'
-        explorecourses: 'Explore online courses'
-        lokingflex: 'Looking for something more flexible?'
-        custom: 'Custome Made Bootcamp'
-        custom-txt: 'Javascript is the most demanded skill in tech world.'
-        exploreb: 'Explore Bootcamp'
+        type1: 'Choose your path'
+        type2: 'Create your own bootcamp'
+        choose:
+          full:
+            tlt: 'Full-Time'
+            txt: 'Three intense months that will accelerate your success and transform your life forever. Our elite program is not for the faint of heart.'
+            btn: 'View full-time courses'
+          part:
+            tlt: 'Part-Time'
+            txt: "Busy during the day? Don't worry, you can still join this program. Our part-time bootcamp adapts to your schedule. Same results."
+            btn: 'View part-time courses'          
+          blended:
+            tlt: 'Blended'
+            txt: 'Combine the best of both worlds: on-site personalized training and our online, hands-on project-based platform. 1, 3 and 6 months options.'
+            btn: 'View blended courses'          
+          online:
+            tlt: 'Online'
+            txt: 'Reinvent your career from anywhere with the ultimate live online coding bootcamp. Learn from home or your office.'
+            btn: 'View online courses'          
+        create:
+          custom:
+            tlt: 'Custome Made Bootcamp'
+            txt: 'Do you want us to build a customized bootcamp for you or your team? Contact us!'
+            btn: 'Create'
+        co: 'BOG - MED'
+        br: 'RIO - SPA'
+        mx: 'DF - GDL'
       partners:
         partner: 'Tim Draper -'
         partner-desc: 'World Tech Makers partner'
@@ -49,8 +66,21 @@ en:
       mentors:
         title: 'Get 1-1 mentorship sessions'
         msg: 'with experienced developers, entrepreneurs, designers and investors.'
+        someone: 
+          name1: 'Franklin Williams'
+          from1: 'Australia'
+          name2: 'Warren Richards'
+          from2: 'Estonia'
+          name3: 'Curtis Cross'
+          from3: 'Ireland'
+          name4: 'Sallt Clayton'
+          from4: 'Faroe Islands'          
         bar:
           msg: 'Meet our mentors'
+      benefits: 
+        tlt: 'Join our global community'
+        txt: 'We have a global network that can help you to get a new job, discounts and global support with top experts'
+        btn: 'Check benefits'          
       testimony:
         msg: 'I flew from Venezuela to join the program and was able to build the MVP for my mobile application.'
         button: 'See more stories'
@@ -59,20 +89,13 @@ en:
         msg: 'Where you can find us'
         invite: 'Want to bring World Tech Makers to your country?'
         mail: 'Email us: info@worldtechmakers.com'
-      bootcamps:
-        title: 'Web development Bootcamps'
-        msg: 'Become a hired developer. Guaranteed.'
-        title-online: 'Flexible (Online)'
-        dur-online: '12 weeks'
-        cost-online: '$2,000,000 COP'
-        pre-online: '2 pre-work week'
-        class-online: 'Class three times per week'
-        title-onsite: 'Intensive (on-site)'
-        dur-onsite: '16 weeks'
-        cost-onsite: '$6,500,000 COP'
-        pre-onsite: '1 pre-work week (virtual)'
-        class-onsite: '3 backing weeks'
-        button: 'View programs'
+        city: 
+          one: 'Medellín'
+          two: 'Rio de Janeiro' 
+          three: "México DF"
+          four: 'Rio de Janeiro'
+          five: 'Guadalajara'
+          six: 'Bogotá'
       achievements:
         text: '"MassChange winning startup, poised to '
         text2: 'make tremendous impact"'

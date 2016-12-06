@@ -1,0 +1,128 @@
+/*
+-----------------
+      Footer
+-----------------
+*/
+
+footer {
+  padding-top: 4em;
+  .container {
+    .row {
+      div:nth-child(1) {
+        #emails-form {
+          .email-newsletter {
+            font-size: 1.5em;
+            border: 1px; 
+            margin-right: 1em;
+            padding: 0.8em; 
+            width: 60%; 
+            background-color: $darkgray;
+            &:focus {
+              outline: none !important;
+              box-shadow: 0 0 10px $darkgray;
+            }
+          }
+          input.border-radius-normal.button-green {
+            padding: 15px 35px;
+            font-size: 1.5em;
+          }
+        }
+        .rights {
+          padding-top: 1.5em;
+          span {
+            a:link {
+              text-decoration: underline;
+            }
+          }
+        }
+        .social-icons {
+          img {
+            margin: 3em 4em 4em 0;
+          }
+        }
+      }
+      div:nth-child(2) {
+        .row {
+          div {
+            
+            .links {
+              p {
+               margin: 2em 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-copy {
+  .container {
+    padding: 1.5em;
+    p {
+      margin: 0px;
+    }
+  }
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  footer {
+    .container {
+      .row {
+        div:nth-child(1) {       
+          #emails-form {
+            .email-newsletter {
+              width: 95%; 
+            }           
+            input.border-radius-normal.button-green {
+              margin-top: 1em;
+              width: 95%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  footer {
+    .container {
+      .row {
+        div:nth-child(1) {        
+          #emails-form {
+            .email-newsletter {
+              width: 90%; 
+            }              
+            input.border-radius-normal.button-green {
+              margin-top: 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  footer {
+    .container {
+      .row {
+        div:nth-child(1) {        
+          #emails-form {
+            .email-newsletter {
+              width: 60%; 
+            }              
+            input.border-radius-normal.button-green {
+              margin-top: 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

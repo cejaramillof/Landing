@@ -1,40 +1,44 @@
-%nav.wtm-navbar.navbar.navbar-default.navbar-fixed-top#nav
-  .container
-    .row
-      .col-xs-12
-        .navbar-header
-          %button.btn-cel.navbar-toggle.collapsed.navbar-right{:type => "button", :data => {:toggle => 'collapse', :target => '#navegacion-wtm'}}
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          %ul.nav.navbar-nav.navbar-toggle.collapsed
-            %li
-              %p= link_to t('menu.apply'), '#', { :class=> "menul" }
-          %ul.hidden-cel.nav.navbar-nav.navbar-toggle.collapsed
-            %li
-              %p= link_to t('menu.on-site'), '#', { :class=> "menul" }
-          %ul.hidden-cel.nav.navbar-nav.navbar-toggle.collapsed
-            %li
-              %p= link_to t('menu.online'), '#', { :class=> "menul" }      
-          %ul.nav.navbar-nav.navbar-toggle.collapsed
-          .navbar-left.logo#logo
-        .collapse.navbar-collapse#navegacion-wtm
-          %ul.nav.navbar-nav.navbar-right
-            %li
-              %div#menu-language.menu{:class => locale, :onMouseover => "None()"}
-                %ul
-                  %li#flag-en.menu.en= link_to '#', "/en"
-                  %li#flag-es.menu.es= link_to '#', "/es"
-                  %li#flag-pt.menu.pt= link_to '#', "/pt"
-            %li
-              %p= link_to t('menu.online'), '#', { :class=> "menul" }
-            %li
-              %p= link_to t('menu.on-site'), '#', { :class=> "menul" }
-            %li
-              %p= link_to t('menu.stories'), '#', { :class=> "menul" }
-            %li
-              %p= link_to t('menu.why'), '#', { :class=> "menul" }
-            %li
-              %p= link_to t('menu.companies'), '#', { :class=> "menul" }
-            %li
-              %p= link_to t('menu.apply'), '#', { :class=> "menul" }
+%nav.first-navbar.navbar.navbar-default.navbar-fixed-top.nav-down#nav
+  .navbar-header
+    %button.display-none.btn-cel.navbar-toggle.collapsed.navbar-right{:type => "button", :data => {:toggle => 'collapse', :target => '#navegacion-wtm'}}
+      %span.icon-bar
+      %span.icon-bar
+      %span.icon-bar
+    %ul.nav.navbar-nav.navbar-toggle.collapsed
+      %li
+        %p= link_to t('menu.apply'), '#', { :class=> "active text-bold" }
+    %ul.nav.navbar-nav.navbar-toggle.collapsed.hidden-md.hidden-lg.hidden-special
+      %li
+        %p= link_to t('menu.on-site'), '#', { :class=> "menul" }
+    %ul.nav.navbar-nav.navbar-toggle.collapsed.hidden-md.hidden-lg.hidden-special
+      %li
+        %p= link_to t('menu.online'), '#', { :class=> "menul" }
+    %ul.nav.navbar-nav.navbar-toggle.collapsed
+    .navbar-left.logo#logo
+  .collapse.navbar-collapse#navegacion-wtm
+    %ul.nav.navbar-nav.navbar-right
+      %li.hidden-xs
+        %div#menu-language.menu{:class => locale, :onMouseover => "None()"}
+          %span{:class => "text-lan"}= locale
+          %span{:class => "glyph-lan glyphicon glyphicon-triangle-bottom"}
+          %ul
+            %li#flag-en.menu.en= link_to 'EN', "/en"
+            %li#flag-es.menu.es= link_to 'ES', "/es"
+            %li#flag-pt.menu.pt= link_to 'PT', "/pt"
+      %li.visible-xs-block
+        %ul.ul-la
+          %li.menu-l.en= link_to '#', "/en"
+          %li.menu-l.es= link_to '#', "/es"
+          %li.menu-l.pt= link_to '#', "/pt"                
+      %li.hidden-xs.hidden-special2.visible
+        %p= link_to t('menu.online'), '#', { :class=> "menul" }
+      %li.hidden-xs.hidden-special2.visible
+        %p= link_to t('menu.on-site'), '#', { :class=> "menul" }
+      %li
+        %p= link_to t('menu.stories'), '#', { :class=> "menul" }
+      %li
+        %p= link_to t('menu.why'), '#', { :class=> "menul" }
+      %li
+        %p= link_to t('menu.companies'), '#', { :class=> "menul" }
+      %li.hidden-xs
+        %p= link_to t('menu.apply'), '#', { :class=> "active text-bold" }

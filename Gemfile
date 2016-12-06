@@ -23,6 +23,9 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+#Simple helper for Zopim live chat script.
+gem 'zopim_rails'
+
 #HAML para un mejor HTML
 gem 'haml-rails'
 

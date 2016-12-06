@@ -1,235 +1,260 @@
-.header-b
-  .header-img
-    .container
-      .row
-        .col-md-6.col-sm-12.header-padding-bottom
-          %h2.header-title= t('home.header.title')
-          %h3.header-sub= t('home.header.msg')
-          .col-sm-12
-            %span= link_to t('home.header.btn-left'), '#', { :class=> "boton-green" }
-            %span= link_to t('home.header.btn-right'), '#', { :class=> "boton-green" }
-        .col-md-6.col-sm-12.hidden-xs
-          .header-video
-.header-msj
+.header-img.background-graytwo
   .container
-    .col-md-1
-    .col-md-10.text-center
-      =image_tag('pt1.png', :class => "botom-img-msj")
-      %p.header-msj-t= t('home.bar.msg1')
-      %b= link_to t('home.bar.msg2'), '#', { :class=> "header-msj-t" }
-      %p.header-msj-t= t('home.bar.msg3')
-      =image_tag('pt2.png', :class => "botom-img-msj")
-    .col-md-1
-.header-syllabus
-  .container.syllabus
-    =form_tag(create_email_student_path, method: :post, id: "emails-form-students") do
-      .col-md-1
-      .col-md-4
-        %p.syllabus-msj= t('home.syllabus.input1')
-        =select_tag 'desc', options_from_collection_for_select(@courses, 'name', 'name'), :style => "font-size: 2em; padding: 2em; width: 300px;"
-      .col-md-4
-        %p.syllabus-msj= t('home.styllabus.input2')
-        =email_field_tag "email",nil, :type => "email", :placeholder => "you@email.com", :style => "font-size: 1.5em; border-radius: 6px;border: 1px; padding: 0.5em; width: 350px;"
-        =hidden_field_tag "ip", request.remote_ip
-      .col-md-3
-        =submit_tag I18n.t('home.syllabus.button'), :class => "clear-btn, boton-red"
-.content-home
-  .container
-    .col-md-6
-      %h4.cont-t= t('home.content.bootcamp-pros.tlt1')
-      %p.cont-te.low-padding-top= t('home.content.bootcamp-pros.msg1')
-    .col-md-6.btns-t
-      %p.btn-tb
-        %span.btn-tb-t= t('home.content.bootcamp-pros.button.n1')
-        %span.btn-tb-m.width-60= t('home.content.bootcamp-pros.button.txt1')
-      %p.btn-tb
-        %span.btn-tb-t= t('home.content.bootcamp-pros.button.n2')
-        %span.btn-tb-m.width-60= t('home.content.bootcamp-pros.button.txt2')
-  .container
-    .row.logos
-      .col-md-2
-      .col-md-8.col-xs-12
-        =image_tag('logos.png', :class => "img-responsive")
-      .col-md-2
-  .container
-    .col-md-3
-    .col-md-6
-      %h4.cont-t.cont-t2.text-center= t('home.content.bootcamp-pros.tlt2')
-      %p.cont-te.low-padding-top.cont-te2.text-center= t('home.content.bootcamp-pros.msg2')
-    .col-md-3
-.bootcamps
-  .container.text-center
     .row
-      .col-md-1
-      .col-md-6
-        %p.boot-title= t('home.content.bootcamp-list.on-site')
-        .row
-          .col-md-6
-            .bootcamp-box.bootcamp-box-red
-              %p.bootc-title= t('home.content.bootcamp-list.ror')
-              %p.bootc-cont= t('home.content.bootcamp-list.ror-txt')
-              %span= link_to t('home.content.bootcamp-list.learnm'), '#', { :class=> "boot-boton" }
-          .col-md-6
-            .bootcamp-box.bootcamp-box-yellow
-              %p.bootc-title= t('home.content.bootcamp-list.js')
-              %p.bootc-cont= t('home.content.bootcamp-list.js-txt')
-              %span= link_to t('home.content.bootcamp-list.learnm'), '#', { :class=> "boot-boton" }     
-        .row
-          .col-md-6
-            .bootcamp-box.bootcamp-box-green
-              %p.bootc-title= t('home.content.bootcamp-list.android')
-              %p.bootc-cont= t('home.content.bootcamp-list.android-txt')
-              %span= link_to t('home.content.bootcamp-list.learnm'), '#', { :class=> "boot-boton" }
-          .col-md-6
-            .bootcamp-box.bootcamp-box-purple
-              %p.bootc-title= t('home.content.bootcamp-list.ui')
-              %p.bootc-cont= t('home.content.bootcamp-list.ui-txt')
-              %span= link_to t('home.content.bootcamp-list.learnm'), '#', { :class=> "boot-boton" }
-        %span= link_to t('home.content.bootcamp-list.allcourses'), '#', { :class=> "boot-boton-t" }   
-      .col-md-1
-        .line-boots.hidden-xs
+      .col-xs-12.col-md-7
+        %h3.text-white.text-bold= t('home.header.title')
+        %h4.text-green= t('home.header.msg')
+        .col-xs-12
+          %span= link_to t('home.header.btn-left'), '#', { :class=> "border-radius-normal text-bold button-green" }
+          %span= link_to t('home.header.btn-right'), '#', { :class=> "border-radius-normal text-bold button-green" }
+      .col-xs-12.col-md-5
+        .header-video.border-radius-normal.hidden-xs.hidden-sm.background-graytwo
+        .whatsboot.visible-sm.visible-xs.text-white.text-center
+          %p= link_to t('home.header.whats'), '#', { :class => "link-white" }
+    .row.text-center.text-white.hidden-xs.hidden-sm
+      .col-md-3.col-md-offset-2
+        =image_tag('left.png', :class => "inline-block")
+        %p.text-bold.inline-block
+          =t('home.header.achievements.one')
+          %br=t('home.header.achievements.startup')
+        =image_tag('right.png', :class => "inline-block")
+        %p=t('home.header.achievements.oneby')
       .col-md-3
-        %p.boot-title= t('home.content.bootcamp-list.online')
+        =image_tag('left.png', :class => "inline-block")
+        %p.text-bold.inline-block
+          =t('home.header.achievements.two')
+          %br=t('home.header.achievements.startup')
+        =image_tag('right.png', :class => "inline-block")  
+        %p=t('home.header.achievements.twoby')
+      .col-md-3
+        =image_tag('left.png', :class => "inline-block")
+        %p.text-bold.inline-block 
+          =t('home.header.achievements.three')
+          %br=t('home.header.achievements.startup')
+        =image_tag('right.png', :class => "inline-block")
+        %p=t('home.header.achievements.threeby')
+.bar-subscribe.background-green.text-white.text-center
+  .container-fluid
+    =image_tag('pt1.png')
+    %p.font-size-2em.inline-block.vertical-align
+      = t('home.bar.msg1')
+      %span= link_to t('home.bar.msg2'), '#', { :class=> "link-white text-bold" }
+      = t('home.bar.msg3')
+    =image_tag('pt2.png')
+.bar-learn.background-lightgray
+  .container
+    .row
+      =form_tag(create_email_student_path, method: :post, id: "emails-form-learn") do
+        .col-sm-4.col-md-4.col-md-offset-1
+          %p.text-darkblue.text-bold= t('home.syllabus.input1')
+          =select_tag 'desc', options_from_collection_for_select(@courses, 'name', 'name'), :class => "text-gray select-style"
+        .col-sm-4.col-md-4
+          %p.text-darkblue.text-bold= t('home.syllabus.input2')
+          =email_field_tag "email",nil, :type => "email", :placeholder => "you@email.com", :class => "input-style text-gray"
+          =hidden_field_tag "ip", request.remote_ip
+        .col-sm-4.col-md-3
+          =submit_tag I18n.t('home.syllabus.button'), :class => "text-bold border-radius-normal button-red"
+.bootcamp-pros
+  .container
+    .row
+      .col-sm-6
+        %h4.text-bold.text-darkblue= t('home.content.bootcamp-pros.tlt1')
+        %p.text-gray.font-size-2em= t('home.content.bootcamp-pros.msg1')
+      .col-sm-6.text-center
+        %p.text-green.border-radius-normal
+          %span.vertical-align.text-bold= t('home.content.bootcamp-pros.button.n1')
+          %span.vertical-align.text-left.inline-block= t('home.content.bootcamp-pros.button.txt1')
+        %p.text-green.border-radius-normal
+          %span.vertical-align.text-bold= t('home.content.bootcamp-pros.button.n2')
+          %span.vertical-align.text-left.inline-block= t('home.content.bootcamp-pros.button.txt2')
+    =image_tag('logos.png', :class => "img-responsive")
+.bootcamp-list.background-lightblue.text-center
+  .container.text-gray
+    %h4.text-bold.text-darkblue= t('home.content.bootcamp-list.type1')
+    .row
+      .col-md-6
+        .border-radius-normal.background-white
+          %p.text-bold.font-size-2em= t('home.content.bootcamp-list.choose.full.tlt')
+          %p= t('home.content.bootcamp-list.choose.full.txt')
+          .locations
+            .co.inline-block
+              =image_tag('locations/colombia-flag.png', :class => "inline-block")
+              %span.vertical-align= t('home.content.bootcamp-list.co')
+            .br.inline-block
+              =image_tag('locations/brazil-flag.png', :class => "inline-block")
+              %span.vertical-align= t('home.content.bootcamp-list.br')
+            .mx.inline-block
+              =image_tag('locations/mexico-flag.png', :class => "inline-block")
+              %span.vertical-align= t('home.content.bootcamp-list.mx')
+          %span= link_to t('home.content.bootcamp-list.choose.full.btn'), '#', { :class=> "text-bold border-radius-normal button-red" }
+      .col-md-6
+        .border-radius-normal.background-white
+          %p.text-bold.font-size-2em= t('home.content.bootcamp-list.choose.part.tlt')
+          %p= t('home.content.bootcamp-list.choose.part.txt')
+          .locations
+            .co.inline-block
+              =image_tag('locations/colombia-flag.png', :class => "inline-block")
+              %span.vertical-align= t('home.content.bootcamp-list.co')
+            .br.inline-block
+              =image_tag('locations/brazil-flag.png', :class => "inline-block")
+              %span.vertical-align= t('home.content.bootcamp-list.br')
+            .mx.inline-block
+              =image_tag('locations/mexico-flag.png', :class => "inline-block")
+              %span.vertical-align= t('home.content.bootcamp-list.mx')
+          %span= link_to t('home.content.bootcamp-list.choose.part.btn'), '#', { :class=> "text-bold border-radius-normal button-red" }
+    .row       
+      .col-md-6
+        .border-radius-normal.background-white
+          %p.text-bold.font-size-2em= t('home.content.bootcamp-list.choose.blended.tlt')
+          %p= t('home.content.bootcamp-list.choose.blended.txt')
+          .locations
+            .co.inline-block
+              =image_tag('locations/colombia-flag.png', :class => "inline-block")
+              %span.vertical-align= t('home.content.bootcamp-list.co')
+            .mx.inline-block
+              =image_tag('locations/mexico-flag.png', :class => "inline-block")
+              %span.vertical-align= t('home.content.bootcamp-list.mx')
+          %span= link_to t('home.content.bootcamp-list.choose.blended.btn'), '#', { :class=> "text-bold border-radius-normal button-red" }
+      .col-md-6
+        .border-radius-normal.background-white
+          %p.text-bold.font-size-2em= t('home.content.bootcamp-list.choose.online.tlt')
+          %p= t('home.content.bootcamp-list.choose.online.txt')
+          .locations
+            .co.inline-block
+              %span &nbsp;
+              %br
+              %br
+          %span= link_to t('home.content.bootcamp-list.choose.online.btn'), '#', { :class=> "text-bold border-radius-normal button-red" }
+    %h4.text-bold.text-darkblue= t('home.content.bootcamp-list.type2')
+    .custom-boot
+      .border-radius-normal.background-white.bootcamp-box-green2
         .row
-          .col-md-12
-            .bootcamp-box.bootcamp-box-yellow
-              %p.bootc-title= t('home.content.bootcamp-list.js')
-              %p.bootc-cont= t('home.content.bootcamp-list.js-txt')
-              %span= link_to t('home.content.bootcamp-list.learnm'), '#', { :class=> "boot-boton" }  
-        .row
-          .col-md-12
-            .bootcamp-box.bootcamp-box-red
-              %p.bootc-title= t('home.content.bootcamp-list.ror')
-              %p.bootc-cont= t('home.content.bootcamp-list.ror-txt')
-              %span= link_to t('home.content.bootcamp-list.learnm'), '#', { :class=> "boot-boton" }               
-        %span= link_to t('home.content.bootcamp-list.explorecourses'), '#', { :class=> "boot-boton-t" }  
-      .col-md-1
+          .col-sm-6.text-left
+            %p.text-darkblue.text-bold= t('home.content.bootcamp-list.create.custom.tlt')
+            %p.text-gray= t('home.content.bootcamp-list.create.custom.txt')
+          .col-sm-3.text-right.float-right
+            %span= link_to t('home.content.bootcamp-list.create.custom.btn'), '#', { :class=> "text-bold border-radius-normal" }
+.partner.background-lightgray
   .container
-    .row.margin-top-5
-      .col-md-1
-      .col-md-10
-        %p.boot-title= t('home.content.bootcamp-list.lokingflex')
-        .bootcamp-box-l.bootcamp-box-green2
-          .row
-            .col-md-6
-              %p.bootc-title= t('home.content.bootcamp-list.custom')
-              %p.bootc-cont= t('home.content.bootcamp-list.custom-txt')
-            .col-md-2
-            .col-md-4
-              %span= link_to t('home.content.bootcamp-list.exploreb'), '#', { :class=> "boot-boton help-botton" }
-      .col-md-1
-.tim-container
+    .row
+      .col-xs-12.col-sm-3.col-sm-offset-1
+        =image_tag('tim.png', :class => "img-responsive hidden-xs")
+      .col-xs-12.col-sm-7
+        =image_tag('comillas.png')
+        %p.text-gray.font-size-2em= t('home.content.partners.partner-msg')
+        %span.text-bold.text-darkblue.text-bold= t('home.content.partners.partner') 
+        %span.text-darkblue= t('home.content.partners.partner-desc')
+.mentors
+  .container-fuid
+    .row.text-center
+      %h4.text-bold.text-darkblue= t('home.content.mentors.title')
+      .col-sm-6.col-sm-offset-3
+        %p.text-gray.font-size-2em= t('home.content.mentors.msg')
+    .row
+      .col-xs-12.col-sm-6.no-padding.no-margin
+        =image_tag('mentors/mentor1.png', :class => "img-responsive inline-block")
+        .desc
+          %p.text-white.text-bold.font-size-2em= t('home.content.mentors.someone.name1')
+          %p.text-white= t('home.content.mentors.someone.from1')
+          = link_to image_tag( 'mentors/tw.png', :class => "" ), 'https://www.twitter.com/', :target => "_blank"
+          = link_to image_tag( 'mentors/in.png', :class => "" ), 'https://www.linkedin.com/', :target => "_blank"
+      .col-xs-12.col-sm-6.no-padding.no-margin
+        =image_tag('mentors/mentor2.png', :class => "img-responsive inline-block")
+        .desc
+          %p.text-white.text-bold.font-size-2em= t('home.content.mentors.someone.name2')
+          %p.text-white= t('home.content.mentors.someone.from2')
+          = link_to image_tag( 'mentors/tw.png', :class => "" ), 'https://www.twitter.com/', :target => "_blank"
+          = link_to image_tag( 'mentors/in.png', :class => "" ), 'https://www.linkedin.com/', :target => "_blank"
+      .col-xs-12.col-sm-6.no-padding.no-margin
+        =image_tag('mentors/mentor3.png', :class => "img-responsive inline-block")
+        .desc
+          %p.text-white.text-bold.font-size-2em= t('home.content.mentors.someone.name3')
+          %p.text-white= t('home.content.mentors.someone.from3')
+          = link_to image_tag( 'mentors/tw.png', :class => "" ), 'https://www.twitter.com/', :target => "_blank"
+          = link_to image_tag( 'mentors/in.png', :class => "" ), 'https://www.linkedin.com/', :target => "_blank"
+      .col-xs-12.col-sm-6.no-padding.no-margin
+        =image_tag('mentors/mentor4.png', :class => "img-responsive inline-block")
+        .desc
+          %p.text-white.text-bold.font-size-2em= t('home.content.mentors.someone.name4')
+          %p.text-white= t('home.content.mentors.someone.from4')
+          = link_to image_tag( 'mentors/tw.png', :class => "" ), 'https://www.twitter.com/', :target => "_blank"
+          = link_to image_tag( 'mentors/in.png', :class => "" ), 'https://www.linkedin.com/', :target => "_blank"
+.bar-mentors.background-green.text-center
   .container
-    .row.padding-tim
-      .col-md-2
-      .col-md-8
-        .row
-          .col-md-3.tim-image 
-            =image_tag('tim.png', :class => "img-responsive")
-          .col-md-9
-            =image_tag('comillas.png', :class => "txt-storie")
-            %p.cont-te= t('home.content.partners.partner-msg')
-            %span.bold.tm-text= t('home.content.partners.partner-desc')
-            %span.tm-text2= t('home.content.partners.partner')
-      .col-md-2
-.container
-  .row
-    .col-md-3
-    .col-md-6
-      %h4.cont-t.text-center.special-padding-top= t('home.content.mentors.title')
-      %p.cont-te.text-center.margin-low-bottom= t('home.content.mentors.msg')
-    .col-md-3
-.row
-  .col-md-6.mentor-img1
-  .col-md-6.mentor-img2
-  .col-md-6.mentor-img3
-  .col-md-6.mentor-img4
-.header-msj
+    =image_tag('pt1.png')
+    %p.font-size-2em.no-margin.inline-block.vertical-align= link_to t('home.content.mentors.bar.msg'), '#', { :class=> "link-white" }
+    =image_tag('pt2.png')
+.benefits.background-gray.text-white.text-center
   .container
-    .col-md-1
-    .col-md-10.text-center
-      =image_tag('pt1.png', :class => "botom-img-msj")
-      %span= link_to t('home.content.mentors.bar.msg'), '#', { :class=> "header-msj-t" }
-      =image_tag('pt2.png', :class => "botom-img-msj")
-    .col-md-1
-.header-syllabus
+    %h4.text-bold= t('home.content.benefits.tlt')
+    .col-sm-8.col-sm-offset-2
+      %p.font-size-2em= t('home.content.benefits.txt')
+      %span= link_to t('home.content.benefits.btn'), '#', { :class=> "button-white text-bold border-radius-normal" }
+.testimony.background-lightgray
   .container
-    .row.margin-low-top.margin-low-bottom
-      .col-md-1
-      .col-md-4
-        =image_tag('comillas.png', :class => "txt-storie")
-        %p.cont-te= t('home.content.testimony.msg')
+    .row
+      .col-xs-12.col-md-4.col-md-offset-1
+        =image_tag('comillas-b.png')
+        %p.text-gray.font-size-2em= t('home.content.testimony.msg')
         =image_tag('yc.png')
-        =image_tag('yctext.png', :class => "txt-storie")
-        %span= link_to t('home.content.testimony.button'), '#', { :class=> "boton-green" }
-      .col-md-2
-        %p.line2.hidden-xs
-      .col-md-4
-        .video-cont
-      .col-md-1
-.container
-  %h4.cont-t.text-center= t('home.content.locations.title')
-  %p.cont-te.text-center= t('home.content.locations.msg')
-  .col-md-6.low-padding-left.margin-low-top
-    .item
-      =image_tag('ciudades/bogota.png', :class => "img-responsive")
-    .item
-      =image_tag('ciudades/rio2.png', :class => "img-responsive")
-    .item
-      =image_tag('ciudades/mexico.png', :class => "img-responsive")
-  .col-md-6.margin-low-top
-    .item
-      =image_tag('ciudades/rio.png', :class => "img-responsive")
-    .item
-      =image_tag('ciudades/guadalajara.png', :class => "img-responsive")
-    .item
-      =image_tag('ciudades/medellin.png', :class => "img-responsive")
-.container
-  %p.btn-tb
-    %span.btn-tb-m.bold= t('home.content.locations.invite')
-    %span.btn-tb-m.float-right.margin-right-low= t('home.content.locations.mail')
-%br
-%br
-.content-wdb
-  %p.text-center.cont-tit= t('home.content.bootcamps.title')
-  %p.text-center.cont-sub= t('home.content.bootcamps.msg')
+        =image_tag('yctext.png')
+        %p= link_to t('home.content.testimony.button'), '#', { :class=> "border-radius-normal text-bold button-green text-bold" }
+      .col-md-2.hidden-xs.hidden-sm
+        %p.line2
+      .col-xs-12.col-md-4
+        .video2.background-graytwo
+.locations.text-center
   .container
-    .col-md-1
-    .col-md-4.box-cont
-      %p.text-center.bold.txt-c= t('home.content.bootcamps.title-online')
-      %p.text-center.txt-co= t('home.content.bootcamps.dur-online')
-      %ul.margin-low
-        %li.txt-co= t('home.content.bootcamps.cost-online')
-        %li.txt-co= t('home.content.bootcamps.pre-online')
-        %li.txt-co= t('home.content.bootcamps.class-online')
-      %span= link_to t('home.content.bootcamps.button'), '#', { :class=> "boton-green center-btn" } 
-    .col-md-2.margin-low-top
-      %p.line.hidden-xs
-    .col-md-4.box-cont
-      %p.text-center.bold.txt-c= t('home.content.bootcamps.title-onsite')
-      %p.text-center.txt-co= t('home.content.bootcamps.dur-onsite')
-      %ul.margin-low
-        %li.txt-co= t('home.content.bootcamps.cost-onsite')
-        %li.txt-co= t('home.content.bootcamps.pre-onsite')
-        %li.txt-co= t('home.content.bootcamps.class-onsite')
-      %span= link_to t('home.content.bootcamps.button'), '#', { :class=> "boton-green center-btn" }
-    .col-md-1
-.mchange
-  .container
+    %h4.text-bold.text-darkblue= t('home.content.locations.title')
+    %p.text-gray.font-size-2em= t('home.content.locations.msg')
     .row
-      .col-md-1
-      .col-md-2
-        =image_tag('medall.png', :class => "img-padding")
-      .col-md-6
-        .mct
-          %span.mctext= t('home.content.achievements.text')
-          %b.mctext= t('home.content.achievements.text2')
-      .col-md-2
-        =image_tag('mc.png', :class => "img-padding2")
-      .col-md-1
-.container#footer-web
-  .row.logos2
-    .col-md-2
-    .col-md-8.col-xs-12
-      =image_tag('logos2.png', :class => "img-responsive")
-    .col-md-2
+      .col-sm-6.no-padding
+        .col-xs-10.col-xs-offset-1
+          .item
+            =image_tag('locations/medellin.png', :class => "img-responsive")
+            .city-datos
+              =image_tag('locations/colombia-flag.png', :class => "inline-block city-flag")
+              %span.city-name.text-white= t('home.content.locations.city.one')
+        .col-xs-5.col-xs-offset-1
+          .item
+            =image_tag('locations/riode.png', :class => "img-responsive")
+            .city-datos
+              =image_tag('locations/brazil-flag.png', :class => "inline-block city-flag2")
+              %span.city-name2.text-white= t('home.content.locations.city.two') 
+        .col-xs-5
+          .item
+            =image_tag('locations/mexicodf.png', :class => "img-responsive")
+            .city-datos
+              =image_tag('locations/mexico-flag.png', :class => "inline-block city-flag2")
+              %span.city-name2.text-white= t('home.content.locations.city.three') 
+      .col-sm-6.no-padding   
+        .col-xs-5.col-xs-offset-1
+          .item
+            =image_tag('locations/rio.png', :class => "img-responsive")
+            .city-datos
+              =image_tag('locations/brazil-flag.png', :class => "inline-block city-flag2")
+              %span.city-name2.text-white= t('home.content.locations.city.four') 
+        .col-xs-5
+          .item
+            =image_tag('locations/guadalajara.png', :class => "img-responsive")
+            .city-datos
+              =image_tag('locations/mexico-flag.png', :class => "inline-block city-flag2")
+              %span.city-name2.text-white= t('home.content.locations.city.five')
+        .col-xs-10.col-xs-offset-1
+          .item
+            =image_tag('locations/bogota.png', :class => "img-responsive")
+            .city-datos
+              =image_tag('locations/colombia-flag.png', :class => "inline-block city-flag")
+              %span.city-name.text-white= t('home.content.locations.city.six')               
+    %p.text-green.border-radius-normal
+      %span.float-left.text-left.text-bold= t('home.content.locations.invite')
+      %span.display-block.text-right= t('home.content.locations.mail')
+.masschange.background-lightgray.text-gray.text-center
+  .container
+    =image_tag('medall.png', :class => 'inline-block vertical-align')
+    %p{:class => 'inline-block vertical-align'}
+      %span.vertical-align= t('home.content.achievements.text')
+      %span.vertical-align.text-bold= t('home.content.achievements.text2')
+    =image_tag('mc.png', :class => 'inline-block vertical-align')
+.container#logos
+  =image_tag('logos2.png', :class => "img-responsive")

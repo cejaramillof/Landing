@@ -1,0 +1,89 @@
+/*
+-----------------
+     BUTTONS
+-----------------
+*/
+
+.button-red {
+  padding: 15px 25px;
+  color: $white;
+  background-color: $red;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: thick solid $darkred;
+  display: inline-block;
+  &:link {
+    color: $white;
+    text-decoration: none;
+  }
+  &:visited {
+    color: $white;
+    text-decoration: none;
+  }
+  &:hover {
+    cursor: pointer;
+    color: $white;
+    text-decoration: none;  
+  }
+  &:active {
+    color: $white;
+    text-decoration: none; 
+  }  
+}
+
+.button-green {
+  padding: 15px 18px;
+  color: $white;
+  background-color: $green;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: thick solid $darkgreen!important;
+  display: inline-block;
+  &:link {
+    color: $white;
+    text-decoration: none;
+  }
+  &:visited {
+    color: $white;
+    text-decoration: none;
+  }
+  &:hover {
+    cursor: pointer;
+    color: $white;
+    text-decoration: none;  
+  }
+  &:active {
+    color: $white;
+    text-decoration: none; 
+  }  
+}
+
+.button-white {
+  padding: 15px 18px;
+  color: $darkblue;
+  background-color: $white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: thick solid #d8d8d8!important;
+  display: inline-block;
+  &:link {
+    color: $darkblue;
+    text-decoration: none;
+  }
+  &:visited {
+    color: $darkblue;
+    text-decoration: none;
+  }
+  &:hover {
+    cursor: pointer;
+    color: $darkblue;
+    text-decoration: none;  
+  }
+  &:active {
+    color: $darkblue;
+    text-decoration: none; 
+  }  
+}

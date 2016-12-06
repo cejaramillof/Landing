@@ -16,7 +16,10 @@
     = f.select(:locale, ['es', 'en', 'pt'])
   .field
     %p Interesed:
-    = f.text_area :desc, :style => "border-radius: 6px;border: 1px solid #dedede; padding: 1em; color: #8e8e8e;", :cols => "50", :rows => "4"
+    - @courses.each do |course|
+      .field
+        = check_box_tag "interested[desc][]", course.name
+        = course.name
   .actions
     = f.submit 'Save', :class => "boton-green-d"
     = link_to 'Back', interesteds_path, :class => "boton-red-d"

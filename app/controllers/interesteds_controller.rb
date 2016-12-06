@@ -2,6 +2,7 @@ class InterestedsController < ApplicationController
   before_filter :authenticate_admin!, :except => [:new, :create]
   before_action :set_interested, only: [:edit, :update, :destroy]
   layout "dashboard"
+  
   def index
     @interesteds = Interested.paginate(page: params[:page],per_page: 10).ultimos.all
   end
@@ -51,7 +52,7 @@ class InterestedsController < ApplicationController
     send_file "private/#{course}_#{locale}.pdf", :type => "application/pdf", :x_sendfile => true
   end
   def interested_params
-    params.fetch(:interested).permit(:id, :email, :locale, :desc, :ip)
+    params.fetch(:interested).permit(:id, :email, :locale, :desc, :ip, :courses)
   end
   def set_interested
     @interested = Interested.find(params[:id])
