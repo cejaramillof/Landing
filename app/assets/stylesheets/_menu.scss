@@ -139,11 +139,11 @@ nav {
   width: 110px;
   height: 65px;
   text-decoration: none;
-  background: url(http://i.imgur.com/6xiN420.png) no-repeat 0 0;
+  background: url(logo.png) no-repeat 0 0;
 }
 
 .logo2 {
-  background: url(http://i.imgur.com/6xiN420.png) no-repeat 0 -65px;
+  background: url(logo.png) no-repeat 0 -65px;
 }
 
 /*
@@ -167,17 +167,17 @@ $flagdimention: 19px;
 }
 
 .es {
-  background-image:url(https://lipis.github.io/flag-icon-css/flags/4x3/co.svg); 
+  background-image:url(flags/es.svg); 
   background-position: center center;
 }
 
 .en {
-  background-image:url(https://lipis.github.io/flag-icon-css/flags/4x3/us.svg); 
+  background-image:url(flags/en.svg); 
   background-position: center center;
 }
 
 .pt {
-  background-image:url(https://lipis.github.io/flag-icon-css/flags/4x3/br.svg);
+  background-image:url(flags/pt.svg);
   background-position: center center;
 }
 
