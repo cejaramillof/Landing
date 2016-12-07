@@ -758,9 +758,10 @@
 
   .masschange {
     padding: 4em 0;
-    .container {
+    .container {      
       p {
-       width: 50%;
+        display: block;
+       width: 100%;
         span {
           font-size: 2.3em;
         }      
