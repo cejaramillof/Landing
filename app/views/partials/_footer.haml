@@ -30,7 +30,7 @@
           .col-xs-6
             %p.text-bold.font-size-28px= t('footer.links.wtm')
             .links
-              %p= link_to t('footer.links.about'), '#', { :class=> "link-white" }
+              %p= link_to t('footer.links.about'), about_path, { :class=> "link-white" }
               %p= link_to t('footer.links.companies'), '#', { :class=> "link-white" }
               %p= link_to t('footer.links.financing'), '#', { :class=> "link-white" }
               %p= link_to t('footer.links.faq'), '#', { :class=> "link-white" }
@@ -42,4 +42,4 @@
     %p.float-right
       %span= t('footer.copyright.made')
       %span= image_tag('corazon.svg')
-      %span= t('footer.copyright.SF')
+      %span= t('footer.copyright.LA')

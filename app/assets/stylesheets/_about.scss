@@ -1,0 +1,194 @@
+@import "_timeline";
+
+.about-img {
+  background: url(headers/about.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .container {
+    div {
+      padding-top: 8em;
+      padding-bottom: 10em;
+      h3 {
+        font-size: 4.3em;
+      }
+      h4 {
+        font-size: 2.3em;
+      }
+    }
+  }
+}
+
+.team {
+  .container {
+    padding-top: 3em;
+    padding-bottom: 5em;
+    .row {
+      padding-top: 3em;
+      div {
+        .box {
+          margin-bottom: 2em;
+          padding-top: 3em;
+          padding-bottom: 1em;
+          .text-bold {
+            padding-top: 1em;
+            font-size: 1.5em;
+          }
+          .text-gray {
+            font-size: 1.2em;
+          }
+        }
+        .text-green {
+          font-size: 5.5em;
+        }
+        .text-gray {
+          font-size: 2.3em;
+        }
+      }
+    }
+  }
+}
+
+#timel {
+  padding-bottom: 5em;
+  .container {
+    .timeline {
+      max-width: 1200px;
+    }
+  } 
+}
+
+.ourmentors {
+  padding-top: 6em;
+  padding-bottom: 8em;
+  .container {
+    p:nth-child(1) {
+      font-size: 2.8em;
+      padding-bottom: 1em;
+    }
+    .row {
+      div {
+        .box {
+          margin-bottom: 2em;
+          padding-top: 3em;
+          padding-bottom: 1em;
+          .text-bold {
+            padding-top: 1em;
+            font-size: 1.5em;
+          }
+          .text-gray {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}
+.teachtechnology {
+  padding: 4em 0 6em 0;
+  .container {
+    .text-center.text-bold {
+      font-size: 2.8em;
+    }
+    .row {
+      div {
+        padding: 4em 0;
+        .text-gray:nth-last-child(1) {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+.backed {
+  padding-top: 5em;
+  .container {
+    p:nth-child(3) {
+      font-size: 2.8em;
+    }
+    p:nth-child(4) {
+      max-width: 65%;
+      margin: 0 auto;
+    }
+    span {
+      
+      a {
+        margin: 1em;
+        padding: 0.7em 2.5em;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-img {
+    .container {
+      div {
+        padding-top: 12em;
+        padding-bottom: 8em;
+        h3 {
+          font-size: 2.3em;
+        }
+        h4 {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+
+  #timel {
+    padding-top: 1em;
+    padding-bottom: 5em;
+    .container {
+      .timeline {
+        max-width: 1200px;
+      }
+    } 
+  }
+
+  .ourmentors {
+    padding-top: 4em;
+    padding-bottom: 6em;
+    .container {
+      p:nth-child(1) {
+        font-size: 2em;
+      }
+    }
+  }
+  .teachtechnology {
+    .container {
+      text-align: center;
+      .text-center.text-bold {
+        font-size: 2em;
+      }
+      .row {
+        div {
+          padding: 2em 0;
+          .text-gray:nth-last-child(1) {
+            font-size: 1.5em;  
+            padding: 0 1em;
+          }
+        }
+      }
+    }
+  }
+
+  .backed {
+    padding-top: 5em;
+    .container {
+      p:nth-child(3) {
+        font-size: 2em;
+      }
+      p:nth-child(4) {
+        max-width: 90%;
+        margin: 0 auto;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
