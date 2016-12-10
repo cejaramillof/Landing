@@ -1,0 +1,82 @@
+en:
+  about:
+    header:
+      title: 'Know the team'
+      msg: "You're in a good company"
+    team:
+      title: 'Exceptional people, execptional team'
+      ceo:
+        name: 'Tim Draper'
+        role: 'CEO'
+      coo:
+        name: 'Joâo Oliveira'
+        role: 'COO'      
+      cto:
+        name: 'Ilya Brotzky'
+        role: 'CTO'      
+      cco:
+        name: 'Ted Gonder'
+        role: 'CCO'
+      stats:
+        students: 'Students'
+        nums: '1.600'
+        mentors: 'Mentors'
+        numm: '30'
+        hired: 'Hired students'
+        numh: '500'
+        bootcamps: 'Bootcamps'
+        numb: '10'
+    timel:
+      five:
+        title: 'The Story of World Tech Makers'
+        msg: 'RoR is one of the most popular Ruby frameworks, scalable, robust and powerful. Use by Github, Bootcamp, Twitter and more. Improve your career learing this awesome language.'
+        year: '2017'
+        desc: 'Dev positions'
+      four:
+        title: 'Lorem ipsum dolor sit amet'
+        msg: 'RoR is one of the most popular Ruby frameworks, scalable, robust and powerful. Use by Github, Bootcamp, Twitter and more. Improve your career learing this awesome language.'
+        year: '2016'
+        desc: 'Dev positions'      
+      three:
+        title: 'Lorem ipsum dolor sit amet'
+        msg: 'RoR is one of the most popular Ruby frameworks, scalable, robust and powerful. Use by Github, Bootcamp, Twitter and more. Improve your career learing this awesome language.'
+        year: '2015'
+        desc: 'Dev positions'      
+      two:
+        title: 'Lorem ipsum dolor sit amet'
+        msg: 'RoR is one of the most popular Ruby frameworks, scalable, robust and powerful. Use by Github, Bootcamp, Twitter and more. Improve your career learing this awesome language.'
+        year: '2014'
+        desc: 'Dev positions'      
+      one:
+        title: 'Lorem ipsum dolor sit amet'
+        msg: 'RoR is one of the most popular Ruby frameworks, scalable, robust and powerful. Use by Github, Bootcamp, Twitter and more. Improve your career learing this awesome language.'
+        year: '2013'
+        desc: 'Dev positions'      
+    ourmentors:
+      title: 'Our Mentors'
+      one:
+        name: ''
+        exp: ''
+    teachtechnology:
+      title: 'We love to teach but also build technology'
+      msg: 'Some of our work includes:'
+      bo:
+        title: 'Bootcamps.online: eLearning'
+        desc: 'Emerging Markets'
+        msg: 'Take online classes in development, design, business and investing. Join our LIVE courses bootcamps for a steeper learning curve or learn at your own pace with our pre-recorded classes and online content, 24/7 from the comfort of your home.'
+      remoto:
+        title: 'Remoto'
+        desc: 'Job matching app'
+        msg: 'Our job matching app matches the top digital talent our there. Whether you are a company looking for developers or a developer looking for a job, register for free and access a growing database of trained professionals and global opportunities: remote or on-site.'
+      nativo:
+        title: 'Nativo Digital'
+        desc: 'Everyone can code'
+        msg: 'Our job matching app matches the top digital talent our there. Whether you are a company looking for developers or a developer looking for a job, register for free and access a growing database of trained professionals and global opportunities: remote or on-site.'      
+      webuild:
+        title: 'Agile digital hand-crafting'
+        msg: 'Our development agency builds mobile and web applications for startups and big corporations in the United States, South America, Asia and Europe. More than software, we create, design and develop digital journeys, built for ready. '      
+    backed:
+      title: 'Backed by experts'
+      title2: "We're growing fast, and we'd love for you to join us."
+      msg: "As an early member of our team, you'll have the opportunity to make tremendous impact."
+      btn: 'Say hello'

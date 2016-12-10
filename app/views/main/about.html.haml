@@ -1,45 +1,45 @@
 .about-img.background-graytwo
   .container
     .col-xs-12
-      %h3.text-bold.text-white Know the team
-      %h4.text-green.font-size-2em You're in a good company
+      %h3.text-bold.text-white= t('about.header.title')
+      %h4.text-green.font-size-2em= t('about.header.msg')
 .team
   .container.text-center.text-darkblue
-    %p.font-size-2em Exceptional people, execptional team
+    %p.font-size-2em= t('about.team.title')
     .row
       .col-xs-6.col-md-3
         .box.background-lightgray.border-radius-normal
           =image_tag('team/tim.png', :class => "img-circle")
-          %p.text-bold Tim Draper
-          %p.text-gray CEO        
+          %p.text-bold= t('about.team.ceo.name')
+          %p.text-gray= t('about.team.ceo.role')
       .col-xs-6.col-md-3
         .box.background-lightgray.border-radius-normal
           =image_tag('team/joao.png', :class => "img-circle")
-          %p.text-bold Joâo Oliveira
-          %p.text-gray COO
+          %p.text-bold= t('about.team.coo.name')
+          %p.text-gray= t('about.team.coo.role')
       .col-xs-6.col-md-3
         .box.background-lightgray.border-radius-normal
           =image_tag('team/ilya.png', :class => "img-circle")
-          %p.text-bold Ilya Brotzky
-          %p.text-gray CTO
+          %p.text-bold= t('about.team.cto.name')
+          %p.text-gray= t('about.team.cto.role')
       .col-xs-6.col-md-3
         .box.background-lightgray.border-radius-normal
           =image_tag('team/ted.png', :class => "img-circle")
-          %p.text-bold Ted Gonder
-          %p.text-gray CCO
+          %p.text-bold= t('about.team.cco.name')
+          %p.text-gray= t('about.team.cco.role')
     .row.text-center
       .col-xs-6.col-sm-3
-        %p.text-green.text-bold 1.600
-        %p.text-gray Students
+        %p.text-green.text-bold= t('about.team.stats.nums')
+        %p.text-gray= t('about.team.stats.students')
       .col-xs-6.col-sm-3
-        %p.text-green.text-bold 30
-        %p.text-gray Mentors        
+        %p.text-green.text-bold= t('about.team.stats.numm')
+        %p.text-gray= t('about.team.stats.mentors')   
       .col-xs-6.col-sm-3
-        %p.text-green.text-bold 500
-        %p.text-gray Hired students
+        %p.text-green.text-bold= t('about.team.stats.numh')
+        %p.text-gray= t('about.team.stats.hired')
       .col-xs-6.col-sm-3
-        %p.text-green.text-bold 10
-        %p.text-gray Bootcamps
+        %p.text-green.text-bold= t('about.team.stats.numb')
+        %p.text-gray= t('about.team.stats.bootcamps')
 #timel.background-lightgray
   .container
     .timeline
@@ -47,51 +47,51 @@
         %li.work
           %input.radio#work5{:name => 'works', :type => 'radio', :checked => true}
           .relative
-            %label.text-bold.text-darkblue{:for => 'work5'} The Story of World Tech Makers
-            %span.text-green.text-bold.date 2017
-            %span.text-gray.datetxt Dev positions
+            %label.text-bold.text-darkblue{:for => 'work5'}= t('about.timel.five.title')
+            %span.text-green.text-bold.date= t('about.timel.five.year')
+            %span.text-gray.datetxt= t('about.timel.five.desc')
             %span.circle
           .content
-            %p.font-size-2em RoR is one of the most popular Ruby frameworks, scalable, robust and powerful. Use by Github, Bootcamp, Twitter and more. Improve your career learing this awesome language.
+            %p.font-size-2em= t('about.timel.five.msg')
         %li.work
           %input.radio#work4{:name => 'works', :type => 'radio'}
           .relative
-            %label{:for => 'work4'} Lorem ipsum dolor sit amet
-            %span.text-green.text-bold.date 2016
-            %span.text-gray.datetxt Dev positions
+            %label{:for => 'work4'}= t('about.timel.four.title')
+            %span.text-green.text-bold.date= t('about.timel.four.year')
+            %span.text-gray.datetxt= t('about.timel.four.desc')
             %span.circle
           .content
-            %p.font-size-2em RoR is one of the most popular Ruby frameworks, scalable, robust and powerful. Use by Github, Bootcamp, Twitter and more. Improve your career learing this awesome language.
+            %p.font-size-2em= t('about.timel.four.msg')
         %li.work
           %input.radio#work3{:name => 'works', :type => 'radio'}
           .relative
-            %label{:for => 'work3'} Lorem ipsum dolor sit amet
-            %span.text-green.text-bold.date 2015
-            %span.text-gray.datetxt Uncovered
+            %label{:for => 'work3'}= t('about.timel.three.title')
+            %span.text-green.text-bold.date= t('about.timel.three.year')
+            %span.text-gray.datetxt= t('about.timel.three.desc')
             %span.circle
           .content
-            %p.font-size-2em RoR is one of the most popular Ruby frameworks, scalable, robust and powerful. Use by Github, Bootcamp, Twitter and more. Improve your career learing this awesome language.
+            %p.font-size-2em= t('about.timel.three.msg')
         %li.work
           %input.radio#work2{:name => 'works', :type => 'radio'}
           .relative
-            %label{:for => 'work2'} Lorem ipsum dolor sit amet
-            %span.text-green.text-bold.date 2014
-            %span.text-gray.datetxt Qualified devs
+            %label{:for => 'work2'}= t('about.timel.two.title')
+            %span.text-green.text-bold.date= t('about.timel.two.year')
+            %span.text-gray.datetxt= t('about.timel.two.desc')
             %span.circle
           .content
-            %p.font-size-2em RoR is one of the most popular Ruby frameworks, scalable, robust and powerful. Use by Github, Bootcamp, Twitter and more. Improve your career learing this awesome language.
+            %p.font-size-2em= t('about.timel.two.msg')
         %li.work
           %input.radio#work1{:name => 'works', :type => 'radio'}
           .relative
-            %label{:for => 'work1'} Lorem ipsum dolor sit amet          
-            %span.text-green.text-bold.date 2013
-            %span.text-gray.datetxt Qualified devs
+            %label{:for => 'work1'}= t('about.timel.one.title')       
+            %span.text-green.text-bold.date= t('about.timel.one.year')
+            %span.text-gray.datetxt= t('about.timel.one.desc')
             %span.circle
           .content
-            %p.font-size-2em RoR is one of the most popular Ruby frameworks, scalable, robust and powerful. Use by Github, Bootcamp, Twitter and more. Improve your career learing this awesome language.
+            %p.font-size-2em= t('about.timel.one.msg')
 .ourmentors.background-white
   .container.text-center
-    %p.text-gray.text-bold Our Mentors
+    %p.text-gray.text-bold= t('about.ourmentors.title')
     .row
       .col-xs-6.col-md-3
         .box.background-lightgray.border-radius-normal
@@ -178,42 +178,42 @@
           %p.text-gray Founder Rails Bootcamp             
 .teachtechnology.background-lightgray
   .container
-    %p.text-center.text-bold.text-darkblue We love to teach but also build technology
-    %p.text-center.text-gray.font-size-2em Some of our work includes:
+    %p.text-center.text-bold.text-darkblue= t('about.teachtechnology.title')
+    %p.text-center.text-gray.font-size-2em= t('about.teachtechnology.msg')
     .row
       .col-md-6.col-md-push-6.text-center
         =image_tag('screens/bo.png')
       .col-md-5.col-md-pull-6.col-md-offset-1
         %p BETA
-        %p.text-darkblue.text-bold.font-size-2em Bootcamps.online: eLearning
-        %p.text-gray.font-size-2em Emerging Markets
-        %p.text-gray Take online classes in development, design, business and investing. Join our LIVE courses bootcamps for a steeper learning curve or learn at your own pace with our pre-recorded classes and online content, 24/7 from the comfort of your home.
+        %p.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.bo.title')
+        %p.text-gray.font-size-2em= t('about.teachtechnology.bo.desc')
+        %p.text-gray= t('about.teachtechnology.bo.msg')
     .row
       .col-md-6.text-center
         =image_tag('screens/remoto.png')
       .col-md-5.col-md-offset-1
-        %p.text-darkblue.text-bold.font-size-2em Remoto
-        %p.text-gray.font-size-2em Job matching app
-        %p.text-gray Our job matching app matches the top digital talent our there. Whether you are a company looking for developers or a developer looking for a job, register for free and access a growing database of trained professionals and global opportunities: remote or on-site.       
+        %p.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.remoto.title')
+        %p.text-gray.font-size-2em= t('about.teachtechnology.remoto.desc')
+        %p.text-gray= t('about.teachtechnology.remoto.msg')  
     .row
       .col-md-6.col-md-push-6.text-center
         =image_tag('screens/nativo.png')    
       .col-md-5.col-md-pull-6.col-md-offset-1
-        %p.text-darkblue.text-bold.font-size-2em Nativo Digital
-        %p.text-gray.font-size-2em Everyone can code
-        %p.text-gray Our job matching app matches the top digital talent our there. Whether you are a company looking for developers or a developer looking for a job, register for free and access a growing database of trained professionals and global opportunities: remote or on-site.
+        %p.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.nativo.title')
+        %p.text-gray.font-size-2em= t('about.teachtechnology.nativo.desc')
+        %p.text-gray= t('about.teachtechnology.nativo.msg')
     .row
       .col-md-6.text-center
         =image_tag('screens/webuild.png')
       .col-md-5.col-md-offset-1
-        %p.text-darkblue.text-bold.font-size-2em Agile digital hand-crafting
-        %p.text-gray Our development agency builds mobile and web applications for startups and big corporations in the United States, South America, Asia and Europe. More than software, we create, design and develop digital journeys, built for ready.   
+        %p.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.webuild.title')
+        %p.text-gray= t('about.teachtechnology.webuild.msg')
 .backed.background-white
   .container.text-center#logos
-    %p.text-bold.font-size-2em.text-darkblue Backed by experts
+    %p.text-bold.font-size-2em.text-darkblue= t('about.backed.title')
     =image_tag('backedlogos.png', :class => "img-responsive")
-    %p.text-bold.text-darkblue We're growing fast, and we'd love for you to join us.
-    %p.font-size-2em.text-gray As an early member of our team, you'll have the opportunity to make tremendous impact.
-    %span= link_to 'Say hello', '#', { :class=> "border-radius-normal button-green" }
+    %p.text-bold.text-darkblue= t('about.backed.title2')
+    %p.font-size-2em.text-gray= t('about.backed.msg')
+    %span= link_to t('about.backed.btn'), '#', { :class=> "border-radius-normal button-green" }
 .container#logos
   =image_tag('logos2.png', :class => "img-responsive")        
