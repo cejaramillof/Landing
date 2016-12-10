@@ -181,32 +181,32 @@
     %p.text-center.text-bold.text-darkblue= t('about.teachtechnology.title')
     %p.text-center.text-gray.font-size-2em= t('about.teachtechnology.msg')
     .row
-      .col-md-6.col-md-push-6.text-center
-        =image_tag('screens/bo.png')
+      .col-md-6.col-md-push-6
+        =image_tag('screens/bo.png', :class => "img-responsive")
       .col-md-5.col-md-pull-6.col-md-offset-1
-        %p BETA
-        %p.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.bo.title')
+        %span.beta.text-white= t('about.teachtechnology.beta')
+        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.bo.title')
         %p.text-gray.font-size-2em= t('about.teachtechnology.bo.desc')
         %p.text-gray= t('about.teachtechnology.bo.msg')
     .row
-      .col-md-6.text-center
-        =image_tag('screens/remoto.png')
+      .col-md-6
+        =image_tag('screens/remoto.png', :class => "img-responsive")
       .col-md-5.col-md-offset-1
-        %p.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.remoto.title')
+        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.remoto.title')
         %p.text-gray.font-size-2em= t('about.teachtechnology.remoto.desc')
         %p.text-gray= t('about.teachtechnology.remoto.msg')  
     .row
-      .col-md-6.col-md-push-6.text-center
-        =image_tag('screens/nativo.png')    
+      .col-md-6.col-md-push-6
+        =image_tag('screens/nativo.png', :class => "img-responsive")
       .col-md-5.col-md-pull-6.col-md-offset-1
-        %p.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.nativo.title')
+        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.nativo.title')
         %p.text-gray.font-size-2em= t('about.teachtechnology.nativo.desc')
         %p.text-gray= t('about.teachtechnology.nativo.msg')
     .row
-      .col-md-6.text-center
-        =image_tag('screens/webuild.png')
+      .col-md-6
+        =image_tag('screens/webuild.png', :class => "img-responsive")
       .col-md-5.col-md-offset-1
-        %p.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.webuild.title')
+        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.webuild.title')
         %p.text-gray= t('about.teachtechnology.webuild.msg')
 .backed.background-white
   .container.text-center#logos

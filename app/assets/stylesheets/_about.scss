@@ -96,6 +96,16 @@
     .row {
       div {
         padding: 4em 0;
+        .img-responsive {
+          margin: 0 auto;
+        }
+        .beta {
+          padding: 3px 18px;
+          background-color: $green;
+          border-radius: 15px;
+          font-size: 1.2em;
+          margin: 3em 0;
+        }
         .text-gray:nth-last-child(1) {
           font-size: 1.5em;
         }

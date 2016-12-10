@@ -60,6 +60,7 @@ en:
     teachtechnology:
       title: 'We love to teach but also build technology'
       msg: 'Some of our work includes:'
+      beta: 'BETA'
       bo:
         title: 'Bootcamps.online: eLearning'
         desc: 'Emerging Markets'
