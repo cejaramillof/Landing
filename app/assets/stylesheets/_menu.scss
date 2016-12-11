@@ -11,9 +11,9 @@ nav {
   padding: 0 2.5%;
   #navegacion-wtm > ul > li > p > a {
     display: block;
-    padding: 10px 15px;
+    padding: 10px 8px;
     margin: 3rem 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     &:link {
       color: $white;
       text-decoration: none;
@@ -23,10 +23,7 @@ nav {
       text-decoration: none;
     }    
     &:hover {
-      color:white;
-      background-color: $red;
-      border-radius: 6px;
-      border-bottom: thick solid $darkred;
+      color: $red;
     }
     &:active {
       color: $white;
@@ -71,30 +68,6 @@ nav {
   transition: 0.4s;
 }
 
-.active {
-  background-color: $red;
-  border-radius: 6px;
-  padding: 10px 15px;
-  margin: 3rem 0.5rem;
-  border-bottom: thick solid $darkred;
-  &:link {
-    color: $white;
-    text-decoration: none;
-  }
-  &:visited {
-    color: $white!important;
-    text-decoration: none;  
-  }
-  &:hover {
-    color: $white!important;
-    text-decoration: none;
-  }
-  &:active {
-    color: $white!important;
-    text-decoration: none;
-  }  
-}
-
 .menul {
   &:link {
     color: $white!important;
@@ -105,7 +78,7 @@ nav {
     text-decoration: none;
   }
   &:hover {
-    color: $white!important;
+    color: $red!important;
     text-decoration: none;
   }
   &:active {
@@ -124,11 +97,35 @@ nav {
     text-decoration: none;
   }
   &:hover {
-    color: $darkblue!important;
+    color: $red!important;
     text-decoration: none;
   }
   &:active {
     color: $darkblue!important;
+    text-decoration: none;
+  }  
+}
+
+.active {
+  background-color: $red;
+  border-radius: 6px;
+  padding: 10px 20px!important;
+  margin: 3rem 0.5rem;
+  border-bottom: thick solid $darkred;
+  &:link {
+    color: $white;
+    text-decoration: none;
+  }
+  &:visited {
+    color: $white!important;
+    text-decoration: none;  
+  }
+  &:hover {
+    color: $white!important;
+    text-decoration: none;
+  }
+  &:active {
+    color: $white!important;
     text-decoration: none;
   }  
 }
@@ -247,6 +244,7 @@ $flagdimention: 19px;
   left: 20px; 
   text-transform: Uppercase; 
   color: $white;
+  font-size: 1.2em;
 }
 
 .text-lan2 {
@@ -255,8 +253,8 @@ $flagdimention: 19px;
 
 .glyph-lan {
   position: relative; 
-  left: 38px; 
-  top: -15px; 
+  left: 40px; 
+  top: -16px; 
   text-transform: Uppercase; 
   color: $white;
 }
@@ -281,7 +279,7 @@ $flagdimention: 19px;
   }  
 }
 
-@media (max-width: 927px) { 
+@media (max-width: 992px) { 
   .hidden-special2 {
     display: none!important;
   }
@@ -302,13 +300,11 @@ $flagdimention: 19px;
   .logo {
     margin: 1rem 0;
   }
- 
-  #nav > div > div > div > div.navbar-header > ul > li > p > a, 
-  #nav > div.navbar-header > ul > li > p > a {
+  #nav > div > div.navbar-header > ul > li > p > a {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 8px;
     margin: 0 10px;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     &:link {
       color: $white;
       text-decoration: none;
@@ -319,9 +315,7 @@ $flagdimention: 19px;
     }    
     &:hover {
       text-decoration: none;
-      background-color: $red;
-      border-radius: 6px;
-      border-bottom: thick solid $darkred;
+      color: $red;
     }
     &:active {
       color: $white;
