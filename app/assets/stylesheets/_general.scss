@@ -121,6 +121,17 @@
   }
 }
 
+.video2 {
+  height: 200px;
+  background: url(video.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
 .select-style {
   font-size: 1.5em; 
   height: 45px; 

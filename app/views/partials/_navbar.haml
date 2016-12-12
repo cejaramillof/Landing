@@ -20,7 +20,7 @@
       %ul.nav.navbar-nav.navbar-right
         %li.hidden-xs
           %div#menu-language.menu{:class => locale, :onMouseover => "None()"}
-            %span{:class => "text-lan"}= locale
+            %span{:class => "text-lan"} #{locale}&nbsp;&nbsp;&nbsp;&nbsp;
             %span{:class => "glyph-lan glyphicon glyphicon-triangle-bottom"}
             %ul
               %li#flag-en.menu.en= link_to 'EN', locale: "en"

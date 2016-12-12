@@ -4,7 +4,7 @@
 -----------------
 */
 
-.header-img {
+#header-img {
   background: url(headers/home.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -69,7 +69,7 @@
   }
 }
 
-.bar-subscribe {
+#bar-subscribe {
   padding: 1.5% 0;
   .container-fluid {
     p {
@@ -78,7 +78,7 @@
   }
 }
 
-.bar-learn {
+#bar-learn {
   padding: 4% 0;
   .container {
     .row {
@@ -94,7 +94,7 @@
   }
 }
 
-.bootcamp-pros {
+#bootcamp-pros {
   padding: 5% 0;
   .container {
     .row {
@@ -127,7 +127,7 @@
   }
 }
 
-.bootcamp-list {
+#bootcamp-list {
   padding: 4em 0 8em 0;
   .container {
     h4 {
@@ -198,7 +198,7 @@
   border-top: 1em solid $green;
 }
 
-.partner {
+#partner {
   padding: 7em 0;
   .container {
     .row {
@@ -222,7 +222,7 @@
   }
 }
 
-.mentors {
+#mentors {
   .row:nth-child(1) {
     padding: 4em 0;
     h4 {
@@ -268,7 +268,7 @@
   }
 }
 
-.bar-mentors {
+#bar-mentors {
   .container {
     padding: 1em 0;
     p {
@@ -277,7 +277,7 @@
   }
 }
 
-.benefits {
+#benefits {
   padding:5em 0;
   h4 {
     padding-bottom: 0.5em;
@@ -292,7 +292,7 @@
   
 }
 
-.testimony {
+#testimony {
   padding: 5em 0;
   .container {
     .row {
@@ -316,22 +316,14 @@
       div {
         .video2 {
           margin-top: 30%;
-          height: 200px;
           width: 100%;
-          background: url(video.png);
-          background-repeat: no-repeat;
-          background-position: center center;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover; 
         }
       }
     }
   }
 }
 
-.locations.text-center {
+#locations.text-center {
   padding: 6em 0;
   .container {
     h4 {
@@ -398,7 +390,7 @@
   }
 }
 
-.masschange {
+#masschange {
   padding: 4em 0;
   .container {
     p {
@@ -421,7 +413,7 @@
   .font-size-2em {
     font-size: 1.5em;
   }
-  .header-img {
+  #header-img {
     background-position: center left;
     .container {
       padding-top: 15%;
@@ -448,7 +440,7 @@
     }
   }
 
-  .bar-subscribe {
+  #bar-subscribe {
     padding: 3.5% 0;
     .container-fluid {
       p {
@@ -457,7 +449,7 @@
     }
   }
 
-  .bar-learn {
+  #bar-learn {
     .container {
       .row {
         p {
@@ -477,7 +469,7 @@
     }
   }
 
-  .bootcamp-pros {
+  #bootcamp-pros {
     .container {
       .row {
         div:nth-child(1) {
@@ -508,7 +500,7 @@
     }
   }
 
-  .partner {
+  #partner {
     padding: 3em 0;
     .container {
       .row {
@@ -535,7 +527,7 @@
     }
   }
 
-  .mentors {
+  #mentors {
     .row:nth-child(1) {
       padding: 4em 0;
       h4 {
@@ -581,7 +573,7 @@
     }
   }
 
-  .bar-mentors {
+  #bar-mentors {
     .container {
       padding: 1em 0;
       p {
@@ -590,7 +582,7 @@
     }
   }
 
-  .benefits {
+  #benefits {
     padding:5em 0;
     h4 {
       padding-bottom: 0.5em;
@@ -606,7 +598,7 @@
 
   }
 
-  .testimony {
+  #testimony {
     padding: 5em 0;
     .container {
       .row {
@@ -631,7 +623,7 @@
     }
   }
 
-  .locations.text-center {
+  #locations.text-center {
     padding: 2em 0;
     .container {
       h4 {
@@ -672,7 +664,7 @@
     }
   }
 
-  .masschange {
+  #masschange {
     padding: 2em 0;
     .container {
       p {
@@ -689,7 +681,7 @@
     font-size: 1.7em;
   }
 
-  .bootcamp-pros {
+  #bootcamp-pros {
     .container {
       .row {
         div:nth-child(2) {
@@ -701,11 +693,11 @@
     }
   }
 
-  .partner {
+  #partner {
     padding: 2em 0;
   }
 
-  .testimony {
+  #testimony {
     .container {
       .row {
         div {
@@ -717,7 +709,7 @@
     }
   }
 
-  .locations.text-center {
+  #locations.text-center {
     padding: 3em 0;
     .container {
       .text-green {
@@ -755,7 +747,7 @@
     }
   }
 
-  .masschange {
+  #masschange {
     padding: 4em 0;
     .container {      
       p {

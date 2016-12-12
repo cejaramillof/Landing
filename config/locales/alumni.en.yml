@@ -1,0 +1,33 @@
+en:
+  alumni:
+    header:
+      title: 'Meet Our Alumni'
+      msg: 'Our students span across the world in around 5 different countries.'
+    toptech:
+      title: 'Hired by top tech companies'
+      msg_html: 'One of the best reasons to attend <b>World Tech Makers</b> is the <br /> student body — your classmates.'
+      btn: 'See the companies that hired our students'
+    historys:
+      one:
+        msg: 'The bootcamp has taught me a lot without having previous experience in the field.'
+        by: 'Gussie Patrick'
+      two:
+        msg: 'The bootcamp has taught me a lot without having previous experience in the field.'
+        by: 'Joel Rose'      
+      three:
+        msg: 'World Tech Makers has been a great door for my learning journey, they have great instructors who know what they do.'
+        by: 'Margaret Elliott'      
+      four:
+        msg: 'This World Tech Makers experience has been beautiful.'
+        by: 'Ada Duncan'      
+      five:
+        msg: 'World Tech Makers taught me what I needed to launch my own startup. And I raised money through their network.'
+        by: 'Johnny Hawkins'      
+      six:
+        msg: 'The bootcamp has taught me a lot without having previous experience in the field.'
+        by: 'Joel Rose'
+      stats:
+        one: 'Of our graduates get job after complete the program.'
+        none: '85%'
+        two: 'Is the average of our graduates salary.'
+        ntwo: '+75k'

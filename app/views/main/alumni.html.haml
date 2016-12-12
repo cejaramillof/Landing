@@ -1,45 +1,96 @@
-#about-img.background-graytwo
+#alumni-img.background-graytwo
   .container
     .col-xs-12
-      %h3.text-bold.text-white= t('about.header.title')
-      %h4.text-green.font-size-2em= t('about.header.msg')
-#team
+      %h3.text-bold.text-white= t('alumni.header.title')
+      %h4.text-green.font-size-2em= t('alumni.header.msg')
+#toptech.background-white
+  .container.text-center#logos
+    %p.text-bold.text-gray= t('alumni.toptech.title')    
+    %p.font-size-2em.text-gray= t('alumni.toptech.msg_html')
+    %span= link_to t('alumni.toptech.btn'), '#', { :class=> "border-radius-normal button-green" }
+    =image_tag('logos/techlogos.png', :class => "img-responsive")
+#historys
+  .row.background-lightblue
+    .col-sm-5.col-sm-offset-1
+      .video2
+    .col-sm-5
+      =image_tag('comillas.png')
+      %p.text-gray.font-size-2em= t('alumni.historys.one.msg')
+      %p.text-darkblue.text-bold= t('alumni.historys.one.by')    
+  .row.background-green
+    .col-sm-5.col-sm-offset-1
+      =image_tag('comillas-d.png')
+      %p.text-gray.font-size-2em= t('alumni.historys.two.msg')
+      %p.text-darkblue.text-bold= t('alumni.historys.two.by')
+    .col-sm-5
+  .row.background-white
+    .col-sm-3
+    
+    .col-sm-9
+      =image_tag('comillas-b.png')
+      %p.text-gray.font-size-2em= t('alumni.historys.three.msg')
+      %p.text-darkblue.text-bold= t('alumni.historys.three.by')
+  .row.background-lightblue
+    .col-sm-5.col-sm-offset-1
+      =image_tag('comillas.png')
+      %p.text-gray.font-size-2em= t('alumni.historys.four.msg')
+      %p.text-darkblue.text-bold= t('alumni.historys.four.by')
+    .col-sm-5
+  .row.background-white
+    .col-sm-6
+    
+    .col-sm-6 
+  .row.background-green
+    .col-sm-5
+    
+    .col-sm-5.col-sm-offset-1
+      =image_tag('comillas-d.png')
+      %p.text-gray.font-size-2em= t('alumni.historys.five.msg')
+      %p.text-darkblue.text-bold= t('alumni.historys.five.by')
+  .row.background-green
+    .col-sm-5.col-sm-offset-1
+      =image_tag('comillas-d.png')
+      %p.text-gray.font-size-2em= t('alumni.historys.six.msg')
+      %p.text-darkblue.text-bold= t('alumni.historys.six.by')
+    .col-sm-6    
+
+.team
   .container.text-center.text-darkblue
-    %p.font-size-2em= t('about.team.title')
+    %p.font-size-2em= t('alumni.team.title')
     .row
       .col-xs-6.col-md-3
         .box.background-lightgray.border-radius-normal
           =image_tag('team/tim.png', :class => "img-circle")
-          %p.text-bold= t('about.team.ceo.name')
-          %p.text-gray= t('about.team.ceo.role')
+          %p.text-bold= t('alumni.team.ceo.name')
+          %p.text-gray= t('alumni.team.ceo.role')
       .col-xs-6.col-md-3
         .box.background-lightgray.border-radius-normal
           =image_tag('team/joao.png', :class => "img-circle")
-          %p.text-bold= t('about.team.coo.name')
-          %p.text-gray= t('about.team.coo.role')
+          %p.text-bold= t('alumni.team.coo.name')
+          %p.text-gray= t('alumni.team.coo.role')
       .col-xs-6.col-md-3
         .box.background-lightgray.border-radius-normal
           =image_tag('team/ilya.png', :class => "img-circle")
-          %p.text-bold= t('about.team.cto.name')
-          %p.text-gray= t('about.team.cto.role')
+          %p.text-bold= t('alumni.team.cto.name')
+          %p.text-gray= t('alumni.team.cto.role')
       .col-xs-6.col-md-3
         .box.background-lightgray.border-radius-normal
           =image_tag('team/ted.png', :class => "img-circle")
-          %p.text-bold= t('about.team.cco.name')
-          %p.text-gray= t('about.team.cco.role')
+          %p.text-bold= t('alumni.team.cco.name')
+          %p.text-gray= t('alumni.team.cco.role')
     .row.text-center
       .col-xs-6.col-sm-3
-        %p.text-green.text-bold= t('about.team.stats.nums')
-        %p.text-gray= t('about.team.stats.students')
+        %p.text-green.text-bold= t('alumni.team.stats.nums')
+        %p.text-gray= t('alumni.team.stats.students')
       .col-xs-6.col-sm-3
-        %p.text-green.text-bold= t('about.team.stats.numm')
-        %p.text-gray= t('about.team.stats.mentors')   
+        %p.text-green.text-bold= t('alumni.team.stats.numm')
+        %p.text-gray= t('alumni.team.stats.mentors')   
       .col-xs-6.col-sm-3
-        %p.text-green.text-bold= t('about.team.stats.numh')
-        %p.text-gray= t('about.team.stats.hired')
+        %p.text-green.text-bold= t('alumni.team.stats.numh')
+        %p.text-gray= t('alumni.team.stats.hired')
       .col-xs-6.col-sm-3
-        %p.text-green.text-bold= t('about.team.stats.numb')
-        %p.text-gray= t('about.team.stats.bootcamps')
+        %p.text-green.text-bold= t('alumni.team.stats.numb')
+        %p.text-gray= t('alumni.team.stats.bootcamps')
 #timel.background-lightgray
   .container
     .timeline
@@ -47,51 +98,51 @@
         %li.work
           %input.radio#work5{:name => 'works', :type => 'radio', :checked => true}
           .relative
-            %label.text-bold.text-darkblue{:for => 'work5'}= t('about.timel.five.title')
-            %span.text-green.text-bold.date= t('about.timel.five.year')
-            %span.text-gray.datetxt= t('about.timel.five.desc')
+            %label.text-bold.text-darkblue{:for => 'work5'}= t('alumni.timel.five.title')
+            %span.text-green.text-bold.date= t('alumni.timel.five.year')
+            %span.text-gray.datetxt= t('alumni.timel.five.desc')
             %span.circle
           .content
-            %p.font-size-2em= t('about.timel.five.msg')
+            %p.font-size-2em= t('alumni.timel.five.msg')
         %li.work
           %input.radio#work4{:name => 'works', :type => 'radio'}
           .relative
-            %label{:for => 'work4'}= t('about.timel.four.title')
-            %span.text-green.text-bold.date= t('about.timel.four.year')
-            %span.text-gray.datetxt= t('about.timel.four.desc')
+            %label{:for => 'work4'}= t('alumni.timel.four.title')
+            %span.text-green.text-bold.date= t('alumni.timel.four.year')
+            %span.text-gray.datetxt= t('alumni.timel.four.desc')
             %span.circle
           .content
-            %p.font-size-2em= t('about.timel.four.msg')
+            %p.font-size-2em= t('alumni.timel.four.msg')
         %li.work
           %input.radio#work3{:name => 'works', :type => 'radio'}
           .relative
-            %label{:for => 'work3'}= t('about.timel.three.title')
-            %span.text-green.text-bold.date= t('about.timel.three.year')
-            %span.text-gray.datetxt= t('about.timel.three.desc')
+            %label{:for => 'work3'}= t('alumni.timel.three.title')
+            %span.text-green.text-bold.date= t('alumni.timel.three.year')
+            %span.text-gray.datetxt= t('alumni.timel.three.desc')
             %span.circle
           .content
-            %p.font-size-2em= t('about.timel.three.msg')
+            %p.font-size-2em= t('alumni.timel.three.msg')
         %li.work
           %input.radio#work2{:name => 'works', :type => 'radio'}
           .relative
-            %label{:for => 'work2'}= t('about.timel.two.title')
-            %span.text-green.text-bold.date= t('about.timel.two.year')
-            %span.text-gray.datetxt= t('about.timel.two.desc')
+            %label{:for => 'work2'}= t('alumni.timel.two.title')
+            %span.text-green.text-bold.date= t('alumni.timel.two.year')
+            %span.text-gray.datetxt= t('alumni.timel.two.desc')
             %span.circle
           .content
-            %p.font-size-2em= t('about.timel.two.msg')
+            %p.font-size-2em= t('alumni.timel.two.msg')
         %li.work
           %input.radio#work1{:name => 'works', :type => 'radio'}
           .relative
-            %label{:for => 'work1'}= t('about.timel.one.title')       
-            %span.text-green.text-bold.date= t('about.timel.one.year')
-            %span.text-gray.datetxt= t('about.timel.one.desc')
+            %label{:for => 'work1'}= t('alumni.timel.one.title')       
+            %span.text-green.text-bold.date= t('alumni.timel.one.year')
+            %span.text-gray.datetxt= t('alumni.timel.one.desc')
             %span.circle
           .content
-            %p.font-size-2em= t('about.timel.one.msg')
-#ourmentors.background-white
+            %p.font-size-2em= t('alumni.timel.one.msg')
+.ourmentors.background-white
   .container.text-center
-    %p.text-gray.text-bold= t('about.ourmentors.title')
+    %p.text-gray.text-bold= t('alumni.ourmentors.title')
     .row
       .col-xs-6.col-md-3
         .box.background-lightgray.border-radius-normal
@@ -176,44 +227,44 @@
           =image_tag('team/ted.png', :class => "img-circle")
           %p.text-bold Frederick Jimenez
           %p.text-gray Founder Rails Bootcamp             
-#teachtechnology.background-lightgray
+.teachtechnology.background-lightgray
   .container
-    %p.text-center.text-bold.text-darkblue= t('about.teachtechnology.title')
-    %p.text-center.text-gray.font-size-2em= t('about.teachtechnology.msg')
+    %p.text-center.text-bold.text-darkblue= t('alumni.teachtechnology.title')
+    %p.text-center.text-gray.font-size-2em= t('alumni.teachtechnology.msg')
     .row
       .col-md-6.col-md-push-6
         =image_tag('screens/bo.png', :class => "img-responsive")
       .col-md-5.col-md-pull-6.col-md-offset-1
-        %span.beta.text-white= t('about.teachtechnology.beta')
-        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.bo.title')
-        %p.text-gray.font-size-2em= t('about.teachtechnology.bo.desc')
-        %p.text-gray= t('about.teachtechnology.bo.msg')
+        %span.beta.text-white= t('alumni.teachtechnology.beta')
+        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('alumni.teachtechnology.bo.title')
+        %p.text-gray.font-size-2em= t('alumni.teachtechnology.bo.desc')
+        %p.text-gray= t('alumni.teachtechnology.bo.msg')
     .row
       .col-md-6
         =image_tag('screens/remoto.png', :class => "img-responsive")
       .col-md-5.col-md-offset-1
-        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.remoto.title')
-        %p.text-gray.font-size-2em= t('about.teachtechnology.remoto.desc')
-        %p.text-gray= t('about.teachtechnology.remoto.msg')  
+        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('alumni.teachtechnology.remoto.title')
+        %p.text-gray.font-size-2em= t('alumni.teachtechnology.remoto.desc')
+        %p.text-gray= t('alumni.teachtechnology.remoto.msg')  
     .row
       .col-md-6.col-md-push-6
         =image_tag('screens/nativo.png', :class => "img-responsive")
       .col-md-5.col-md-pull-6.col-md-offset-1
-        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.nativo.title')
-        %p.text-gray.font-size-2em= t('about.teachtechnology.nativo.desc')
-        %p.text-gray= t('about.teachtechnology.nativo.msg')
+        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('alumni.teachtechnology.nativo.title')
+        %p.text-gray.font-size-2em= t('alumni.teachtechnology.nativo.desc')
+        %p.text-gray= t('alumni.teachtechnology.nativo.msg')
     .row
       .col-md-6
         =image_tag('screens/webuild.png', :class => "img-responsive")
       .col-md-5.col-md-offset-1
-        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('about.teachtechnology.webuild.title')
-        %p.text-gray= t('about.teachtechnology.webuild.msg')
-#backed.background-white
+        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('alumni.teachtechnology.webuild.title')
+        %p.text-gray= t('alumni.teachtechnology.webuild.msg')
+.backed.background-white
   .container.text-center#logos
-    %p.text-bold.font-size-2em.text-darkblue= t('about.backed.title')
+    %p.text-bold.font-size-2em.text-darkblue= t('alumni.backed.title')
     =image_tag('logos/backedlogos.png', :class => "img-responsive")
-    %p.text-bold.text-darkblue= t('about.backed.title2')
-    %p.font-size-2em.text-gray= t('about.backed.msg')
-    %span= link_to t('about.backed.btn'), '#', { :class=> "border-radius-normal button-green" }
+    %p.text-bold.text-darkblue= t('alumni.backed.title2')
+    %p.font-size-2em.text-gray= t('alumni.backed.msg')
+    %span= link_to t('alumni.backed.btn'), '#', { :class=> "border-radius-normal button-green" }
 .container#logos
-  =image_tag('logos/logos2.png', :class => "img-responsive")        
+  =image_tag('logos/logos2.png', :class => "img-responsive")

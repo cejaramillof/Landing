@@ -1,4 +1,4 @@
-.header-img.home-img.background-graytwo
+#header-img.home-img.background-graytwo
   .container
     .row
       .col-xs-12.col-md-7
@@ -33,7 +33,7 @@
           %br=t('home.header.achievements.startup')
         =image_tag('right.png', :class => "inline-block")
         %p=t('home.header.achievements.threeby')
-.bar-subscribe.background-green.text-white.text-center
+#bar-subscribe.background-green.text-white.text-center
   .container-fluid
     =image_tag('pt1.png')
     %p.font-size-2em.inline-block.vertical-align
@@ -41,7 +41,7 @@
       %span= link_to t('home.bar.msg2'), '#', { :class=> "link-white text-bold" }
       = t('home.bar.msg3')
     =image_tag('pt2.png')
-.bar-learn.background-lightgray
+#bar-learn.background-lightgray
   .container
     .row
       =form_tag(create_email_student_path, method: :post, id: "emails-form-learn") do
@@ -54,7 +54,7 @@
           =hidden_field_tag "ip", request.remote_ip
         .col-sm-4.col-md-3
           =submit_tag I18n.t('home.syllabus.button'), :class => "text-bold border-radius-normal button-red"
-.bootcamp-pros
+#bootcamp-pros
   .container
     .row
       .col-sm-6
@@ -67,8 +67,8 @@
         %p.text-green.border-radius-normal
           %span.vertical-align.text-bold= t('home.content.bootcamp-pros.button.n2')
           %span.vertical-align.text-left.inline-block= t('home.content.bootcamp-pros.button.txt2')
-    =image_tag('logos.png', :class => "img-responsive")
-.bootcamp-list.background-lightblue.text-center
+    =image_tag('logos/logos.png', :class => "img-responsive")
+#bootcamp-list.background-lightblue.text-center
   .container.text-gray
     %h4.text-bold.text-darkblue= t('home.content.bootcamp-list.type1')
     .row
@@ -133,7 +133,7 @@
             %p.text-gray= t('home.content.bootcamp-list.create.custom.txt')
           .col-sm-3.text-right.float-right
             %span= link_to t('home.content.bootcamp-list.create.custom.btn'), '#', { :class=> "text-bold border-radius-normal" }
-.partner.background-lightgray
+#partner.background-lightgray
   .container
     .row
       .col-xs-12.col-sm-3.col-sm-offset-1
@@ -143,7 +143,7 @@
         %p.text-gray.font-size-2em= t('home.content.partners.partner-msg')
         %span.text-bold.text-darkblue.text-bold= t('home.content.partners.partner') 
         %span.text-darkblue= t('home.content.partners.partner-desc')
-.mentors
+#mentors
   .container-fuid
     .row.text-center
       %h4.text-bold.text-darkblue= t('home.content.mentors.title')
@@ -178,18 +178,18 @@
           %p.text-white= t('home.content.mentors.someone.from4')
           = link_to image_tag( 'mentors/tw.png', :class => "" ), 'https://www.twitter.com/', :target => "_blank"
           = link_to image_tag( 'mentors/in.png', :class => "" ), 'https://www.linkedin.com/', :target => "_blank"
-.bar-mentors.background-green.text-center
+#bar-mentors.background-green.text-center
   .container
     =image_tag('pt1.png')
     %p.font-size-2em.no-margin.inline-block.vertical-align= link_to t('home.content.mentors.bar.msg'), '#', { :class=> "link-white" }
     =image_tag('pt2.png')
-.benefits.background-gray.text-white.text-center
+#benefits.background-gray.text-white.text-center
   .container
     %h4.text-bold= t('home.content.benefits.tlt')
     .col-sm-8.col-sm-offset-2
       %p.font-size-2em= t('home.content.benefits.txt')
       %span= link_to t('home.content.benefits.btn'), '#', { :class=> "button-white text-bold border-radius-normal" }
-.testimony.background-lightgray
+#testimony.background-lightgray
   .container
     .row
       .col-xs-12.col-md-4.col-md-offset-1
@@ -202,7 +202,7 @@
         %p.line2
       .col-xs-12.col-md-4
         .video2.background-graytwo
-.locations.text-center
+#locations.text-center
   .container
     %h4.text-bold.text-darkblue= t('home.content.locations.title')
     %p.text-gray.font-size-2em= t('home.content.locations.msg')
@@ -248,7 +248,7 @@
     %p.text-green.border-radius-normal
       %span.float-left.text-left.text-bold= t('home.content.locations.invite')
       %span.display-block.text-right= t('home.content.locations.mail')
-.masschange.background-lightgray.text-gray.text-center
+#masschange.background-lightgray.text-gray.text-center
   .container
     =image_tag('medall.png', :class => 'inline-block vertical-align')
     %p{:class => 'inline-block vertical-align'}
@@ -256,4 +256,4 @@
       %span.vertical-align.text-bold= t('home.content.achievements.text2')
     =image_tag('mc.png', :class => 'inline-block vertical-align')
 .container#logos
-  =image_tag('logos2.png', :class => "img-responsive")
+  =image_tag('logos/logos2.png', :class => "img-responsive")

@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     root to: 'dashboard#index', as: :authenticated_root
   end
 
+  get '/alumni', to: 'main#alumni'
   get '/about', to: 'main#about'
   root 'main#home'
   resources :subscribers, except: [:show]
