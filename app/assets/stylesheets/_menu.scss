@@ -9,7 +9,8 @@ nav {
   transition: top 0.2s ease-in-out;
   width: 100%;
   padding: 0 2.5%;
-  #navegacion-wtm > ul > li > p > a {
+  #navegacion-wtm > ul > li > p > a,
+  #navegacion-wtm > ul > li > a {
     display: block;
     padding: 10px 8px;
     margin: 3rem 0.5rem;
@@ -30,7 +31,16 @@ nav {
       text-decoration: none;
     }      
   }
+  #navegacion-wtm > ul > li.dropdown > a {
+    margin-bottom: 0px;
+  }
 }
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+
+#navegacion-wtm > ul > li.dropdown > a
 
 .nav-up {
     top: -950px;
@@ -293,14 +303,17 @@ $flagdimention: 19px;
     height: auto !important;
   }
   
-  #navegacion-wtm > ul > li > p > a {
+  #navegacion-wtm > ul > li > p > a, 
+  #navegacion-wtm > ul > li  > a, 
+  #navegacion-wtm > ul > li.dropdown.open > ul {
     text-align: center;
   }
   
   .logo {
     margin: 1rem 0;
   }
-  #nav > div > div.navbar-header > ul > li > p > a {
+  #nav > div > div.navbar-header > ul > li > p > a, 
+  #nav > div > div.navbar-header > ul > li > a{
     display: inline-block;
     padding: 10px 8px;
     margin: 0 10px;
