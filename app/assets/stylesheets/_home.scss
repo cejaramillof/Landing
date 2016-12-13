@@ -69,6 +69,32 @@
   }
 }
 
+#news {
+  padding: 2em 0;
+  div {
+    img.html5 {
+      margin: 0 2em 0 3em;
+    }
+    img.calendar {
+      margin-right: 1em;
+    }
+    p.inline-block {
+      min-width: 336px;
+      .text-white {
+        background-color: #007BA7;
+        border-radius: 15px;
+        padding: 3px 10px;
+        margin: 0 1em;
+      }
+    }
+    .button-red {
+      margin: 2em 0;
+      font-size: 1.2em;
+      padding: 10px 28px;
+    }
+  }
+}
+
 #bar-subscribe {
   padding: 1.5% 0;
   .container-fluid {
@@ -113,16 +139,16 @@
             font-size: 5.5em;
           }
           .inline-block {
-            padding-left: 1em;
+            padding: 1em 0 1em 1em;
             font-size: 1.5em;
-            width: 60%;
+            width: 50%;
           }
-          
         }     
       } 
     }
     img {
-      margin: 2% auto;
+      margin:0 auto;
+      margin-top: 5%;
     }
   }
 }

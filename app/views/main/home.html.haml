@@ -33,34 +33,26 @@
           %br=t('home.header.achievements.startup')
         =image_tag('right.png', :class => "inline-block")
         %p=t('home.header.achievements.threeby')
-#bar-subscribe.background-green.text-white.text-center
-  .container-fluid
-    =image_tag('pt1.png')
-    %p.font-size-2em.inline-block.vertical-align
-      = t('home.bar.msg1')
-      %span= link_to t('home.bar.msg2'), '#', { :class=> "link-white text-bold" }
-      = t('home.bar.msg3')
-    =image_tag('pt2.png')
-#bar-learn.background-lightgray
+#news.background-lightgray
   .container
     .row
-      =form_tag(create_email_student_path, method: :post, id: "emails-form-learn") do
-        .col-sm-4.col-md-4.col-md-offset-1
-          %p.text-darkblue.text-bold= t('home.syllabus.input1')
-          =select_tag 'desc', options_from_collection_for_select(@courses, 'name', 'name'), :class => "text-gray select-style"
-        .col-sm-4.col-md-4
-          %p.text-darkblue.text-bold= t('home.syllabus.input2')
-          =email_field_tag "email",nil, :type => "email", :placeholder => "you@email.com", :class => "input-style text-gray"
-          =hidden_field_tag "ip", request.remote_ip
-        .col-sm-4.col-md-3
-          =submit_tag I18n.t('home.syllabus.button'), :class => "text-bold border-radius-normal button-red"
+      .col-sm-9
+        =image_tag('html5.png', :class => 'inline-block html5')
+        %p.inline-block.vertical-align
+          %span.vertical-align.text-gray.text-bold.font-size-2em Course of HTML5 / CSS3
+          %span.text-white 1 month
+          %span.display-block
+            =image_tag('calendar.png', :class => 'inline-block calendar')
+            %span.text-gray.font-size-2em.vertical-align  30 ago - 27 nov
+      .col-sm-3
+        %span= link_to 'Learn More', '#', { :class=> "border-radius-normal text-bold button-red" }
 #bootcamp-pros
   .container
     .row
-      .col-sm-6
+      .col-sm-7
         %h4.text-bold.text-darkblue= t('home.content.bootcamp-pros.tlt1')
         %p.text-gray.font-size-2em= t('home.content.bootcamp-pros.msg1')
-      .col-sm-6.text-center
+      .col-sm-5.text-center
         %p.text-green.border-radius-normal
           %span.vertical-align.text-bold= t('home.content.bootcamp-pros.button.n1')
           %span.vertical-align.text-left.inline-block= t('home.content.bootcamp-pros.button.txt1')
@@ -257,3 +249,24 @@
     =image_tag('mc.png', :class => 'inline-block vertical-align')
 .container#logos
   =image_tag('logos/logos2.png', :class => "img-responsive")
+#bar-subscribe.background-green.text-white.text-center
+  .container-fluid
+    =image_tag('pt1.png')
+    %p.font-size-2em.inline-block.vertical-align
+      = t('home.bar.msg1')
+      %span= link_to t('home.bar.msg2'), '#', { :class=> "link-white text-bold" }
+      = t('home.bar.msg3')
+    =image_tag('pt2.png')
+#bar-learn.background-lightgray
+  .container
+    .row
+      =form_tag(create_email_student_path, method: :post, id: "emails-form-learn") do
+        .col-sm-4.col-md-4.col-md-offset-1
+          %p.text-darkblue.text-bold= t('home.syllabus.input1')
+          =select_tag 'desc', options_from_collection_for_select(@courses, 'name', 'name'), :class => "text-gray select-style"
+        .col-sm-4.col-md-4
+          %p.text-darkblue.text-bold= t('home.syllabus.input2')
+          =email_field_tag "email",nil, :type => "email", :placeholder => "you@email.com", :class => "input-style text-gray"
+          =hidden_field_tag "ip", request.remote_ip
+        .col-sm-4.col-md-3
+          =submit_tag I18n.t('home.syllabus.button'), :class => "text-bold border-radius-normal button-red"    

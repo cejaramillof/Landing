@@ -36,6 +36,10 @@ nav {
   }
 }
 
+#navegacion-wtm > ul > li.dropdown.open > ul {
+  border-radius: 6px;
+}
+
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   background-color: transparent;
 }
@@ -264,9 +268,10 @@ $flagdimention: 19px;
 .glyph-lan {
   position: relative; 
   left: 40px; 
-  top: -16px; 
+  top: -18px; 
   text-transform: Uppercase; 
   color: $white;
+  font-size: 0.8em;
 }
 
 .glyph-lan2 {
