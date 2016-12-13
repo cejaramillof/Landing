@@ -14,10 +14,6 @@ en:
         three: 'Most Innovative'
         threeby: 'MIT'
         startup: 'Startup'
-    bar:
-      msg1: 'Check out our new online bootcamps.  '
-      msg2: 'Subscribe now'
-      msg3: '  and change your career'
     syllabus: 
       input1: 'What do you want to learn?'
       input2: 'Your email:'
@@ -64,19 +60,21 @@ en:
         partner-desc: 'World Tech Makers partner'
         partner-msg: "World Tech Makers it's a great opportunity to improve your career and get a better job."
       mentors:
-        title: 'Get 1-1 mentorship sessions'
-        msg: 'with experienced developers, entrepreneurs, designers and investors.'
+        title: 'Get 1-1 mentored by top industry experts'
+        msg: 'One of the reasons for our top rank in the country is our inspiring team of instructors, including:'
         someone: 
-          name1: 'Franklin Williams'
-          from1: 'Australia'
-          name2: 'Warren Richards'
-          from2: 'Estonia'
-          name3: 'Curtis Cross'
-          from3: 'Ireland'
-          name4: 'Sallt Clayton'
-          from4: 'Faroe Islands'          
-        bar:
-          msg: 'Meet our mentors'
+          one:
+            name: 'Tim Draper'
+            role: 'Venture Capitalist. Investor at Testla, Homtail, skype and more'
+          two:
+            name: 'Joâo Oliveira'
+            role: 'Chief Bitcoin Officer at Foxbit, the largest bitcoin exchange in Brazil'      
+          three:
+            name: 'Ilya Brotzky'
+            role: 'CEO and Founder at Vanhack.com. Advisor at World Tech Makers.'      
+          four:
+            name: 'Ted Gonder'
+            role: 'CEO and co-founder at Moneythink. White House entrepreneur'
       benefits: 
         tlt: 'Join our global community'
         txt: 'We have a global network that can help you to get a new job, discounts and global support with top experts'

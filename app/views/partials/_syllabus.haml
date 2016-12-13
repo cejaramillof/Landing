@@ -1,0 +1,15 @@
+#bar-learn.background-gray
+  %input#cerrar{:type => 'checkbox'}
+  %label#btn-cerrar.text-white{:for => 'cerrar'} X Close
+  .container#syllabusall
+    .row
+      =form_tag(create_email_student_path, method: :post, id: "emails-form-learn") do
+        .col-sm-4.col-md-4.col-md-offset-1
+          %p.text-white.text-bold= t('home.syllabus.input1')
+          =select_tag 'desc', options_from_collection_for_select(@courses, 'name', 'name'), :class => "text-gray select-style"
+        .col-sm-4.col-md-4
+          %p.text-white.text-bold= t('home.syllabus.input2')
+          =email_field_tag "email",nil, :type => "email", :placeholder => "you@email.com", :class => "input-style text-gray"
+          =hidden_field_tag "ip", request.remote_ip
+        .col-sm-4.col-md-3
+          =submit_tag I18n.t('home.syllabus.button'), :class => "text-bold border-radius-normal button-red"   

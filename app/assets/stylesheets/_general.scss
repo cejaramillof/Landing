@@ -114,10 +114,10 @@
   border-radius: 6px;
   padding: 0.5em; 
   width: 90%;
-  border: 1px solid #a6a6a6;
+  border: 1px solid $darkgray;
   &:focus {
     outline: none !important;
-    box-shadow: 0 0 10px #bcbcbc;
+    box-shadow: 0 0 10px $darkgray;
   }
 }
 
@@ -138,14 +138,14 @@
   width: 95%;
   &:focus {
     outline: none !important;
-    box-shadow: 0 0 10px #bcbcbc;
+    box-shadow: 0 0 10px $darkgray;
   }
 }
 
 input {
   &:focus {
     outline: none !important;
-    box-shadow: 0 0 0px #bcbcbc;
+    box-shadow: 0 0 0px $darkgray;
   }
 }
 

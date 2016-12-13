@@ -95,31 +95,6 @@
   }
 }
 
-#bar-subscribe {
-  padding: 1.5% 0;
-  .container-fluid {
-    p {
-      margin: 0 0.3em;
-    }
-  }
-}
-
-#bar-learn {
-  padding: 4% 0;
-  .container {
-    .row {
-      p {
-        font-size: 1.3em;
-      }
-      .button-red {
-        margin-top: 1.3em;
-        float: left;
-        font-size: 1.4em;
-      }
-    }
-  }
-}
-
 #bootcamp-pros {
   padding: 5% 0;
   .container {
@@ -249,62 +224,45 @@
 }
 
 #mentors {
-  .row:nth-child(1) {
-    padding: 4em 0;
-    h4 {
-      font-size: 2.8em;
-    }     
-  }
-  .row:nth-child(2) {
-    div:nth-child(2),
-    div:nth-child(3)  {
-      .img-responsive {
-        width: 100%;
-      }
-      .desc {
-        top: 30%;
-        left: 7%;
-      }
-    }
-    div:nth-child(1),
-    div:nth-child(4) {
-      .img-responsive {
-        width: 100%;
-      }
-      .desc {
-        top: 30%;
-        right: 10%;
-      }
-    }    
-    div {
-      .desc {
-        position: absolute;
-        display: block;
-        p {
-          margin: 0px;
-        }
-        p:nth-child(2) {
-          font-size: 1.5em;
-        }
-        img {
-          margin: 10px 10px 10px 0;
-        }      
-      }
+  .container-fluid {
+    .row {
+      padding: 5em 0 3em 0;
+      h4 {
+        font-size: 2.8em;
+      }     
     }
   }
-}
-
-#bar-mentors {
   .container {
-    padding: 1em 0;
-    p {
-      padding: 0 0.5em;
-    }
-  }
+    padding-bottom: 6em;
+    .row {
+      div {
+        .box {
+          margin-bottom: 2em;
+          padding-top: 3em;
+          padding-bottom: 1em;
+          .text-bold {
+            padding-top: 1em;
+            font-size: 1.5em;
+          }
+          .text-gray {
+            padding: 0 2em;
+            font-size: 1.2em;
+          }
+        }
+      }
+    }  
+  } 
 }
 
 #benefits {
   padding:5em 0;
+  background: url(headers/community.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;   
   h4 {
     padding-bottom: 0.5em;
     font-size: 2.8em;
@@ -466,35 +424,6 @@
     }
   }
 
-  #bar-subscribe {
-    padding: 3.5% 0;
-    .container-fluid {
-      p {
-        width: 75%;
-      }
-    }
-  }
-
-  #bar-learn {
-    .container {
-      .row {
-        p {
-          padding-top: 1em;
-          font-size: 1.3em;
-        }
-        .input-style {
-          width: 95%;
-        }
-        .button-red {
-          width: 95%;
-          text-align: center;
-          float: none;
-          margin-bottom: 1em;
-        }
-      }
-    }
-  }
-
   #bootcamp-pros {
     .container {
       .row {
@@ -554,56 +483,12 @@
   }
 
   #mentors {
-    .row:nth-child(1) {
-      padding: 4em 0;
-      h4 {
-        font-size: 1.8em;
-      }     
-    }
-    .row:nth-child(2) {
-      div:nth-child(2),
-      div:nth-child(3)  {
-        .img-responsive {
-          width: 100%;
-        }
-        .desc {
-          top: 30%;
-          left: 7%;
-        }
-      }
-      div:nth-child(1),
-      div:nth-child(4) {
-        .img-responsive {
-          width: 100%;
-        }
-        .desc {
-          top: 30%;
-          right: 10%;
-        }
-      }    
-      div {
-        .desc {
-          position: absolute;
-          display: block;
-          p {
-            margin: 0px;
-          }
-          p:nth-child(2) {
-            font-size: 1.5em;
-          }
-          img {
-            margin: 10px 10px 10px 0;
-          }      
-        }
-      }
-    }
-  }
-
-  #bar-mentors {
-    .container {
-      padding: 1em 0;
-      p {
-        padding: 0 0.5em;
+    .container-fluid {
+      .row {
+        padding: 4em 0;
+        h4 {
+          font-size: 1.8em;
+        }     
       }
     }
   }

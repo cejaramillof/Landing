@@ -1,0 +1,72 @@
+#bar-learn {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  animation: modal 2s 3s forwards;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  .container {
+    padding: 2% 0;  
+    .row {
+      p {
+        font-size: 1.3em;
+      }
+      .button-red {
+        margin-top: 1.3em;
+        float: left;
+        font-size: 1.4em;
+      }
+    }
+  }
+}
+
+#cerrar {
+ display: none;
+}
+
+#cerrar + label {
+  max-width: 66px;
+  font-size: 1.5em;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  cursor: pointer;
+  animation: modal 2s 3s forwards;
+  visibility: hidden;  
+  z-index: 1001;
+}
+
+#cerrar:checked ~ #syllabusall, #cerrar:checked + label {
+  display: none;
+}
+
+@keyframes modal {
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  #bar-learn {
+    .container {
+      .row {
+        p {
+          padding-top: 1em;
+          font-size: 1.3em;
+        }
+        .input-style {
+          width: 95%;
+        }
+        .button-red {
+          width: 95%;
+          text-align: center;
+          float: none;
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+}
