@@ -233,7 +233,6 @@ $flagdimention: 19px;
     list-style: none;
     position: absolute;
     top:100%;
-    left:-5px;
     margin: 0;
     padding: 0;
     li {
@@ -276,6 +275,20 @@ $flagdimention: 19px;
   color: $darkblue;
 }
 
+.dropdown-flags {
+    z-index: 1000;
+    padding: 0.5em!important;
+    list-style: none;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+}
 
 /*
 -----------------

@@ -22,7 +22,7 @@
           %div#menu-language.menu{:class => locale, :onMouseover => "None()"}
             %span{:class => "text-lan"} #{locale}&nbsp;&nbsp;&nbsp;&nbsp;
             %span{:class => "glyph-lan glyphicon glyphicon-triangle-bottom"}
-            %ul
+            %ul.dropdown-flags
               %li#flag-en.menu.en= link_to 'EN', locale: "en"
               %li#flag-es.menu.es= link_to 'ES', locale: "es"
               %li#flag-pt.menu.pt= link_to 'PT', locale: "pt"
@@ -37,7 +37,7 @@
           %p= link_to t('menu.on-site'), '#', { :class=> "menul" }
         %li
           %p= link_to t('menu.blog'), '#', { :class=> "menul" }
-        %li.dropdown{:role => 'presentation'}
+        %li.dropdown{:role => 'whydifferent'}
           = link_to t('menu.why'), '#', { :class=> "menul dropdown-toggle", 'data-toggle' => 'dropdown', :role => 'button', 'aria-haspopup' => 'true', 'aria-expanded' => 'false' }
           %ul.dropdown-menu
             %li=link_to link_to t('menu.stories'), '#'
