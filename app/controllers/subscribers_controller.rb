@@ -8,11 +8,13 @@ class SubscribersController < ApplicationController
   
   def create
     @email = Subscriber.new(email: params[:email].downcase, ip: params[:ip], locale: params[:locale])
-    if @email.save
-      ebook(locale)
-    else
-      redirect_to root_path
-    end
+    respond_to do |format|
+      if @email.save
+        format.html { ebook(locale) }
+      else
+        format.html { redirect_to root_path, alert: t('footer.newsletter.error') }
+      end
+    end    
   end
   
   def destroy

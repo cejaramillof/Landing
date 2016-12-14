@@ -36,6 +36,9 @@ gem 'devise'
 #Para paginar
 gem 'will_paginate'
 
+#Toastr para notificaciones
+gem 'toastr-rails'
+
 #Froala WYSIWYG
 gem 'wysiwyg-rails'
 gem 'font-awesome-rails'

@@ -13,4 +13,5 @@
  *= require font-awesome
  *= require main
  *= require_self
+ *= require toastr
  */
