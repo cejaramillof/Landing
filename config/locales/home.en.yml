@@ -13,11 +13,12 @@ en:
         twoby: 'BIP Demand solutions'
         three: 'Most Innovative'
         threeby: 'MIT'
-        startup: 'Startup'
-    syllabus: 
-      input1: 'What do you want to learn?'
-      input2: 'Your email:'
-      button: 'Download Syllabus'
+        startup: 'Startup'        
+    news:
+      title: 'Course of HTML5 / CSS3'
+      time: '1 month'
+      date: '30 ago - 27 nov'
+      more: 'Learn more'
     content: 
       bootcamp-pros:
         tlt1: 'Launch your career in technology'

@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   post "/subscribers/create", as: :create_email
   
 
-  scope '(:locale)', locale: /en|es|pt/ do
+  scope '(:locale)', locale: /en|es|br/ do
     get '/', to: 'main#home'
   end
   # The priority is based upon order of creation: first created -> highest priority.

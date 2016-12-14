@@ -39,13 +39,13 @@
       .col-sm-9
         =image_tag('html5.png', :class => 'inline-block html5')
         %p.inline-block.vertical-align
-          %span.vertical-align.text-gray.text-bold.font-size-2em Course of HTML5 / CSS3
-          %span.text-white 1 month
+          %span.vertical-align.text-gray.text-bold.font-size-2em=t('home.news.title')
+          %span.text-white= t('home.news.time')
           %span.display-block
             =image_tag('calendar.png', :class => 'inline-block calendar')
-            %span.text-gray.font-size-2em.vertical-align  30 ago - 27 nov
+            %span.text-gray.font-size-2em.vertical-align=t('home.news.date')
       .col-sm-3
-        %span= link_to 'Learn More', '#', { :class=> "border-radius-normal text-bold button-red" }
+        %span= link_to t('home.news.more'), '#', { :class=> "border-radius-normal text-bold button-red" }
 #bootcamp-pros
   .container
     .row

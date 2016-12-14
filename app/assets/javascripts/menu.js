@@ -25,8 +25,8 @@ function None(){
       $('#flag-es').addClass('display-none');
     } else if ($("#menu-language").hasClass('en')){
       $('#flag-en').addClass('display-none');
-    } else if ($("#menu-language").hasClass('pt')){
-      $('#flag-pt').addClass('display-none');
+    } else if ($("#menu-language").hasClass('br')){
+      $('#flag-br').addClass('display-none');
     }
 }
 

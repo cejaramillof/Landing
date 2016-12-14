@@ -21,11 +21,18 @@
         %li.hidden-xs
           %div#menu-language.menu{:class => locale, :onMouseover => "None()"}
             %span{:class => "text-lan"} #{locale}&nbsp;&nbsp;&nbsp;&nbsp;
-            %span{:class => "glyph-lan glyphicon glyphicon-triangle-bottom"}
-            %ul.dropdown-flags
-              %li#flag-en.menu.en= link_to 'EN', locale: "en"
-              %li#flag-es.menu.es= link_to 'ES', locale: "es"
-              %li#flag-pt.menu.pt= link_to 'PT', locale: "pt"
+            %span{:class => "glyph-lan glyphicon glyphicon-triangle-bottom"}  
+            .space
+            %ul.dropdown-flags              
+              %li#flag-en.menu.en
+                = link_to 'EN', locale: "en"
+                %span.ltflag= link_to 'EN', locale: "en"
+              %li#flag-es.menu.es
+                = link_to 'ES', locale: "es"
+                %span.ltflag= link_to 'ES', locale: "es"
+              %li#flag-br.menu.br
+                = link_to 'BR', locale: "br"
+                %span.ltflag= link_to 'BR', locale: "br"
         %li.visible-xs-block
           %ul.ul-la
             %li.menu-l.en= link_to '#', locale: "en"

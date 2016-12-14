@@ -172,7 +172,6 @@ $flagdimention: 19px;
   margin: 5px;
   background-repeat: no-repeat;
   background-size: cover;
-  color: red;
 }
 
 .es {
@@ -185,8 +184,8 @@ $flagdimention: 19px;
   background-position: center center;
 }
 
-.pt {
-  background-image:url(flags/pt.svg);
+.br {
+  background-image:url(flags/br.svg);
   background-position: center center;
 }
 
@@ -219,7 +218,7 @@ $flagdimention: 19px;
   position: relative;
   width: $flagdimention;
   height: $flagdimention;
-  margin: 3.9rem 0.5rem;
+  margin: 3.9rem 0.5rem 0 0;
   border: 1px solid white;
   &:hover {
     cursor:pointer;
@@ -232,10 +231,11 @@ $flagdimention: 19px;
     display: none;
     list-style: none;
     position: absolute;
-    top:100%;
+    top:35px;
     margin: 0;
     padding: 0;
     li {
+      margin-right: 25px;
       &:hover {
         opacity: 0.6;
       }
@@ -275,6 +275,11 @@ $flagdimention: 19px;
   color: $darkblue;
 }
 
+.space {
+  margin-top: -2em; 
+  padding: 1em 2em;
+}
+
 .dropdown-flags {
     z-index: 1000;
     padding: 0.5em!important;
@@ -288,6 +293,17 @@ $flagdimention: 19px;
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
     background-clip: padding-box;
+}
+
+.ltflag {
+  position: absolute;
+  margin: -1.3em 0 0 1em;
+  a {
+    color: $darkblue!important;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 /*
@@ -357,7 +373,7 @@ $flagdimention: 19px;
   }
   
   .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: red;
+    background-color: $red;
   }
   
   .navbar-default {
