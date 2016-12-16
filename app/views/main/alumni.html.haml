@@ -19,261 +19,44 @@
           %span.vertical-align.text-bold= t('alumni.toptech.button.n2')
           %span.vertical-align.text-left.inline-block= t('alumni.toptech.button.txt2')
 #historys
-  .row.background-lightblue
-    .col-sm-5.col-sm-offset-1
-      .video2
-    .col-sm-5
-      =image_tag('comillas.png')
-      %p.text-gray.font-size-2em= t('alumni.historys.one.msg')
-      %p.text-darkblue.text-bold= t('alumni.historys.one.by')    
-  .row.background-green
-    .col-sm-5.col-sm-offset-1
-      =image_tag('comillas-d.png')
-      %p.text-gray.font-size-2em= t('alumni.historys.two.msg')
-      %p.text-darkblue.text-bold= t('alumni.historys.two.by')
-    .col-sm-5
-  .row.background-white
-    .col-sm-3
-    
-    .col-sm-9
-      =image_tag('comillas-b.png')
-      %p.text-gray.font-size-2em= t('alumni.historys.three.msg')
-      %p.text-darkblue.text-bold= t('alumni.historys.three.by')
-  .row.background-lightblue
-    .col-sm-5.col-sm-offset-1
-      =image_tag('comillas.png')
-      %p.text-gray.font-size-2em= t('alumni.historys.four.msg')
-      %p.text-darkblue.text-bold= t('alumni.historys.four.by')
-    .col-sm-5
-  .row.background-white
-    .col-sm-6
-    
-    .col-sm-6 
-  .row.background-green
-    .col-sm-5
-    
-    .col-sm-5.col-sm-offset-1
-      =image_tag('comillas-d.png')
-      %p.text-gray.font-size-2em= t('alumni.historys.five.msg')
-      %p.text-darkblue.text-bold= t('alumni.historys.five.by')
-  .row.background-green
-    .col-sm-5.col-sm-offset-1
-      =image_tag('comillas-d.png')
-      %p.text-gray.font-size-2em= t('alumni.historys.six.msg')
-      %p.text-darkblue.text-bold= t('alumni.historys.six.by')
-    .col-sm-6    
-
-.team
-  .container.text-center.text-darkblue
-    %p.font-size-2em= t('alumni.team.title')
-    .row
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/tim.png', :class => "img-circle")
-          %p.text-bold= t('alumni.team.ceo.name')
-          %p.text-gray= t('alumni.team.ceo.role')
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/joao.png', :class => "img-circle")
-          %p.text-bold= t('alumni.team.coo.name')
-          %p.text-gray= t('alumni.team.coo.role')
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/ilya.png', :class => "img-circle")
-          %p.text-bold= t('alumni.team.cto.name')
-          %p.text-gray= t('alumni.team.cto.role')
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/ted.png', :class => "img-circle")
-          %p.text-bold= t('alumni.team.cco.name')
-          %p.text-gray= t('alumni.team.cco.role')
-    .row.text-center
-      .col-xs-6.col-sm-3
-        %p.text-green.text-bold= t('alumni.team.stats.nums')
-        %p.text-gray= t('alumni.team.stats.students')
-      .col-xs-6.col-sm-3
-        %p.text-green.text-bold= t('alumni.team.stats.numm')
-        %p.text-gray= t('alumni.team.stats.mentors')   
-      .col-xs-6.col-sm-3
-        %p.text-green.text-bold= t('alumni.team.stats.numh')
-        %p.text-gray= t('alumni.team.stats.hired')
-      .col-xs-6.col-sm-3
-        %p.text-green.text-bold= t('alumni.team.stats.numb')
-        %p.text-gray= t('alumni.team.stats.bootcamps')
-#timel.background-lightgray
-  .container
-    .timeline
-      %ul#timeline
-        %li.work
-          %input.radio#work5{:name => 'works', :type => 'radio', :checked => true}
-          .relative
-            %label.text-bold.text-darkblue{:for => 'work5'}= t('alumni.timel.five.title')
-            %span.text-green.text-bold.date= t('alumni.timel.five.year')
-            %span.text-gray.datetxt= t('alumni.timel.five.desc')
-            %span.circle
-          .content
-            %p.font-size-2em= t('alumni.timel.five.msg')
-        %li.work
-          %input.radio#work4{:name => 'works', :type => 'radio'}
-          .relative
-            %label{:for => 'work4'}= t('alumni.timel.four.title')
-            %span.text-green.text-bold.date= t('alumni.timel.four.year')
-            %span.text-gray.datetxt= t('alumni.timel.four.desc')
-            %span.circle
-          .content
-            %p.font-size-2em= t('alumni.timel.four.msg')
-        %li.work
-          %input.radio#work3{:name => 'works', :type => 'radio'}
-          .relative
-            %label{:for => 'work3'}= t('alumni.timel.three.title')
-            %span.text-green.text-bold.date= t('alumni.timel.three.year')
-            %span.text-gray.datetxt= t('alumni.timel.three.desc')
-            %span.circle
-          .content
-            %p.font-size-2em= t('alumni.timel.three.msg')
-        %li.work
-          %input.radio#work2{:name => 'works', :type => 'radio'}
-          .relative
-            %label{:for => 'work2'}= t('alumni.timel.two.title')
-            %span.text-green.text-bold.date= t('alumni.timel.two.year')
-            %span.text-gray.datetxt= t('alumni.timel.two.desc')
-            %span.circle
-          .content
-            %p.font-size-2em= t('alumni.timel.two.msg')
-        %li.work
-          %input.radio#work1{:name => 'works', :type => 'radio'}
-          .relative
-            %label{:for => 'work1'}= t('alumni.timel.one.title')       
-            %span.text-green.text-bold.date= t('alumni.timel.one.year')
-            %span.text-gray.datetxt= t('alumni.timel.one.desc')
-            %span.circle
-          .content
-            %p.font-size-2em= t('alumni.timel.one.msg')
-.ourmentors.background-white
-  .container.text-center
-    %p.text-gray.text-bold= t('alumni.ourmentors.title')
-    .row
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/adeline.png', :class => "img-circle")
-          %p.text-bold Adeline Diaz
-          %p.text-gray Founder Rails Girls
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/aaron.png', :class => "img-circle")
-          %p.text-bold Aaron Cain
-          %p.text-gray CTO at Github
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/ilya.png', :class => "img-circle")
-          %p.text-bold Luella Reynolds
-          %p.text-gray Full-stack Developer
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/ted.png', :class => "img-circle")
-          %p.text-bold Frederick Jimenez
-          %p.text-gray Founder Rails Bootcamp
-    .row
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/adeline.png', :class => "img-circle")
-          %p.text-bold Adeline Diaz
-          %p.text-gray Founder Rails Girls
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/aaron.png', :class => "img-circle")
-          %p.text-bold Aaron Cain
-          %p.text-gray CTO at Github
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/ilya.png', :class => "img-circle")
-          %p.text-bold Luella Reynolds
-          %p.text-gray Full-stack Developer
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/ted.png', :class => "img-circle")
-          %p.text-bold Frederick Jimenez
-          %p.text-gray Founder Rails Bootcamp   
-    .row
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/adeline.png', :class => "img-circle")
-          %p.text-bold Adeline Diaz
-          %p.text-gray Founder Rails Girls
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/aaron.png', :class => "img-circle")
-          %p.text-bold Aaron Cain
-          %p.text-gray CTO at Github
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/ilya.png', :class => "img-circle")
-          %p.text-bold Luella Reynolds
-          %p.text-gray Full-stack Developer
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/ted.png', :class => "img-circle")
-          %p.text-bold Frederick Jimenez
-          %p.text-gray Founder Rails Bootcamp   
-    .row
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/adeline.png', :class => "img-circle")
-          %p.text-bold Adeline Diaz
-          %p.text-gray Founder Rails Girls
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/aaron.png', :class => "img-circle")
-          %p.text-bold Aaron Cain
-          %p.text-gray CTO at Github
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/ilya.png', :class => "img-circle")
-          %p.text-bold Luella Reynolds
-          %p.text-gray Full-stack Developer
-      .col-xs-6.col-md-3
-        .box.background-lightgray.border-radius-normal
-          =image_tag('team/ted.png', :class => "img-circle")
-          %p.text-bold Frederick Jimenez
-          %p.text-gray Founder Rails Bootcamp             
-.teachtechnology.background-lightgray
-  .container
-    %p.text-center.text-bold.text-darkblue= t('alumni.teachtechnology.title')
-    %p.text-center.text-gray.font-size-2em= t('alumni.teachtechnology.msg')
-    .row
-      .col-md-6.col-md-push-6
-        =image_tag('screens/bo.png', :class => "img-responsive")
-      .col-md-5.col-md-pull-6.col-md-offset-1
-        %span.beta.text-white= t('alumni.teachtechnology.beta')
-        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('alumni.teachtechnology.bo.title')
-        %p.text-gray.font-size-2em= t('alumni.teachtechnology.bo.desc')
-        %p.text-gray= t('alumni.teachtechnology.bo.msg')
-    .row
-      .col-md-6
-        =image_tag('screens/remoto.png', :class => "img-responsive")
-      .col-md-5.col-md-offset-1
-        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('alumni.teachtechnology.remoto.title')
-        %p.text-gray.font-size-2em= t('alumni.teachtechnology.remoto.desc')
-        %p.text-gray= t('alumni.teachtechnology.remoto.msg')  
-    .row
-      .col-md-6.col-md-push-6
-        =image_tag('screens/nativo.png', :class => "img-responsive")
-      .col-md-5.col-md-pull-6.col-md-offset-1
-        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('alumni.teachtechnology.nativo.title')
-        %p.text-gray.font-size-2em= t('alumni.teachtechnology.nativo.desc')
-        %p.text-gray= t('alumni.teachtechnology.nativo.msg')
-    .row
-      .col-md-6
-        =image_tag('screens/webuild.png', :class => "img-responsive")
-      .col-md-5.col-md-offset-1
-        %p.no-margin.text-darkblue.text-bold.font-size-2em= t('alumni.teachtechnology.webuild.title')
-        %p.text-gray= t('alumni.teachtechnology.webuild.msg')
-.backed.background-white
-  .container.text-center#logos
-    %p.text-bold.font-size-2em.text-darkblue= t('alumni.backed.title')
-    =image_tag('logos/backedlogos.png', :class => "img-responsive")
-    %p.text-bold.text-darkblue= t('alumni.backed.title2')
-    %p.font-size-2em.text-gray= t('alumni.backed.msg')
-    %span= link_to t('alumni.backed.btn'), '#', { :class=> "border-radius-normal button-green" }
-.container#logos
-  =image_tag('logos/logos2.png', :class => "img-responsive")
+  .container-fluid
+    #alumnone.row.background-lightgray
+      .col-md-6.alumn1
+      .col-md-6.history1
+        =image_tag('tarefa.png')
+        %p.text-gray= t('alumni.historys.one.msg_html')
+        %p.text-darkblue.text-bold= t('alumni.historys.one.by')
+    #alumntwo.row.background-lightblue
+      .col-md-6.history1
+        =image_tag('comillas.png')
+        %p.text-gray= t('alumni.historys.two.msg')
+        %p.text-darkblue.text-bold= t('alumni.historys.two.by')
+      .col-md-6.vid
+        .video2
+    #alumnthree.row.background-green
+      .col-md-6.alumn2
+      .col-md-6.history1
+        =image_tag('comillas-d.png')
+        %p.text-white= t('alumni.historys.three.msg')
+        %p.text-white.text-bold= t('alumni.historys.three.by')
+    #alumnfour.row.background-lightgray
+      .col-md-6.alumn3
+      .col-md-6.history1
+        =image_tag('tarefa.png')
+        %p.text-gray= t('alumni.historys.four.msg_html')
+        %p.text-darkblue.text-bold= t('alumni.historys.four.by')
+    #alumnfive.row.background-green    
+      .col-md-6.history1
+        =image_tag('comillas-d.png')
+        %p.text-white= t('alumni.historys.five.msg')
+        %p.text-white.text-bold= t('alumni.historys.five.by')    
+      .col-md-6.alumn4          
+    #alumnsix.row.background-lightblue
+      .col-md-6.history1
+        =image_tag('comillas.png')
+        %p.text-gray= t('alumni.historys.six.msg')
+        %p.text-darkblue.text-bold= t('alumni.historys.six.by')
+      .col-md-6.vid
+        .video2
+  .container#logos
+    =image_tag('logos/logos2.png', :class => "img-responsive")

@@ -38,10 +38,12 @@
       }
     }
     img {
+      padding: 2em 0;
       margin: 0 auto;
     }
     .row {
       div {
+        padding: 3em 0;
         p {
           width: 90%;
           border: 2px solid $green;
@@ -60,115 +62,128 @@
   }
 }
 
-.team {
-  .container {
-    padding-top: 3em;
-    padding-bottom: 5em;
-    .row {
-      padding-top: 3em;
+.alumn1 {
+  height: 300px;
+  background: url(alumn1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
+.history1 {
+  font-size: 2rem;
+  padding: 0em 3em;
+  p.text-bold {
+    font-size: 2.7rem;
+  }
+  img {
+    padding: 1em 0;
+  }
+}
+
+.vid {
+  padding: 4em 6em;
+}
+
+.alumn2 {
+  height: 300px;
+  background: url(alumn2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
+.alumn3 {
+  height: 300px;
+  background: url(alumn3.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
+.alumn4 {
+  height: 300px;
+  background: url(alumn4.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .font-size-2em {
+    font-size: 1.5em;
+  }
+  #alumni-img {
+    .container {
       div {
-        .box {
-          margin-bottom: 2em;
-          padding-top: 3em;
-          padding-bottom: 1em;
-          .text-bold {
-            padding-top: 1em;
-            font-size: 1.5em;
-          }
-          .text-gray {
-            font-size: 1.2em;
-          }
-        }
-        .text-green {
-          font-size: 5.5em;
-        }
-        .text-gray {
+        padding-top: 6em;
+        padding-bottom: 6em;
+        h3 {
           font-size: 2.3em;
         }
+        h4 {
+          font-size: 1.3em;
+          max-width: 100%;
+        }
       }
     }
   }
-}
-
-#timel {
-  padding-bottom: 5em;
-  .container {
-    .timeline {
-      max-width: 1200px;
+  
+  #toptech {
+    .container {
+      p:nth-child(1) {
+        font-size: 1.8em;
+      }
+      span {
+        a {
+          margin: 2em 1em;
+          padding: 0.7em 2.5em;
+          font-size: 1em;
+        }
+      }
+      .row {
+        div {
+          padding: 1em 0;
+          padding-left: 1em;
+          p {
+            width: 90%;
+            border: 2px solid $green;
+            padding: 0.4em 0;
+            .text-bold {
+              font-size: 5.5rem;
+            }
+            .inline-block {
+              padding: 1em 0 1em 1em;
+              font-size: 1.5rem;
+              width: 55%;
+            }
+          }         
+        }
+      }
     }
   } 
-}
-
-.ourmentors {
-  padding-top: 6em;
-  padding-bottom: 8em;
-  .container {
-    p:nth-child(1) {
-      font-size: 2.8em;
-      padding-bottom: 1em;
+  .history1 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0em 3em;
+    p.text-bold {
+      font-size: 2.7rem;
     }
-    .row {
-      div {
-        .box {
-          margin-bottom: 2em;
-          padding-top: 3em;
-          padding-bottom: 1em;
-          .text-bold {
-            padding-top: 1em;
-            font-size: 1.5em;
-          }
-          .text-gray {
-            font-size: 1.2em;
-          }
-        }
-      }
+    img {
+      padding: 1em 0;
     }
-  }
-}
-.teachtechnology {
-  padding: 4em 0 6em 0;
-  .container {
-    .text-center.text-bold {
-      font-size: 2.8em;
-    }
-    .row {
-      div {
-        padding: 4em 0;
-        .img-responsive {
-          margin: 0 auto;
-        }
-        .beta {
-          padding: 3px 18px;
-          background-color: $green;
-          border-radius: 15px;
-          font-size: 1.2em;
-          margin: 3em 0;
-        }
-        .text-gray:nth-last-child(1) {
-          font-size: 1.5em;
-        }
-      }
-    }
-  }
-}
-
-.backed {
-  padding-top: 5em;
-  .container {
-    p:nth-child(3) {
-      font-size: 2.8em;
-    }
-    p:nth-child(4) {
-      max-width: 65%;
-      margin: 0 auto;
-    }
-    span {
-      
-      a {
-        margin: 1em;
-        padding: 0.7em 2.5em;
-        font-size: 1.5em;
-      }
-    }
-  }
+  }  
 }

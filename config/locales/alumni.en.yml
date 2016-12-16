@@ -14,25 +14,20 @@ en:
         txt2: 'Is the average of our graduates salary.'        
     historys:
       one:
-        msg: 'The bootcamp has taught me a lot without having previous experience in the field.'
-        by: 'Gussie Patrick'
+        msg_html: 'Uno de nuestros primeros makers nos cuenta su experiencia durante y después del bootcamp. Matemático, emprendedor tecnológico y apasionado por la programación.  <b>Escucha aquí su testimonio</b>'
+        by: 'Felipe Campos'
       two:
-        msg: 'The bootcamp has taught me a lot without having previous experience in the field.'
-        by: 'Joel Rose'      
-      three:
-        msg: 'World Tech Makers has been a great door for my learning journey, they have great instructors who know what they do.'
-        by: 'Margaret Elliott'      
-      four:
         msg: 'This World Tech Makers experience has been beautiful.'
-        by: 'Ada Duncan'      
-      five:
+        by: 'Ada Duncan'    
+      three:
         msg: 'World Tech Makers taught me what I needed to launch my own startup. And I raised money through their network.'
-        by: 'Johnny Hawkins'      
-      six:
+        by: 'Johnny Hawkins'
+      four:
+        msg_html: 'Uno de nuestros primeros makers nos cuenta su experiencia durante y después del bootcamp. Matemático, emprendedor tecnológico y apasionado por la programación.  <b>Escucha aquí su testimonio</b>'
+        by: 'Felipe Campos'      
+      five:
         msg: 'The bootcamp has taught me a lot without having previous experience in the field.'
         by: 'Joel Rose'
-      stats:
-        one: 'Of our graduates get job after complete the program.'
-        none: '85%'
-        two: 'Is the average of our graduates salary.'
-        ntwo: '+75k'
+      six:
+        msg: 'This World Tech Makers experience has been beautiful.'
+        by: 'Ada Duncan'            
