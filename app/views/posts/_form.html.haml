@@ -1,0 +1,24 @@
+= form_for @post do |f|
+  - if @post.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@post.errors.count, "error")} prohibited this newsletter from being saved:"
+      %ul
+        - @post.errors.full_messages.each do |msg|
+          %li= msg
+  .field
+    %p Title:
+    = f.text_field :title, :style => "border-radius: 6px;border: 1px solid #dedede; padding: 1em; color: #8e8e8e;width: 90%;", :required => true
+  .field
+    %p Portada:
+    = f.file_field :cover
+  .field
+    = f.text_field :all_tags, placeholder: "Tags separated with comma", :style => "border-radius: 6px;border: 1px solid #dedede; padding: 1em; color: #8e8e8e;width: 90%;"
+  .field
+    %p Mensaje:
+    = f.text_area :body, :required => true, :style => "border-radius: 6px;border: 1px solid #dedede; padding: 1em; color: #8e8e8e;width: 90%;", id: "wysiwyg"
+    %script
+      $('#wysiwyg').froalaEditor()
+  .actions
+    = f.submit 'Save', :class => "boton-green-d"
+    = link_to 'Back', posts_path, :class => "boton-red-d"
+    

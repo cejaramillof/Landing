@@ -13,13 +13,10 @@
     = f.text_field :email, :readonly => true, :style => "border-radius: 6px;border: 1px solid #dedede; padding: 1em; color: #8e8e8e;width: 80%;"
   .field
     %p Language:
-    = f.select(:locale, ['es', 'en', 'pt'])
+    = f.select(:locale, ['es', 'en', 'br'])
   .field
     %p Interesed:
-    - @courses.each do |course|
-      .field
-        = check_box_tag "interested[desc][]", course.name
-        = course.name
+    = f.text_field :desc
   .actions
     = f.submit 'Save', :class => "boton-green-d"
     = link_to 'Back', interesteds_path, :class => "boton-red-d"

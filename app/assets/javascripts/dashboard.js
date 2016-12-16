@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require toastr
 // Include other froala.
 //
 //= require froala/froala_editor.min.js

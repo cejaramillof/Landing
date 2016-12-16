@@ -13,6 +13,7 @@
  *= require dash
  *= require_self
 /*
+ *= require toastr
  *= require froala_editor.min.css
  *= require froala_style.min.css
  *= require font-awesome

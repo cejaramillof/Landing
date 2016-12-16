@@ -1,28 +1,38 @@
 Rails.application.routes.draw do
   
-  resources :courses
-  devise_for :admins, controllers: {:registrations => 'registrations'}
+  get '/' => 'blogs#show', :constraints => { :subdomain => 'blog' }
+  get '/' => 'dashboard#index', :constraints => { :subdomain => 'dashboard' }
+  
+  root :to => "main#home"
+  
+  get 'posts/index'
+  get 'tags/:tag', to: 'posts#index', as: "tag"
+  get 'posts/create'
 
+  resources :courses
+  
+  devise_for :admins, controllers: {:registrations => 'registrations'}
+  
   get '/admins' => "dashboard#index", as: :user_root
   
   authenticated :user do
     root to: 'dashboard#index', as: :authenticated_root
   end
-
+  
   get '/alumni', to: 'main#alumni'
   get '/about', to: 'main#about'
-  root 'main#home'
+  get '/terms', to: 'main#terms'
+
   resources :subscribers, except: [:show]
   resources :interesteds, except: [:show]
   resources :newsletters, except: [:edit, :update]
+  resources :posts
   
   post "/interesteds/create", as: :create_email_student
   post "/subscribers/create", as: :create_email
   
+  get '/change_locale/:locale', to: 'settings#change_locale', as: :change_locale
 
-  scope '(:locale)', locale: /en|es|br/ do
-    get '/', to: 'main#home'
-  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

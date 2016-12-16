@@ -1,0 +1,13 @@
+= div_for post do
+  .col-xs-12.mt.pt
+    %strong= link_to post.title, post
+    %br
+    %sup From
+    %span= post.created_at
+    %br
+    .mb.pb
+      = h(post.body)
+    .tags
+      =raw tag_links(post.all_tags)
+    =link_to "eliminar", post, method: :delete
+    =link_to 'Edit', edit_post_path(post), :class => "boton-green-min"

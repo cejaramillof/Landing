@@ -7,6 +7,11 @@ en:
       title: 'Hired by top tech companies'
       msg_html: 'One of the best reasons to attend <b>World Tech Makers</b> is the <br /> student body — your classmates.'
       btn: 'See the companies that hired our students'
+      button:
+        n1: '85%'
+        txt1: 'Of our graduates get job after complete the program.'
+        n2: '+75k'
+        txt2: 'Is the average of our graduates salary.'        
     historys:
       one:
         msg: 'The bootcamp has taught me a lot without having previous experience in the field.'

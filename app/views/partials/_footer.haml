@@ -4,14 +4,14 @@
       .col-xs-12.col-sm-7
         %p.text-bold.font-size-28px= t('footer.newsletter.title')
         =form_tag(create_email_path, method: :post, id: "emails-form") do
-          =email_field_tag "email",nil, :type => "email", :placeholder => "you@email.com", :class => "email-newsletter border-radius-normal text-white"
+          =email_field_tag "email",nil, :type => "email", :placeholder => "you@email.com", :class => "email-newsletter border-radius-normal text-white", :required => true
           =hidden_field_tag "ip", request.remote_ip
           =submit_tag I18n.t('footer.newsletter.button'), :class => "border-radius-normal button-green"
         %p.rights.font-size-14px
           %span= t('footer.newsletter.conditions')
-          %span= link_to t('footer.newsletter.policy'), '#', { :class=> "link-white font-size-14px" }
+          %span= link_to t('footer.newsletter.policy'), terms_path, { :class=> "link-white font-size-14px" }
           %span= t('footer.newsletter.and')
-          %span= link_to t('footer.newsletter.terms'), '#', { :class=> "link-white font-size-14px" }
+          %span= link_to t('footer.newsletter.terms'), terms_path, { :class=> "link-white font-size-14px" }
         .social-icons
           = link_to image_tag( 'redes/fb.png', :class => "" ), 'https://www.facebook.com/worldtechmakers/', :target => "_blank"
           = link_to image_tag( 'redes/tw.png', :class => "" ), 'https://twitter.com/worldtechmaker', :target => "_blank"

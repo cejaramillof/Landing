@@ -1,0 +1,27 @@
+.container
+  .row
+    .col-md-12
+      %h1.title-dash.text-center Show Post
+%p#notice= notice
+
+.container
+  .row
+    .col-md-1
+    .col-md-10
+    
+      %p
+        Escrito por:
+        = @post.admin.email
+      %p
+        %b Title:
+        = @post.title    
+      %p
+        %b Post:
+        = @post.body.html_safe
+        
+      %p
+        %b Cover:
+        = image_tag @post.cover.url(:thumb)
+    .col-md-1
+.text-center
+  = link_to 'Back', posts_path, :class => "boton-red-d"

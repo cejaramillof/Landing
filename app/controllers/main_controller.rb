@@ -4,5 +4,7 @@ class MainController < ApplicationController
   def about
   end
   def alumni
-  end  
+  end
+  def terms
+  end
 end

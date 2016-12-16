@@ -6,8 +6,7 @@ class NewslettersController < ApplicationController
   # GET /newsletters
   # GET /newsletters.json
   def index
-    @newsletters = Newsletter.paginate(page: params[:page],per_page: 10).ultimos.all
-    
+    @newsletters = Newsletter.paginate(page: params[:page],per_page: 10).ultimos.all 
   end
 
   # GET /newsletters/1

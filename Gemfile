@@ -21,6 +21,15 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+#locale User’s Country
+gem 'geocoder'
+
+#Modelos multi-idioma
+gem 'globalize', github: 'ncri/globalize'
+
+#Multi-idioma
+gem 'rails-i18n'
+
 #Simple helper for Zopim live chat script.
 gem 'zopim_rails'
 
@@ -42,6 +51,9 @@ gem 'toastr-rails'
 #Froala WYSIWYG
 gem 'wysiwyg-rails'
 gem 'font-awesome-rails'
+
+#Subir imagenes
+gem 'paperclip'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

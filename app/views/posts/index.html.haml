@@ -1,0 +1,28 @@
+.container
+  .row
+    .col-md-12
+      %h1.title-dash.text-center Listing Posts
+.table-responsive
+  %table.table.table-striped.table-hover
+    %thead
+      %tr
+        %th Titulo   
+        %th Creado por
+        %th Creado el        
+        %th Editar
+        %th Eliminar
+    %tbody
+      - @posts.each do |post|
+        %tr
+          %td= link_to post.title, post, :target => "_blank"
+          %td= post.admin.email
+          %td= post.created_at
+          %td=link_to 'Edit', edit_post_path(post), :class => "boton-green-min"
+          %td=link_to "eliminar", post, method: :delete, :class => "boton-red-min", :data => { :confirm => 'Are you sure?' }
+.container
+  .row
+    .col-md-12.text-right
+      = link_to 'New Post', new_post_path, :class => "boton-green-d"  
+    .col-md-12
+      = will_paginate @posts, {:class => "text-center paginate"}
+        

@@ -40,6 +40,23 @@
     img {
       margin: 0 auto;
     }
+    .row {
+      div {
+        p {
+          width: 90%;
+          border: 2px solid $green;
+          padding: 0.4em 0;
+          .text-bold {
+            font-size: 5.5rem;
+          }
+          .inline-block {
+            padding: 1em 0 1em 1em;
+            font-size: 1.5rem;
+            width: 55%;
+          }
+        }         
+      }
+    }
   }
 }
 
