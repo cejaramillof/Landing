@@ -1,0 +1,92 @@
+en:
+  benefits:
+    header:
+      title: 'Your New Career Starts Here.'
+      msg: 'The most comprehensive and rigorous full-stack education.'
+    stats:
+      button:
+        n1: '85%'
+        txt1: 'Of our graduates get job after complete the program.'
+        n2: '+75k'
+        txt2: 'Is the average of our graduates salary.'
+    different:
+      left:
+        title: 'Why we’re different'
+        msg: 'RoR is one of the most popular Ruby frameworks, scalable, robust and powerful. Use by Github, Bootcamp, Twitter and more. Improve your career learing this awesome language.'
+        txt: 'This World Tech Makers experience has been beautiful.'
+      right:
+        title: "By the end of this program, you'll be able to:"
+        one: 'Build data products that integrate with production-grade software.'
+        two: 'Apply for most entry-level Ruby Developer jobs (with a portfolio to show).'
+        three: 'Collaborate to open-source project or create your own business.'
+      students:
+        title: 'Where our students are working'
+        titletwo: 'Our methodology'
+      methodology:
+        learn:
+          title: 'Learn by doing'
+          msg: "Just like when you learned to walk, learning a new skill set requires practice, a beginner's mindset. Build apps, complete our coding challenges, learn by doing."
+        agile:
+          title: 'Agile'
+          msg: "Just like when you learned to walk, learning a new skill set requires practice, a beginner's mindset. Build apps, complete our coding challenges, learn by doing."    
+        data:
+          title: 'Data driven'
+          msg: 'We combine both on-site training with online training with built-in-house 24/7. Practice outside of class, measure your progress, participate in forums, stay connected even after the bootcamp is over.'        
+        blended:
+          title: 'Blended learning'
+          msg: 'We combine both on-site training with online training with built-in-house 24/7. Practice outside of class, measure your progress, participate in forums, stay connected even after the bootcamp is over.'        
+        mentor:
+          title: 'Mentor matching'
+          msg: 'Learn from others who have walked similar paths or who have started crazy ideas that are now successful. 1-1 mentorships, group-mentorships and a growing network that expands without borders.'        
+        industry:
+          title: 'Industry relevant'
+          msg: 'Learn from others who have walked similar paths or who have started crazy ideas that are now successful. 1-1 mentorships, group-mentorships and a growing network that expands without borders.'
+    learningout:
+      title: 'Learning outcomes'
+      msg: 'Clarity and progress'
+      one:
+        title: 'The basics'
+        msg: 'Command line and Git, basics of programming, variables, loops, methods, UI, UX, lean methodologies'
+      two:
+        title: 'Software engineering'
+        msg: 'Object-oriented skills, Smart architecture, Design patterns, System dynamics.'
+      three:
+        title: 'Core language'
+        msg: 'Language of choice, Introductions and basics, Strong in design, Applications and more'
+      four:
+        title: 'Data base and integration'
+        msg: 'Databases, Tables, connections, Libraries available, APIs and more'
+      five:
+        title: 'Project Phase'
+        msg: 'Everything together: Apply robust know-how, Develop project, Demo Day and graduation'  
+    robustcomunity:
+      title: 'A robust comunity where what matters most is you'
+      one: 'Learn in your native language'
+      two: 'Support from top experts'
+      three: 'At your pace or with bootcamps'
+    financial:
+      title: 'Financial options'
+      msg: 'Become a hired developer. Gauaranteed.'
+      one:
+        title: 'Front pay'
+        one: '$6,500,000 COP'
+        two: 'pre-work week (virtual)'
+        three: 'reinforcement weeks'
+      two:
+        title: '50% pay first'
+        one: '$6,500,000 COP'
+        two: 'pre-work week (virtual)'
+        three: 'reinforcement weeks'     
+      three:
+        title: 'Mensual payment'
+        one: '$6,500,000 COP'
+        two: 'pre-work week (virtual)'
+        three: 'reinforcement weeks'     
+      btn: 'Request info'
+    experience:
+      exp: 'The bootcamp has taught me a lot without having experience in the field.'
+      name: 'Joel Rose'
+    needhelp: 
+      title: 'Need help? send us an email.'
+      btn: 'Request information'
+      

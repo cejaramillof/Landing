@@ -121,6 +121,18 @@
   }
 }
 
+.help-style {
+  font-size: 1.5em; 
+  border-radius: 6px;
+  padding: 0.8em; 
+  width: 90%;
+  border: 1px solid #b5b9ba;
+  &:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #b5b9ba;
+  }
+}
+
 .video2 {
   height: 200px;
   background: url(video.png);

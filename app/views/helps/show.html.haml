@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Email:
+  = @help.email
+%p
+  %b Ip:
+  = @help.ip
+%p
+  %b Locale:
+  = @help.locale
+%p
+  %b Helped:
+  = @help.helped
+%p
+  %b Desc:
+  = @help.desc
+
+= link_to 'Edit', edit_help_path(@help)
+\|
+= link_to 'Back', helps_path

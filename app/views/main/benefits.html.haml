@@ -1,0 +1,203 @@
+#ben-img.background-graytwo
+  .container
+    .col-xs-12
+      %h3.text-bold.text-white= t('benefits.header.title')
+      %h4.text-green.font-size-2em= t('benefits.header.msg')
+#stat.background-lightblue
+  .container
+    .row
+      .col-md-5.col-md-offset-1
+        %p.text-green.border-radius-normal
+          %span.vertical-align.text-bold= t('benefits.stats.button.n1')
+          %span.vertical-align.text-left.inline-block= t('benefits.stats.button.txt1')
+      .col-md-5
+        %p.text-green.border-radius-normal
+          %span.vertical-align.text-bold= t('benefits.stats.button.n2')
+          %span.vertical-align.text-left.inline-block= t('benefits.stats.button.txt2')
+#whydif.background-white
+  .container
+    .row
+      .col-sm-5.col-sm-offset-1
+        %p.text-darkblue.text-bold= t('benefits.different.left.title')
+        %p.text-gray.font-size-2em= t('benefits.different.left.msg')
+        .linea
+        .row
+          .col-xs-3
+            =image_tag('girl.png')
+          .col-xs-9
+            =image_tag('comillas-b.png', :class => "img-responsive")
+            %p.text-gray= t('benefits.different.left.txt')
+      .col-sm-5.background-lightgray.border-radius-normal
+        %p.text-darkblue.text-bold.font-size-2em= t('benefits.different.right.title')
+        .row
+          .col-xs-2
+            =image_tag('check.png')
+          .col-xs-10
+            %span.text-gray= t('benefits.different.right.one')
+        .row
+          .col-xs-2
+            =image_tag('check.png')
+          .col-xs-10
+            %span.text-gray= t('benefits.different.right.two')
+        .row
+          .col-xs-2
+            =image_tag('check.png')
+          .col-xs-10
+            %span.text-gray= t('benefits.different.right.three') 
+    .row.text-center
+      %p.text-bold.text-gray= t('benefits.different.students.title')
+      =image_tag('logos/workingstudents.png', :class => "img-responsive")
+      %p.text-bold.text-gray= t('benefits.different.students.titletwo')
+    #methodology
+      .row
+        .col-sm-4.col-sm-push-4.text-center.col-sm-offset-2
+          =image_tag('methodology/learn.png')
+        .col-sm-4.col-sm-pull-4
+          %p.text-gray.text-bold= t('benefits.different.methodology.learn.title')
+          %p.text-gray= t('benefits.different.methodology.learn.msg')          
+      .row
+        .col-sm-4.col-sm-offset-2.text-center
+          =image_tag('methodology/agile.png')
+        .col-sm-4
+          %p.text-gray.text-bold= t('benefits.different.methodology.agile.title')
+          %p.text-gray= t('benefits.different.methodology.agile.msg')
+      .row
+        .col-sm-4.col-sm-push-4.col-sm-offset-2.text-center
+          =image_tag('methodology/data.png')
+        .col-sm-4.col-sm-pull-4
+          %p.text-gray.text-bold= t('benefits.different.methodology.data.title')
+          %p.text-gray= t('benefits.different.methodology.data.msg')          
+      .row
+        .col-sm-4.col-sm-offset-2.text-center
+          =image_tag('methodology/blended.png')
+        .col-sm-4
+          %p.text-gray.text-bold= t('benefits.different.methodology.blended.title')
+          %p.text-gray= t('benefits.different.methodology.blended.msg')
+      .row
+        .col-sm-4.col-sm-push-4.col-sm-offset-2.text-center
+          =image_tag('methodology/mentor.png')
+        .col-sm-4.col-sm-pull-4
+          %p.text-gray.text-bold= t('benefits.different.methodology.mentor.title')
+          %p.text-gray= t('benefits.different.methodology.mentor.msg')
+      .row
+        .col-sm-4.col-sm-offset-2.text-center
+          =image_tag('methodology/industry.png')
+        .col-sm-4
+          %p.text-gray.text-bold= t('benefits.different.methodology.industry.title')
+          %p.text-gray= t('benefits.different.methodology.industry.msg')
+#learningout.background-lightblue
+  %p.text-bold.text-darkblue.text-center= t('benefits.learningout.title')
+  %p.text-gray.text-center.font-size-2em= t('benefits.learningout.msg')
+  .container
+    .row
+      .col-sm-10.background-white.border-radius-normal.col-sm-offset-1
+        .row
+          .col-sm-2
+            =image_tag('methodology/mentor.png', :class => "img-responsive")
+          .col-sm-10
+            %p.text-bold.text-darkblue.font-size-2em= t('benefits.learningout.one.title')
+            %p.text-gray= t('benefits.learningout.one.msg')
+    .row
+      .col-sm-10.background-white.border-radius-normal.col-sm-offset-1
+        .row
+          .col-sm-2
+            =image_tag('methodology/industry.png', :class => "img-responsive")
+          .col-sm-10
+            %p.text-bold.text-darkblue.font-size-2em= t('benefits.learningout.two.title')
+            %p.text-gray= t('benefits.learningout.two.msg')
+    .row
+      .col-sm-10.background-white.border-radius-normal.col-sm-offset-1
+        .row
+          .col-sm-2
+            =image_tag('methodology/learn.png', :class => "img-responsive")
+          .col-sm-10
+            %p.text-bold.text-darkblue.font-size-2em= t('benefits.learningout.three.title')
+            %p.text-gray= t('benefits.learningout.three.msg')
+    .row
+      .col-sm-10.background-white.border-radius-normal.col-sm-offset-1
+        .row
+          .col-sm-2
+            =image_tag('methodology/data.png', :class => "img-responsive")
+          .col-xs-10
+            %p.text-bold.text-darkblue.font-size-2em= t('benefits.learningout.four.title')
+            %p.text-gray= t('benefits.learningout.four.msg')
+    .row
+      .col-sm-10.background-white.border-radius-normal.col-sm-offset-1
+        .row
+          .col-sm-2
+            =image_tag('methodology/agile.png', :class => "img-responsive")
+          .col-sm-10
+            %p.text-bold.text-darkblue.font-size-2em= t('benefits.learningout.five.title')
+            %p.text-gray= t('benefits.learningout.five.msg')
+#robustcomunity.background-white
+  .container
+    .row.todo
+      .col-xs-10.col-xs-offset-1.col-sm-6.background-lightgray.border-radius-normal.col-sm-offset-3
+        %p.text-bold.text-gray.text-center= t('benefits.robustcomunity.title') 
+        .row
+          .col-xs-1.col-xs-offset-2
+            =image_tag('check.png')
+          .col-xs-8
+            %span.text-gray= t('benefits.robustcomunity.one')
+        .row
+          .col-xs-1.col-xs-offset-2
+            =image_tag('check.png')
+          .col-xs-8
+            %span.text-gray= t('benefits.robustcomunity.two')
+        .row
+          .col-xs-1.col-xs-offset-2
+            =image_tag('check.png')
+          .col-xs-8
+            %span.text-gray= t('benefits.robustcomunity.three')
+#financial.background-green
+  .container
+    %p.text-center.text-white.text-bold= t('benefits.financial.title')
+    %p.text-center.text-white.font-size-2em= t('benefits.financial.msg')
+    .row.background-lightgray.border-radius-normal.text-center
+      .col-sm-3
+        %p.text-bold.text-darkblue.font-size-2em= t('benefits.financial.one.title')
+        %ul.text-gray
+          %li= t('benefits.financial.one.one')
+          %li= t('benefits.financial.one.two')
+          %li= t('benefits.financial.one.three')
+        %p= link_to t('benefits.financial.btn'), '#', { :class=> "border-radius-normal text-bold button-red text-bold" }
+      .col-sm-1.hidden-xs
+        .lined
+      .col-sm-4
+        %p.text-bold.text-darkblue.font-size-2em= t('benefits.financial.two.title')
+        %ul.text-gray
+          %li= t('benefits.financial.two.one')
+          %li= t('benefits.financial.two.two')
+          %li= t('benefits.financial.two.three')
+        %p= link_to t('benefits.financial.btn'), '#', { :class=> "border-radius-normal text-bold button-red text-bold" }
+      .col-sm-1.hidden-xs
+        .line
+      .col-sm-3
+        %p.text-bold.text-darkblue.font-size-2em= t('benefits.financial.three.title')
+        %ul.text-gray
+          %li= t('benefits.financial.three.one')
+          %li= t('benefits.financial.three.two')
+          %li= t('benefits.financial.three.three')
+        %p= link_to t('benefits.financial.btn'), '#', { :class=> "border-radius-normal text-bold button-red text-bold" }
+#experience.background-lightgray
+  .container-fluid
+    .row
+      .col-md-4.col-md-offset-1
+        =image_tag('comillas-b.png', :class => "com")
+        %p.text-gray.font-size-2em= t('benefits.experience.exp')
+        %p.text-darkblue.text-bold= t('benefits.experience.name')
+        %p= link_to t('home.content.testimony.button'), stories_path, { :class=> "border-radius-normal text-bold button-green text-bold" }
+      .col-md-6.col-md-offset-1.alumn4 
+#needhelp.background-lightblue
+  .container
+    .row
+      =form_tag(create_helped_path, method: :post) do
+        .col-sm-4.col-md-3.col-md-offset-1
+          %p.text-gray.text-bold= t('benefits.needhelp.title')
+        .col-sm-4.col-md-4
+          =email_field_tag "email",nil, :type => "email",:required => "true", :placeholder => "you@email.com", :class => "help-style text-gray"
+          =hidden_field_tag "ip", request.remote_ip
+        .col-sm-4.col-md-3
+          =submit_tag t('benefits.needhelp.btn'), :class => "text-bold border-radius-normal button-red"
+.container#logos
+  =image_tag('logos/logos2.png', :class => "img-responsive")

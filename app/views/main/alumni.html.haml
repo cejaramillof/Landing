@@ -7,7 +7,7 @@
   .container.text-center#logos
     %p.text-bold.text-gray= t('alumni.toptech.title')    
     %p.font-size-2em.text-gray= t('alumni.toptech.msg_html')
-    %span= link_to t('alumni.toptech.btn'), '#', { :class=> "border-radius-normal button-green" }
+    %span= link_to t('alumni.toptech.btn'), companies_path, { :class=> "border-radius-normal button-green" }
     =image_tag('logos/techlogos.png', :class => "img-responsive")
     .row
       .col-md-5.col-md-offset-1
@@ -23,7 +23,7 @@
     #alumnone.row.background-lightgray
       .col-md-6.alumn1
       .col-md-6.history1
-        =image_tag('tarefa.png')
+        =image_tag('logos/tarefa.png')
         %p.text-gray= t('alumni.historys.one.msg_html')
         %p.text-darkblue.text-bold= t('alumni.historys.one.by')
     #alumntwo.row.background-lightblue
@@ -42,7 +42,7 @@
     #alumnfour.row.background-lightgray
       .col-md-6.alumn3
       .col-md-6.history1
-        =image_tag('tarefa.png')
+        =image_tag('logos/tarefa.png')
         %p.text-gray= t('alumni.historys.four.msg_html')
         %p.text-darkblue.text-bold= t('alumni.historys.four.by')
     #alumnfive.row.background-green    

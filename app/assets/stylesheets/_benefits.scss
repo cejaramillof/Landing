@@ -1,0 +1,475 @@
+#ben-img {
+  background: url(headers/list.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .container {
+    div {
+      padding-top: 6em;
+      padding-bottom: 6em;
+      h3 {
+        font-size: 4.3em;
+      }
+      h4 {
+        font-size: 2.3em;
+        max-width: 55%;
+      }
+    }
+  }
+}
+#stat {
+  .container {
+    .row {
+      div {
+        padding: 4em 0;
+        p {
+          margin: 0 auto;
+          width: 90%;
+          border: 2px solid $green;
+          padding: 0.4em 1em;
+          .text-bold {
+            font-size: 5.5rem;
+          }
+          .inline-block {
+            padding: 1em 0 1em 1em;
+            font-size: 1.5rem;
+            width: 60%;
+          }
+        }         
+      }
+    }
+  }
+}
+
+#whydif {
+  .container {
+    padding: 4em 0;
+    .row:nth-child(1) {
+      div:nth-child(1) {
+        .text-darkblue {
+          font-size: 2.8em
+        }
+        .linea {
+          width: 40%;
+          border-bottom: 3px solid black;
+        }
+        .row {
+          padding: 4em 0;
+          div {
+            .img-responsive {
+              max-height: 20px;
+              max-height: 20px;
+            }
+            .text-gray {
+              font-size: 1.8em;
+            }
+          }
+        }
+      }
+      .border-radius-normal {
+        padding: 2em;
+        .row {
+          margin: 2em 0;
+          div {
+            img {
+              margin: 0.5em 0;
+            }
+            span {
+              font-size: 1.5em;
+            }
+          }
+        }
+      }
+    }
+    .row.text-center {
+      padding: 6em 0 0 0;
+      p {
+        padding-bottom: 2em;
+        font-size: 2.8em;
+      }
+      p:nth-child(3) {
+        padding: 5em 0 1em 0;
+      }
+      img {
+        margin: 0 auto;
+      }
+    }
+    #methodology {
+      .row {
+        padding: 3em 0;
+        div {
+          .text-bold {
+            font-size: 2.2em;
+          }
+          p:nth-child(2) {
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+#learningout {
+  padding: 3em 0;
+  p.text-bold.text-darkblue.text-center {
+    font-size: 2.8em;
+  }
+  .container {
+    .row {
+      margin: 3em 2em;
+      div {
+        .row {
+          div {
+            p.text-gray {
+              font-size: 1.5em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#robustcomunity {
+  .container {
+    .row.todo {
+      padding: 8em 0;
+      .border-radius-normal {
+        padding: 2em;
+        p {
+          font-size: 2.7em;
+        }
+        .row {          
+          div {
+            padding: 1em 0;
+            img {
+              margin: 0 auto;
+            }
+            span {
+              font-size: 1.8em;
+            }
+          }
+        }       
+      }
+    }
+  }
+}
+
+#needhelp {
+  .container {
+    .row {
+      form {
+        div {
+          padding: 4em 0;
+          p {
+            font-size: 2.2em;
+          }
+          .button-red {
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+#experience {
+  .container-fluid {
+    .row {
+      div {
+        padding-top: 2em;
+        .com {
+          max-width: 50px;
+          max-height: 50px;
+        }
+        p.text-bold {
+          font-size: 2.7em;
+        }
+      }
+    }
+  }
+}
+
+#financial {
+  .container {
+    padding: 5em 0;
+    p.text-center.text-white.text-bold {
+      font-size: 2.8em;
+    }
+    .row {
+      margin: 2em 0;
+      padding: 2em 0;
+      div {
+        .line {
+          margin: 0 auto;
+          border-left: 1px solid $gray;
+          height: 20em;
+        }
+        .lined {
+          margin: 0 auto;
+          border-right: 1px solid $gray;
+          height: 20em;
+        }
+        ul {
+          text-align: left!important;
+          font-size: 1.5em;
+          margin: 1em 0;
+        }
+        p {
+          .button-red {
+            font-size: 1.5em;
+          }           
+        }
+      }
+    }
+  }
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .font-size-2em {
+    font-size: 1.5em;
+  }
+  #ben-img {
+    .container {
+      div {
+        padding-top: 6em;
+        padding-bottom: 6em;
+        h3 {
+          font-size: 2.3em;
+        }
+        h4 {
+          font-size: 1.3em;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  #stat {
+    .container {
+      padding: 1em 0;
+      .row {
+        div {
+          padding: 1em 0;
+          p {
+            margin: 0 auto;
+            width: 90%;
+            border: 2px solid $green;
+            padding: 0.4em 1em;
+            .text-bold {
+              font-size: 5.5rem;
+            }
+            .inline-block {
+              padding: 1em 0 1em 1em;
+              font-size: 1.5rem;
+              width: 60%;
+            }
+          }         
+        }
+      }
+    }
+  }
+
+  #whydif {
+    .container {      
+      padding: 4em 0;
+      .row:nth-child(1) {
+        div:nth-child(1) {
+          .text-darkblue {
+            text-align: center;
+            font-size: 2.8em
+          }
+          .text-gray.font-size-2em {
+            text-align: center;
+          }
+          .linea {
+            width: 40%;
+            border-bottom: 3px solid black;
+          }
+          .row {
+            padding: 4em 0;
+            div {
+              .img-responsive {
+                max-height: 20px;
+                max-height: 20px;
+              }
+              .text-gray {
+                font-size: 1.5em;
+              }
+            }
+          }
+        }
+        .border-radius-normal {
+          padding: 2em;
+          .row {
+            margin: 2em 0;
+            div {
+              img {
+                margin: 0.5em 0;
+              }
+              span {
+                font-size: 1.3em;
+              }
+            }
+          }
+        }
+      }
+      .row.text-center {
+        padding: 6em 0 0 0;
+        p {
+          padding-bottom: 2em;
+          font-size: 2em;
+        }
+        p:nth-child(3) {
+          padding: 5em 0 1em 0;
+        }
+        img {
+          margin: 0 auto;
+        }
+      }
+      #methodology {
+        .row {
+          padding: 3em 0;
+          div {
+            .text-bold {
+              text-align: center;
+              font-size: 2em;
+            }
+            p:nth-child(2) {
+              text-align: center;
+              font-size: 1.5em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #learningout {
+    padding: 3em 0;
+    p.text-bold.text-darkblue.text-center {
+      font-size: 2.8em;
+    }
+    .container {
+      .row {
+        margin: 3em 2em;
+        div {
+          .row {
+            div {
+              .img-responsive {
+                padding: 1em;
+                margin: 0 auto;
+              }
+              p.text-gray {
+                font-size: 1.5em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #robustcomunity {
+    .container {
+      .row.todo {
+        padding: 8em 0;
+        .border-radius-normal {
+          padding: 2em;
+          p {
+            font-size: 2em;
+          }
+          .row {          
+            div {
+              padding: 1em 0;
+              img {
+                margin: 0 auto;
+                margin-left: -1em;
+              }
+              span {
+                margin: 3em 0;
+                font-size: 1.2em;
+              }
+            }
+          }       
+        }
+      }
+    }
+  }
+
+  #needhelp {
+    .container {
+      .row {
+        form {
+          div {
+            text-align: center;
+            padding: 1em 0;
+            p {
+              font-size: 2.2em;
+            }
+            .button-red {
+              font-size: 1.5em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #experience {
+    .container-fluid {
+      .row {
+        div {
+          padding-top: 2em;
+          .com {
+            max-width: 50px;
+            max-height: 50px;
+          }
+          p.text-bold {
+            font-size: 2.7em;
+          }
+        }
+      }
+    }
+  }
+
+  #financial {
+    .container {
+      padding: 5em 0;
+      p.text-center.text-white.text-bold {
+        font-size: 2.8em;
+      }
+      .row {
+        margin: 2em 0;
+        padding: 2em 0;
+        div {
+          .line {
+            margin: 0 auto;
+            border-left: 1px solid $gray;
+            height: 20em;
+          }
+          .lined {
+            margin: 0 auto;
+            border-right: 1px solid $gray;
+            height: 20em;
+          }
+          ul {
+            text-align: left!important;
+            font-size: 1.5em;
+            margin: 1em 0;
+          }
+          p {
+            .button-red {
+              font-size: 1.5em;
+            }           
+          }
+        }
+      }
+    }
+  }
+}

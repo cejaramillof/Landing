@@ -1,0 +1,35 @@
+#compa-img {
+  background: url(headers/companies.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .container {
+    div {
+      padding-top: 6em;
+      padding-bottom: 8em;
+      h3 {
+        font-size: 4.3em;
+      }
+      h4 {
+        font-size: 2.3em;
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+#teamsl {
+  padding: 3em 0;
+  .container {
+    .row {
+      padding-top: 3em;
+    }
+  }
+}
+
+#leading {
+  
+}

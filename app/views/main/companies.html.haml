@@ -1,0 +1,25 @@
+#compa-img.background-graytwo
+  .container
+    .col-xs-12
+      %h3.text-bold.text-white= t('companies.header.title')
+      %h4.text-green.font-size-2em= t('companies.header.msg')
+#teamsl.background-lightgray
+  .container.text-center
+    %p.font-size-2em.text-gray= t('companies.teamsl.title')
+    .row
+      .col-sm-4
+        =image_tag("logos/andes.png")
+      .col-sm-4
+        =image_tag("logos/endeavor.png")
+      .col-sm-4
+        =image_tag("logos/bid.png")
+#leading.background-white
+.container
+  %p.text-darkblue= t('companies.leading.title')
+  .row
+    .col-sm-4
+      .lineon
+        =image_tag("check.png", :class => "inline-block")
+        %p.inline-block.text-gray= t('companies.leading.one')
+    .col-sm-4
+      =image_tag("logos/wbrutanalcaldia.png")

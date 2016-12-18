@@ -178,7 +178,7 @@
         %p.text-gray.font-size-2em= t('home.content.testimony.msg')
         =image_tag('yc.png')
         =image_tag('yctext.png')
-        %p= link_to t('home.content.testimony.button'), '#', { :class=> "border-radius-normal text-bold button-green text-bold" }
+        %p= link_to t('home.content.testimony.button'), stories_path, { :class=> "border-radius-normal text-bold button-green text-bold" }
       .col-md-2.hidden-xs.hidden-sm
         %p.line2
       .col-xs-12.col-md-4
@@ -235,6 +235,6 @@
     %p{:class => 'inline-block vertical-align'}
       %span.vertical-align= t('home.content.achievements.text')
       %span.vertical-align.text-bold= t('home.content.achievements.text2')
-    =image_tag('mc.png', :class => 'inline-block vertical-align')
+    =image_tag('logos/mc.png', :class => 'inline-block vertical-align')
 .container#logos
   =image_tag('logos/logos2.png', :class => "img-responsive")

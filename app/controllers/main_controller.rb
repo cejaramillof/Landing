@@ -5,6 +5,10 @@ class MainController < ApplicationController
   end
   def alumni
   end
+  def benefits
+  end  
   def terms
+  end
+  def companies
   end
 end

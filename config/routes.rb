@@ -1,37 +1,37 @@
 Rails.application.routes.draw do
   
+  resources :helps
+  get 'blog/index'
+
   get '/' => 'blogs#show', :constraints => { :subdomain => 'blog' }
   get '/' => 'dashboard#index', :constraints => { :subdomain => 'dashboard' }
+  get '/admins' => "dashboard#index", as: :user_root
   
   root :to => "main#home"
   
-  get 'posts/index'
-  get 'tags/:tag', to: 'posts#index', as: "tag"
-  get 'posts/create'
-
-  resources :courses
-  
   devise_for :admins, controllers: {:registrations => 'registrations'}
-  
-  get '/admins' => "dashboard#index", as: :user_root
   
   authenticated :user do
     root to: 'dashboard#index', as: :authenticated_root
   end
-  
-  get '/alumni', to: 'main#alumni'
+
+  get '/change_locale/:locale', to: 'settings#change_locale', as: :change_locale
+  get 'tags/:tag', to: 'posts#index', as: "tag"
+  get '/stories', to: 'main#alumni'
+  get '/benefits', to: 'main#benefits'  
   get '/about', to: 'main#about'
   get '/terms', to: 'main#terms'
+  get '/companies', to: 'main#companies'
 
   resources :subscribers, except: [:show]
   resources :interesteds, except: [:show]
   resources :newsletters, except: [:edit, :update]
   resources :posts
+  resources :courses
   
   post "/interesteds/create", as: :create_email_student
   post "/subscribers/create", as: :create_email
-  
-  get '/change_locale/:locale', to: 'settings#change_locale', as: :change_locale
+  post "/helps/create", as: :create_helped
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

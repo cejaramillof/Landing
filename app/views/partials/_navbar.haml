@@ -15,7 +15,8 @@
         %li
           %p= link_to t('menu.online'), '#', { :class=> "menul" }
       %ul.nav.navbar-nav.navbar-toggle.collapsed
-      .navbar-left.logo#logo
+      %a{:href => root_path} 
+        .navbar-left.logo#logo
     .collapse.navbar-collapse#navegacion-wtm
       %ul.nav.navbar-nav.navbar-right
         %li.hidden-xs
@@ -37,7 +38,7 @@
           %ul.ul-la
             %li.menu-l.en= link_to '#', locale: "en"
             %li.menu-l.es= link_to '#', locale: "es"
-            %li.menu-l.pt= link_to '#', locale: "pt"               
+            %li.menu-l.br= link_to '#', locale: "br"               
         %li.hidden-xs.hidden-special2.visible
           %p= link_to t('menu.online'), '#', { :class=> "menul" }
         %li.hidden-xs.hidden-special2.visible
@@ -47,10 +48,10 @@
         %li.dropdown{:role => 'whydifferent'}
           = link_to t('menu.why'), '#', { :class=> "menul dropdown-toggle", 'data-toggle' => 'dropdown', :role => 'button', 'aria-haspopup' => 'true', 'aria-expanded' => 'false' }
           %ul.dropdown-menu
-            %li=link_to link_to t('menu.stories'), alumni_path
+            %li=link_to t('menu.stories'), stories_path
             %li.divider{:role => 'separator'}
-            %li=link_to link_to t('menu.benefits'), '#' 
+            %li=link_to t('menu.benefits'), benefits_path
         %li
-          %p= link_to t('menu.companies'), '#', { :class=> "menul" }
+          %p= link_to t('menu.companies'), companies_path, { :class=> "menul" }
         %li.hidden-xs
           %p= link_to t('menu.apply'), '#', { :class=> "active text-bold" }

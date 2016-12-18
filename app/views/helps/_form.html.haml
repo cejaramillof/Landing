@@ -1,0 +1,25 @@
+= form_for @help do |f|
+  - if @help.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@help.errors.count, "error")} prohibited this help from being saved:"
+      %ul
+        - @help.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :email
+    = f.text_field :email
+  .field
+    = f.label :ip
+    = f.text_field :ip
+  .field
+    = f.label :locale
+    = f.text_field :locale
+  .field
+    = f.label :helped
+    = f.check_box :helped
+  .field
+    = f.label :desc
+    = f.text_area :desc
+  .actions
+    = f.submit 'Save'
