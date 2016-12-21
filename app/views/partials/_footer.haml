@@ -30,8 +30,8 @@
             %p.text-bold.font-size-28px= t('footer.links.wtm')
             .links
               %p= link_to t('footer.links.about'), about_path, { :class=> "link-white" }
-              %p= link_to t('footer.links.companies'), '#', { :class=> "link-white" }
-              %p= link_to t('footer.links.financing'), '#', { :class=> "link-white" }
+              %p= link_to t('footer.links.companies'), companies_path, { :class=> "link-white" }
+              %p= link_to t('footer.links.financing'), benefits_path(:anchor => "financial"), { :class=> "link-white" }
               %p= link_to t('footer.links.faq'), '#', { :class=> "link-white" }
               %p= link_to t('footer.links.blog'), '#', { :class=> "link-white" }
               %p= link_to t('footer.links.process'), '#', { :class=> "link-white" }

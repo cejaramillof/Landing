@@ -14,12 +14,139 @@
       .col-sm-4
         =image_tag("logos/bid.png")
 #leading.background-white
-.container
-  %p.text-darkblue= t('companies.leading.title')
+  .container
+    %p.text-darkblue.text-bold.text-center= t('companies.leading.title')
+    .row
+      .col-sm-1
+      .col-sm-5
+        .lineon
+          .col-xs-2
+            =image_tag("check.png")
+          .col-xs-10
+            %p.text-gray= t('companies.leading.one')
+        .lineon
+          .col-xs-2
+            =image_tag("check.png")
+          .col-xs-10
+            %p.text-gray= t('companies.leading.two')       
+      .col-sm-5.text-center
+        =image_tag("logos/wbrutanalcaldia.png")
+      .col-sm-1
+    .row.text-center
+      .line
+      .col-xs-4
+        .circlex
+        %p.text-bold.text-green= t('companies.timeline.one.title') 
+        %p.text-gray= t('companies.timeline.one.msg') 
+      .col-xs-4
+        .circlex
+        %p.text-bold.text-green= t('companies.timeline.two.title') 
+        %p.text-gray= t('companies.timeline.two.msg') 
+      .col-xs-4
+        .circlex
+        %p.text-bold.text-green= t('companies.timeline.three.title') 
+        %p.text-gray= t('companies.timeline.three.msg') 
+    %p.text-center= link_to t('companies.timeline.btn') , '#', { :class=> "border-radius-normal text-bold button-green text-bold" }
+#combine.background-lightblue
+  .container
+    %p.text-center.text-darkblue.font-size-2em= t('companies.combine.title') 
+    .row.text-center
+      .col-sm-3.background-white.border-radius-normal
+        =image_tag('work.png')
+        %p.text-bold.text-darkblue= t('companies.combine.one.title') 
+        %p.text-gray= t('companies.combine.one.msg')
+      .col-sm-1
+      .col-sm-4.background-white.border-radius-normal
+        =image_tag('live.png')
+        %p.text-bold.text-darkblue= t('companies.combine.two.title') 
+        %p.text-gray= t('companies.combine.two.msg')
+      .col-sm-1
+      .col-sm-3.background-white.border-radius-normal
+        =image_tag('code.png')
+        %p.text-bold.text-darkblue= t('companies.combine.three.title') 
+        %p.text-gray= t('companies.combine.three.msg')
+#looking.row.background-white
+  .col-md-6.guy
+  .col-md-6.text-center
+    %p.text-darkblue.text-bold= t('companies.looking.title')
+    %p.text-gray.font-size-2em= t('companies.looking.msg')
+    %p.text-center= link_to t('companies.looking.btn'), '#', { :class=> "border-radius-normal text-bold button-green text-bold" }
+#alumntwo.row.background-lightgray
+  .col-md-6.vid
+    .video2
+  .col-md-6
+    =image_tag('comillas-b.png')
+    %p.text-gray.font-size-2em= t('companies.alumntwo.msg')
+    %p.text-darkblue.text-bold= t('companies.alumntwo.by')
+#benefits.background-gray.text-white.text-center
+  .container
+    %h4.text-bold= t('companies.benefits.title')
+    .col-sm-8.col-sm-offset-2
+      %p.font-size-2em= t('companies.benefits.msg')
+      %span= link_to t('companies.benefits.btn'), '#', { :class=> "button-white text-bold border-radius-normal" }
+#building.background-white
+  .container
+    %p.text-center.text-bold.text-darkblue= t('companies.building.title')
+    .row
+      .col-sm-5.col-sm-offset-1
+        =image_tag('comillas.png', :class => "img-responsive")
+        %p.text-gray.font-size-2em= t('companies.building.left.msg')
+        %p.text-darkblue.text-bold= t('companies.building.left.by')
+        =image_tag('logos/endeavor2.png')
+      .col-sm-5.background-lightgray.border-radius-normal
+        %p.text-darkblue.text-bold.font-size-2em= t('companies.building.right.title')
+        .row
+          .col-xs-2
+            =image_tag('check.png')
+          .col-xs-10
+            %span.text-gray= t('companies.building.right.one')
+        .row
+          .col-xs-2
+            =image_tag('check.png')
+          .col-xs-10
+            %span.text-gray= t('companies.building.right.two')
+        .row
+          .col-xs-2
+            =image_tag('check.png')
+          .col-xs-10
+            %span.text-gray= t('companies.building.right.three')
+#vanhack.row.background-lightgray
+  .col-md-6.alumn1
+  .col-md-6.history1
+    =image_tag('logos/vanhack.png')
+    %p.text-gray= t('companies.vanhack.title')
+    %p.text-gray= t('companies.vanhack.msg')
+#asyouseen.background-lightblue  
+  .container.text-center
+    %p.text-bold.text-darkblue= t('companies.asyouseen.title')
+    = link_to image_tag('logos/rcn.png', :class => "img-responsive inline-block"), '#', :target => "_blank"
+    = link_to image_tag('logos/tiempo.png', :class => "img-responsive inline-block"), '#', :target => "_blank"
+    = link_to image_tag('logos/caracol.png', :class => "img-responsive inline-block"), '#', :target => "_blank"
+    = link_to image_tag('logos/ee.png', :class => "img-responsive inline-block"), '#', :target => "_blank"
+    = link_to image_tag('logos/tech.png', :class => "img-responsive inline-block"), '#', :target => "_blank"
+#request
+  %p.text-bold.text-darkblue.text-center= t('companies.request.title')
+  %p.text-gray.text-center.font-size-2em= t('companies.request.msg')
   .row
-    .col-sm-4
-      .lineon
-        =image_tag("check.png", :class => "inline-block")
-        %p.inline-block.text-gray= t('companies.leading.one')
-    .col-sm-4
-      =image_tag("logos/wbrutanalcaldia.png")
+    =form_tag(create_helped_path, method: :post) do
+      .row
+        .col-sm-4.col-sm-offset-2
+          %p.text-darkblue.text-bold= t('companies.request.name')
+          =text_field_tag "desc[name]",nil, placeholder: 'Pepito', :class => "help-style text-gray",:required => "true"
+        .col-sm-4
+          %p.text-darkblue.text-bold= t('companies.request.email')
+          =email_field_tag "email",nil, :type => "email",:required => "true", :placeholder => "you@email.com", :class => "help-style text-gray"
+      .row
+        .col-sm-4.col-sm-offset-2
+          %p.text-darkblue.text-bold= t('companies.request.company')
+          =text_field_tag "desc[company]",nil, placeholder: 'VanHack', :class => "help-style text-gray",:required => "true"
+        .col-sm-4
+          %p.text-darkblue.text-bold= t('companies.request.title')
+          =text_field_tag "desc[title]",nil, placeholder: 'CEO', :class => "help-style text-gray",:required => "true"
+      .row.text-center
+        =hidden_field_tag "ip", request.remote_ip
+        =submit_tag t('benefits.needhelp.btn'), :class => "text-bold border-radius-normal button-green"
+.container#houses
+  =image_tag('houses.png', :class => "img-responsive")
+.container#logos
+  =image_tag('logos/companieslogos.png', :class => "img-responsive")    

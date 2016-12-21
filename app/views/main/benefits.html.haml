@@ -160,7 +160,7 @@
           %li= t('benefits.financial.one.one')
           %li= t('benefits.financial.one.two')
           %li= t('benefits.financial.one.three')
-        %p= link_to t('benefits.financial.btn'), '#', { :class=> "border-radius-normal text-bold button-red text-bold" }
+        %span.border-radius-normal.text-bold.button-red{:onclick => "toggle_visibility('submitfront');"}= t('benefits.financial.btn')
       .col-sm-1.hidden-xs
         .lined
       .col-sm-4
@@ -169,7 +169,7 @@
           %li= t('benefits.financial.two.one')
           %li= t('benefits.financial.two.two')
           %li= t('benefits.financial.two.three')
-        %p= link_to t('benefits.financial.btn'), '#', { :class=> "border-radius-normal text-bold button-red text-bold" }
+        %span.border-radius-normal.text-bold.button-red{:onclick => "toggle_visibility('submitfirst');"}= t('benefits.financial.btn')
       .col-sm-1.hidden-xs
         .line
       .col-sm-3
@@ -178,7 +178,41 @@
           %li= t('benefits.financial.three.one')
           %li= t('benefits.financial.three.two')
           %li= t('benefits.financial.three.three')
-        %p= link_to t('benefits.financial.btn'), '#', { :class=> "border-radius-normal text-bold button-red text-bold" }
+        %span.border-radius-normal.text-bold.button-red{:onclick => "toggle_visibility('submitmensual');"}= t('benefits.financial.btn')
+    .row
+      #submitfront.background-lightgray.border-radius-normal
+        .row
+          =form_tag(create_helped_path, method: :post) do
+            .col-sm-4.col-md-3.col-md-offset-1
+              %p.text-gray.text-bold We'll send you all the information about Front pay
+              =hidden_field_tag "desc", 'Front pay'
+            .col-sm-4.col-md-4
+              =email_field_tag "email",nil, :type => "email",:required => "true", :placeholder => "you@email.com", :class => "help-style text-gray"
+              =hidden_field_tag "ip", request.remote_ip
+            .col-sm-4.col-md-3
+              =submit_tag t('benefits.needhelp.btn'), :class => "text-bold border-radius-normal button-red"
+      #submitfirst.background-lightgray.border-radius-normal
+        .row
+          =form_tag(create_helped_path, method: :post) do
+            .col-sm-4.col-md-3.col-md-offset-1
+              %p.text-gray.text-bold We'll send you all the information about pay First
+              =hidden_field_tag "desc", 'First pay'
+            .col-sm-4.col-md-4
+              =email_field_tag "email",nil, :type => "email",:required => "true", :placeholder => "you@email.com", :class => "help-style text-gray"
+              =hidden_field_tag "ip", request.remote_ip
+            .col-sm-4.col-md-3
+              =submit_tag t('benefits.needhelp.btn'), :class => "text-bold border-radius-normal button-red"
+      #submitmensual.background-lightgray.border-radius-normal
+        .row
+          =form_tag(create_helped_path, method: :post) do
+            .col-sm-4.col-md-3.col-md-offset-1
+              %p.text-gray.text-bold We'll send you all the information about Mensual
+              =hidden_field_tag "desc", 'Mensual payment'
+            .col-sm-4.col-md-4
+              =email_field_tag "email",nil, :type => "email",:required => "true", :placeholder => "you@email.com", :class => "help-style text-gray"
+              =hidden_field_tag "ip", request.remote_ip
+            .col-sm-4.col-md-3
+              =submit_tag t('benefits.needhelp.btn'), :class => "text-bold border-radius-normal button-red"
 #experience.background-lightgray
   .container-fluid
     .row
@@ -194,6 +228,7 @@
       =form_tag(create_helped_path, method: :post) do
         .col-sm-4.col-md-3.col-md-offset-1
           %p.text-gray.text-bold= t('benefits.needhelp.title')
+          =hidden_field_tag "desc", 'General'
         .col-sm-4.col-md-4
           =email_field_tag "email",nil, :type => "email",:required => "true", :placeholder => "you@email.com", :class => "help-style text-gray"
           =hidden_field_tag "ip", request.remote_ip

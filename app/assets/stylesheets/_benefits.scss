@@ -189,6 +189,11 @@
         p.text-bold {
           font-size: 2.7em;
         }
+        p {
+          a {
+            font-size: 1.5em;
+          }
+        }
       }
     }
   }
@@ -219,12 +224,24 @@
           font-size: 1.5em;
           margin: 1em 0;
         }
-        p {
-          .button-red {
-            font-size: 1.5em;
-          }           
-        }
+        span.button-red {
+          font-size: 1.5em;
+          cursor:pointer;          
+        }       
       }
+      #submitfront, #submitfirst, #submitmensual {
+        display: none;
+        margin: 3em 0;
+        .row {
+          form {
+            div {
+              p.text-gray {
+                font-size: 1.3em;
+              }
+            }
+          }
+        }
+      }      
     }
   }
 }
@@ -469,6 +486,23 @@
             }           
           }
         }
+        #submitfront, #submitfirst, #submitmensual {
+          display: none;
+          text-align: center;
+          margin: 3em 0;
+          .row {
+            form {
+              div {
+                p.text-gray {
+                  font-size: 1.3em;
+                }
+                input {
+                  margin: 1em 0;
+                }
+              }
+            }
+          }
+        }        
       }
     }
   }

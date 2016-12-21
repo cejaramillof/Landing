@@ -1,11 +1,12 @@
 class HelpsController < ApplicationController
+  before_filter :authenticate_admin!, :except => [:new, :create]
   before_action :set_help, only: [:show, :edit, :update, :destroy]
   layout "dashboard"
   
   # GET /helps
   # GET /helps.json
   def index
-    @helps = Help.all
+    @helps = Help.ultimos.all
   end
 
   # GET /helps/1
@@ -29,7 +30,7 @@ class HelpsController < ApplicationController
 
     respond_to do |format|
       if @help.save
-        format.html { redirect_to benefits_path, notice: 'En breve nos pondremos en contacto con usted' }
+        format.html { redirect_to :back, notice: 'En breve nos pondremos en contacto con usted' }
         format.json { render :show, status: :created, location: @help }
       else
         format.html { render :new }

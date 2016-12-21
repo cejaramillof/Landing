@@ -9,3 +9,58 @@ en:
       title: 'Leading the largest international effort to provide youth engagement with cooding bootcamps'
       one: 'Collaborate to open-source project or create your own business.'
       two: 'Apply for most entry-level Ruby Developer jobs (with a portfolio to show).'
+    timeline:
+      one:
+        title: '74m'
+        msg: 'People without study or work'
+      two:
+        title: '3-6'
+        msg: 'Months timeframe'
+      three:
+        title: '95%'
+        msg: 'Job placement'   
+      btn: 'Learn more'
+    combine:
+      title: 'Combine on-site training with our eLearning platform bootcamps.online'
+      one:
+        title: 'Work spaces'
+        msg: 'Practice in the browser, make employees accountable'
+      two:
+        title: 'Videos & Live classes'
+        msg: 'Learn by watching videos and live classes'
+      three:
+        title: 'Code Challenges'
+        msg: 'Test your knowledge, earn points' 
+    looking:
+      title: 'Looking for talent?'
+      msg: 'Hire top talent developers, trained talent, ready to work'
+      btn: 'Hire top talent'
+    alumntwo:
+      msg: 'The bootcamp has taught me a lot without having previous experience in the field.'
+      by: 'Gussie Patrick'
+    benefits:
+      title: 'Transform your talent'
+      msg: "Enliven your team's learning with expert-led videos, screencasts, and interactive coding challenges."
+      btn: 'Get a qoute'
+    building:
+      title: 'Building community with'
+      left:
+        by: 'Global Manager Endeavor'
+        msg: 'The bootcamp has taught me a lot without having previous experience in the field.'
+      right:
+        title: 'Selected from +1000 companies and startups'
+        one: 'Learn in your native language'
+        two: 'Support from top experts'
+        thre: 'At your pace or with bootcamps'
+    vanhack:
+      title: 'official partners'
+      msg: 'VanHack is your connection to the Canadian technology market. VanHack guides you in the process of finding a job abroad: from training to job matching services.'
+    asyouseen:
+      title: 'As you seen us on'
+    request: 
+      title: 'Request more information'
+      msg: 'Do you want to bring our bootcamps to your city, school or company?'
+      name: 'Name:'
+      email: 'Email:'
+      company: 'Company Name:'
+      title: 'Title:'

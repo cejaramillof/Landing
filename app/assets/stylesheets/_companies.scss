@@ -31,5 +31,203 @@
 }
 
 #leading {
-  
+  padding: 5em 0;
+  .container {
+    p.text-darkblue  {
+      font-size: 2.8em;
+    }
+    .row:nth-child(2) {
+      padding: 4em 0;
+      div {
+        .lineon {
+          div {
+            p.text-gray {
+              font-size: 1.5em;
+            }
+          }
+        }
+      }
+    }
+    .row:nth-child(3) {
+      .line {
+        border-bottom: 7px solid $green;
+        width: 67%;
+        margin: 0 auto;
+        margin-bottom: -1.3em;
+      }
+      div {
+        .circlex {
+          margin: 0 auto;
+          background-color: $green;
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          display: block;
+        }
+        p.text-bold {
+          font-size: 3.2em;
+        }
+        p.text-gray {
+          font-size: 1.5em;
+        }        
+      }
+    }
+    p {
+      a {
+        margin-top: 4em;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+#combine {
+  padding: 5em 0;
+  .container {
+    p.text-center {
+      margin: 0 auto;
+      max-width: 50%;
+      padding-bottom: 2em;
+    }
+    .row {
+      div {
+        padding: 2em;
+        p.text-bold {
+          padding-top: 1em;
+          font-size: 2.2em;
+        }
+        p.text-gray {
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+}
+
+#looking {
+  .guy {
+    height: 300px;
+    background: url('guy.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+  }
+  div {
+    padding: 2em 0;    
+    p.text-bold {
+      font-size: 2.8em;
+    }
+    p.text-gray {
+      margin: 0 auto;
+      width: 50%;
+      padding-bottom: 1em;
+    }
+    p {
+      a {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+#alumntwo {
+  div:nth-child(2) {
+    padding: 2em 0;
+    p.text-gray {
+      max-width: 70%;
+    }
+    p.text-darkblue.text-bold {
+      font-size: 2.7em;
+    }
+  }
+}
+
+#building {
+  padding: 4em 0 7em 0;
+  .container {
+    p.text-center {
+      font-size: 2.8em;
+      padding-bottom: 2em;
+    }
+    .row {
+      div:nth-child(1) {
+        p.text-darkblue.text-bold {
+          font-size: 2.7em;
+        }   
+      }
+      div.background-lightgray {
+        padding: 3em;
+        .row {
+          padding: 1em 0;
+          div {
+            span.text-gray {
+              font-size: 1.8em;
+            }
+          }
+        }      
+      }
+    }  
+  }
+}
+
+#vanhack {
+  div:nth-child(2) {
+    padding: 1em 0 1em 2em;
+    p {
+      font-size: 1.1em;
+    }
+  }
+}
+#asyouseen {
+  padding: 4em 0;
+  .container {
+    p {
+      font-size: 2.8em;
+    }
+    img {
+      padding: 2em;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      &:hover {
+        -webkit-filter: none; /*Returns to default state*/
+      }
+    }
+  }
+}
+
+#request {
+  padding-top: 5em;
+  .text-bold.text-center {
+    font-size: 2.8em
+  }
+  .font-size-2em {
+    padding-bottom: 1em;
+    max-width: 40%;
+    margin: 0 auto;
+  }
+  .row {
+    form {
+      .row {
+        div {
+          padding: 1em 0;
+          %p.text-darkblue {
+            font-size: 1.5em;
+          }
+        }
+        .button-green {
+          margin: 2em 0;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+#houses {
+  img {
+    margin: 0 auto;
+  }
 }

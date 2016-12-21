@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require bootstrap
 //= require menu
+//= require hidden
 //= require toastr
