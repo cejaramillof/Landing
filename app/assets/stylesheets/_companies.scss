@@ -231,3 +231,247 @@
     margin: 0 auto;
   }
 }
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .font-size-2em {
+    font-size: 1.5em;
+  }
+  #compa-img {
+    .container {
+      div {
+        padding-top: 6em;
+        padding-bottom: 4em;
+        h3 {
+          font-size: 2.3em;
+        }
+        h4 {
+          font-size: 1.3em;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  #teamsl {
+    padding: 3em 0;
+    .container {
+      .row {
+        padding-top: 3em;
+        div {
+          img {
+            margin: 2em auto;
+          }
+        }
+      }
+    }
+  }
+
+  #leading {
+    padding: 5em 0;
+    .container {
+      p.text-darkblue  {
+        font-size: 1.8em;
+      }
+      .row:nth-child(2) {
+        padding: 4em 0;
+        div {
+          .lineon {
+            div {
+              p.text-gray {
+                font-size: 1em;
+                padding-bottom: 3em;
+              }
+            }
+          }
+        img {
+          margin: 1em auto;
+        }          
+        }
+      }
+      .row:nth-child(3) {
+        .line {
+          border-bottom: 7px solid $green;
+          width: 67%;
+          margin: 0 auto;
+          margin-bottom: -1.3em;
+        }
+        div {
+          .circlex {
+            margin: 0 auto;
+            background-color: $green;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: block;
+          }
+          p.text-bold {
+            font-size: 3.2em;
+          }
+          p.text-gray {
+            font-size: 1em;
+          }        
+        }
+      }
+      p {
+        a {
+          margin-top: 2em;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+  #combine {
+    padding: 3em 0;
+    .container {
+      p.text-center {
+        margin: 0 auto;
+        max-width: 100%;
+        padding-bottom: 2em;
+      }
+      .row {
+        div {
+          padding: 2em;
+          p.text-bold {
+            padding-top: 1em;
+            font-size: 2.2em;
+          }
+          p.text-gray {
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
+  }
+
+  #looking {
+    div {
+      padding: 2em 0;    
+      p.text-bold {
+        font-size: 1.8em;
+      }
+      p.text-gray {
+        margin: 0 auto;
+        width: 90%;
+        padding-bottom: 1em;
+      }
+      p {
+        a {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+  #alumntwo {
+    div:nth-child(2) {
+      padding: 2em 0;
+      img {
+        margin: 1em 0 1em 2em;
+      }
+      p.text-gray {
+        max-width: 70%;
+        text-align: center;
+        margin: 0 auto;
+      }
+      p.text-darkblue.text-bold {
+        font-size: 2.7em;
+        text-align: center;
+      }
+    }
+  }
+
+  #building {
+    padding: 4em 0 7em 0;
+    .container {
+      p.text-center {
+        font-size: 1.8em;
+        padding-bottom: 0;
+      }
+      .row {
+        div:nth-child(1) {
+          p.text-darkblue.text-bold {
+            font-size: 1.7em;
+          }
+          .endeavor {
+            margin: 1em;
+          }
+        }
+        div.background-lightgray {
+          margin-top: 2em;
+          padding: 3em;
+          .row {
+            padding: 1em 0;
+            div {
+              span.text-gray {
+                font-size: 1.3em;
+              }
+            }
+          }      
+        }
+      }  
+    }
+  }
+
+  #vanhack {
+    div:nth-child(2) {
+      padding: 1em 0 1em 2em;
+      p {
+        font-size: 1.1em;
+      }
+    }
+  }
+  #asyouseen {
+    padding: 4em 0;
+    .container {
+      p {
+        font-size: 1.8em;
+      }
+      img {
+        margin: 0 auto;
+        display: block;
+        padding: 2em;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        &:hover {
+          -webkit-filter: none; /*Returns to default state*/
+        }
+      }
+    }
+  }
+
+  #request {
+    padding-top: 5em;
+    .text-bold.text-center {
+      font-size: 1.8em
+    }
+    .font-size-2em {
+      padding-bottom: 1em;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    .row {
+      form {
+        .row {
+          div {
+            padding: 1em 0;
+            %p.text-darkblue {
+              font-size: 1.5em;
+            }
+          }
+          .button-green {
+            margin: 2em 0;
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
+
+  #houses {
+    img {
+      margin: 0 auto;
+    }
+  }
+}

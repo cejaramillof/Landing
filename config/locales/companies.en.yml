@@ -63,4 +63,4 @@ en:
       name: 'Name:'
       email: 'Email:'
       company: 'Company Name:'
-      title: 'Title:'
+      titlemsg: 'Title:'

@@ -30,7 +30,7 @@
           .col-xs-10
             %p.text-gray= t('companies.leading.two')       
       .col-sm-5.text-center
-        =image_tag("logos/wbrutanalcaldia.png")
+        =image_tag("logos/wbrutanalcaldia.png", :class => "img-responsive")
       .col-sm-1
     .row.text-center
       .line
@@ -92,7 +92,7 @@
         =image_tag('comillas.png', :class => "img-responsive")
         %p.text-gray.font-size-2em= t('companies.building.left.msg')
         %p.text-darkblue.text-bold= t('companies.building.left.by')
-        =image_tag('logos/endeavor2.png')
+        =image_tag('logos/endeavor2.png', :class => "endeavor")
       .col-sm-5.background-lightgray.border-radius-normal
         %p.text-darkblue.text-bold.font-size-2em= t('companies.building.right.title')
         .row
@@ -130,18 +130,18 @@
   .row
     =form_tag(create_helped_path, method: :post) do
       .row
-        .col-sm-4.col-sm-offset-2
+        .col-xs-10.col-xs-offset-1.col-sm-4.col-sm-offset-2
           %p.text-darkblue.text-bold= t('companies.request.name')
           =text_field_tag "desc[name]",nil, placeholder: 'Pepito', :class => "help-style text-gray",:required => "true"
-        .col-sm-4
+        .col-xs-10.col-xs-offset-1.col-sm-4
           %p.text-darkblue.text-bold= t('companies.request.email')
           =email_field_tag "email",nil, :type => "email",:required => "true", :placeholder => "you@email.com", :class => "help-style text-gray"
       .row
-        .col-sm-4.col-sm-offset-2
+        .col-xs-10.col-xs-offset-1.col-sm-4.col-sm-offset-2
           %p.text-darkblue.text-bold= t('companies.request.company')
           =text_field_tag "desc[company]",nil, placeholder: 'VanHack', :class => "help-style text-gray",:required => "true"
-        .col-sm-4
-          %p.text-darkblue.text-bold= t('companies.request.title')
+        .col-xs-10.col-xs-offset-1.col-sm-4
+          %p.text-darkblue.text-bold= t('companies.request.titlemsg')
           =text_field_tag "desc[title]",nil, placeholder: 'CEO', :class => "help-style text-gray",:required => "true"
       .row.text-center
         =hidden_field_tag "ip", request.remote_ip
