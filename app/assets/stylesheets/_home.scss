@@ -533,7 +533,29 @@
       }
     }
   }
-
+  #news {
+    div {
+      text-align: center;
+      p.inline-block {
+        min-width: 336px;
+        display: block!important;
+        .text-white {
+          background-color: #007BA7;
+          border-radius: 15px;
+          padding: 3px 10px;
+          margin: 2em 1em;
+        }
+        .text-bold.font-size-2em {
+          display: block;
+        }
+      }
+      .button-red {
+        margin: 2em 0;
+        font-size: 1.2em;
+        padding: 10px 28px;
+      }
+    }
+  }
   #bootcamp-pros {
     .container {
       .row {
