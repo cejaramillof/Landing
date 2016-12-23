@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get '/about', to: 'main#about'
   get '/terms', to: 'main#terms'
   get '/companies', to: 'main#companies'
+  get '/faq', to: 'main#faq'
 
   resources :subscribers, except: [:show]
   resources :interesteds, except: [:show]

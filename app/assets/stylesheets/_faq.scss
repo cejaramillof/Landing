@@ -1,0 +1,81 @@
+#faq-head {
+  .container {
+    div {
+      padding: 4em 0;
+      h3 {
+        font-size: 3.3em;
+      }
+    }
+  }
+}
+
+#men {
+  .row {
+    div {
+      padding: 6em 0;
+      font-size: 1.5em;
+      p {
+        a {
+          &:link {
+            color: $darkblue;
+          }
+          &:visited {
+            color: $darkblue;
+          }
+          &:hover {
+            color: $darkblue;
+            text-decoration: none;
+          }
+          &:active {
+            color: $darkblue;
+          }        
+        }
+      }
+    }  
+  }
+}
+
+div {
+  .container {
+    padding: 2em 0;
+    p.text-gray {
+      font-size: 1.4em;
+    }
+  }
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .font-size-2em {
+    font-size: 1.5em;
+  }
+  #faq-head {
+    .container {
+      div {
+        padding: 4em 1em;
+        h3 {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+
+  #men {
+    .row {
+      padding: 6em 0;
+      div {
+        padding: 0em 0;
+        font-size: 1.2em;
+      }  
+    }
+  }
+
+  div {
+    .container {
+      padding: 2em 1em;
+      p.text-gray {
+        font-size: 1.2em;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+#faq-head.background-green
+  .container
+    .col-xs-12
+      %h3.text-bold.text-white= t('faq.header.title')
+.container#men
+  .row
+    .col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1
+      %p.text-bold=link_to t('faq.menu.one.title'), '#one'
+      %p.text-bold=link_to t('faq.menu.two.title'), '#two'
+      %p.text-bold=link_to t('faq.menu.three.title'), '#three'
+    .col-xs-10.col-xs-offset-1.col-sm-5.col-sm-offset-1
+      %p.text-bold=link_to t('faq.menu.four.title'), '#four'
+      %p.text-bold=link_to t('faq.menu.five.title'), '#five'
+      %p.text-bold=link_to t('faq.menu.six.title'), '#six'
+#one
+  .container
+    %p.text-bold.text-green.font-size-2em= t('faq.menu.one.title')
+    %hr
+    %p.text-gray= t('faq.menu.one.msg')
+#two
+  .container
+    %p.text-bold.text-green.font-size-2em= t('faq.menu.two.title')
+    %hr
+    %p.text-gray= t('faq.menu.two.msg')
+#three
+  .container
+    %p.text-bold.text-green.font-size-2em= t('faq.menu.three.title')
+    %hr
+    %p.text-gray= t('faq.menu.three.msg')
+#four
+  .container
+    %p.text-bold.text-green.font-size-2em= t('faq.menu.four.title')
+    %hr
+    %p.text-gray= t('faq.menu.four.msg')
+#five
+  .container
+    %p.text-bold.text-green.font-size-2em= t('faq.menu.five.title')
+    %hr
+    %p.text-gray= t('faq.menu.five.msg')
+#six
+  .container
+    %p.text-bold.text-green.font-size-2em= t('faq.menu.six.title')
+    %hr
+    %p.text-gray= t('faq.menu.six.msg')
+.container#logos
+  =image_tag('logos/logos2.png', :class => "img-responsive")            

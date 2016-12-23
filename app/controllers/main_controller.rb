@@ -11,4 +11,6 @@ class MainController < ApplicationController
   end
   def companies
   end
+  def faq
+  end
 end
